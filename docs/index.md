@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png
+heroImage: https://yiming_chang.gitee.io/manages/favicon.ico
 heroText: Pure Admin
 tagline: 🚀一个开箱即用的前端框架
 actionText: 快速开始 →
