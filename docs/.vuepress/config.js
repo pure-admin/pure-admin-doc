@@ -4,7 +4,7 @@ const htmlModules = require('./config/htmlModules.js');
 
 module.exports = {
   title: "Pure Admin",
-  description: '一个开箱即用的前端框架',
+  description: '一个开箱即用的前端框架aa',
   base, // '/<仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
