@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: https://yiming_chang.gitee.io/manages/favicon.ico
+heroImage: "/img/pure.png"
 heroText: Pure Admin
-tagline: 🚀一个开箱即用的前端框架
+tagline: 一个开箱即用的前端框架（保姆级文档🥰）
 actionText: 快速开始 →
 actionLink: /pages/a2f161/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
@@ -12,13 +12,12 @@ features: # 可选的
     details: 基于Vue3、Vite、Element-Plus、TypeScript等最新技术栈开发
   - title: ⚡️ 轻量快速的热重载
     details: 无论应用程序大小如何，都始终极快的模块热重载（HMR）
-  - title: 简单易上手
+  - title: 🤙 简单易上手
     details: 使用单文件组件<script setup>，极易上手的同时提升渲染速度
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: none
 ---
-
 
 <!-- <br/> -->
 <p align="center">
@@ -27,17 +26,9 @@ postList: none
 </p>
 
 <!-- <br/> -->
-<!-- 
+<!--
 ## ⚡️未来...
 
 ::: tip
 Element-Plus发布黑暗模式主题后，此项目也会加入黑暗模式
 :::
-
-<br/>
-
-## 🔔微信交流群
-::: center
-<img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e430c878243e4327ad0fd86a338bae00~tplv-k3u1fbpfcp-watermark.awebp?"  class="no-zoom" style="width:200px;">
-
-<br/> -->
