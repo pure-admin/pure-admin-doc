@@ -5,18 +5,22 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
-    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
+    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D",
+    "editFm": "node utils/editFrontmatter.js"
   },
   "license": "MIT",
   "devDependencies": {
     "dayjs": "^1.10.7",
+    "inquirer": "7.1.0",
+    "json2yaml": "1.1.0",
     "vuepress": "^1.8.2",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-theme-vdoing": "^1.8.5"
+    "vuepress-theme-vdoing": "^1.8.5",
+    "yamljs": "0.3.0"
   },
   "dependencies": {}
 }
