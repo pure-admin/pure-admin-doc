@@ -29,14 +29,14 @@ module.exports = [
       }
     ]
   },
-  {
-    text: '辅助', link: '/pages/developguide/',
-    items: [
-      { text: '前端开发规范', link: '/pages/developguide/' },
-      { text: 'Typora图片上传', link: '/pages/picupload/' },
-      { text: '遗留问题', link: '/pages/bea9d4/' },
-    ]
-  },
+  // {
+  //   text: '辅助', link: '/pages/developguide/',
+  //   items: [
+  //     { text: '前端开发规范', link: '/pages/developguide/' },
+  //     { text: 'Typora图片上传', link: '/pages/picupload/' },
+  //     { text: '遗留问题', link: '/pages/bea9d4/' },
+  //   ]
+  // },
   {
     text: '相关链接', link: '',
     items: [
