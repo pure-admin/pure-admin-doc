@@ -37,5 +37,17 @@ module.exports = [
       { text: '遗留问题', link: '/pages/bea9d4/' },
     ]
   },
+  {
+    text: '相关链接', link: '',
+    items: [
+      { text: 'GitHub完整版预览', link: 'http://yiming_chang.gitee.io/manages/' },
+      { text: 'GitHub完整版源码', link: 'https://github.com/xiaoxian521/vue-pure-admin' },
+      { text: 'GitHub精简版源码', link: 'https://github.com/xiaoxian521/pure-admin-thin' },
+      { text: 'GitHub配套后端源码', link: 'https://github.com/xiaoxian521/pure-admin-backend' },
+      { text: 'Gitee完整版源码', link: 'https://gitee.com/yiming_chang/vue-pure-admin' },
+      { text: 'Gitee精简版源码', link: 'https://gitee.com/yiming_chang/pure-admin-thin' },
+      { text: 'Gitee配套后端源码', link: 'https://gitee.com/yiming_chang/pure-admin-backend' },
+    ]
+  },
   { text: '支持与反馈', link: '/pages/1b12ed/' },
 ]
