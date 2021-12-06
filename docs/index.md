@@ -18,17 +18,3 @@ features: # 可选的
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 postList: none
 ---
-
-<!-- <br/> -->
-<p align="center">
-  <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank"><img src='https://img.shields.io/github/stars/xiaoxian521/vue-pure-admin' alt='GitHub stars' class="no-zoom"></a>
-  <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank"><img src='https://img.shields.io/github/forks/xiaoxian521/vue-pure-admin' alt='GitHub forks' class="no-zoom"></a>
-</p>
-
-<!-- <br/> -->
-<!--
-## ⚡️未来...
-
-::: tip
-Element-Plus发布黑暗模式主题后，此项目也会加入黑暗模式
-:::

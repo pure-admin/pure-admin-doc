@@ -11,6 +11,20 @@
       ></a>
     </div>
 
+    <p align="center">
+      <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank"
+        ><img
+          src="https://img.shields.io/github/stars/xiaoxian521/vue-pure-admin"
+          alt="GitHub stars"
+          class="no-zoom"
+      /></a>
+      <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank"
+        ><img
+          src="https://img.shields.io/github/forks/xiaoxian521/vue-pure-admin"
+          alt="GitHub forks"
+          class="no-zoom"
+      /></a>
+    </p>
     <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
     Theme by
     <a
@@ -42,7 +56,7 @@ export default {
 <style lang="stylus">
 // $mobileSidebarWidth = $sidebarWidth * 0.82
 .footer
-  padding 1.5rem
+  margin-top -1.4rem
   text-align center
   color #666
   box-sizing border-box
