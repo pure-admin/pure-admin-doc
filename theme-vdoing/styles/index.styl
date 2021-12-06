@@ -22,6 +22,13 @@ body
   font-size 16px
   color $textColor
   background var(--bodyBg)
+  overflow auto
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
 // 去掉黄色边框
 a,input,button
