@@ -10,7 +10,7 @@ module.exports = [
       { text: '路由', link: '/pages/782b6e/' },
       { text: '权限', link: '/pages/7a0a31/' },
       { text: '请求接口', link: '/pages/9a083a/' },
-
+      { text: '项目打包', link: '/pages/9a152a/' },
       {
         text: '进阶', items: [
           { text: '图标', link: '/pages/497c2e/' },
