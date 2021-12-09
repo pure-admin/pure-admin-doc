@@ -6,6 +6,15 @@
       <NavLink v-else :item="item" />
     </div>
 
+    <el-popover placement="bottom" trigger="hover">
+      <img
+        :src="require('./wechat.png')"
+        style="width: 200px; height: 200px"
+        alt="wechat"
+      />
+      <i class="ri-wechat-fill" slot="reference" title="添加微信"></i>
+    </el-popover>
+
     <!-- repo link -->
     <a
       v-if="repoLink"
@@ -136,6 +145,15 @@ export default {
     margin-left 1.5rem
     display inline-block
     &:hover
+      color $accentColor
+  .ri-wechat-fill
+    vertical-align middle
+    margin-bottom 0.1em
+    font-size 20px
+    margin-left 1.5rem
+    display inline-block
+    &:hover
+      cursor pointer
       color $accentColor
   svg
     vertical-align middle

@@ -2,6 +2,7 @@
   "name": "vue-pure-admin-doc",
   "version": "1.0.0",
   "scripts": {
+    "bootstrap": "pnpm install && cd theme-vdoing && pnpm install",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
@@ -10,17 +11,35 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@better-scroll/core": "^2.4.2",
+    "@better-scroll/slide": "^2.4.2",
+    "@vuepress/plugin-active-header-links": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-search": "^1.8.2",
+    "chalk": "^5.0.0",
     "dayjs": "^1.10.7",
+    "docsearch.js": "^2.6.3",
+    "element-ui": "^2.15.6",
+    "good-storage": "^1.1.1",
     "inquirer": "7.1.0",
+    "js-yaml": "^4.1.0",
     "json2yaml": "1.1.0",
+    "lodash": "^4.17.21",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.2",
     "vuepress": "^1.8.2",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
+    "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-smooth-scroll": "^0.0.10",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.8",
-    "vuepress-theme-vdoing": "^1.8.5",
     "yamljs": "0.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-plugin-component": "^1.1.1",
+    "core-js": "2.6.11",
+    "remixicon": "^2.5.0"
+  }
 }
