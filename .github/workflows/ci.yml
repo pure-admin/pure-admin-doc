@@ -26,4 +26,4 @@ jobs: # 工作流
       - name: run deploy.sh # 步骤3
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-        run: npm install && npm run deploy
+        run: npm run bootstrap && npm run deploy
