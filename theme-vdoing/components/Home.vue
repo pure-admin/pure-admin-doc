@@ -18,9 +18,25 @@
             :src="$withBase(homeData.heroImage)"
             :alt="homeData.heroAlt"
           />
-          <h1 v-if="homeData.heroText" id="main-title">
-            {{ homeData.heroText }}
-          </h1>
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <h1 v-if="homeData.heroText" id="main-title">
+              {{ homeData.heroText }}
+            </h1>
+            <img
+              src="https://img.shields.io/github/v/tag/xiaoxian521/vue-pure-admin.svg?sort=semver"
+              alt="当前版本"
+              style="
+                width: 80px;
+                height: 24px;
+                margin: 0;
+                padding: 0;
+                padding-left: 10px;
+                padding-top: 5px;
+              "
+            />
+          </div>
           <p v-if="homeData.tagline" class="description">
             {{ homeData.tagline }}
           </p>
@@ -390,7 +406,7 @@ export default {
           margin 2rem auto 1.5rem
         h1
           margin 0
-          font-size 3.2rem
+          font-size 2.8rem
         .description, .action
           margin 1.5rem auto
         .description
