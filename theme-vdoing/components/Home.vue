@@ -27,14 +27,7 @@
             <img
               src="https://img.shields.io/github/v/tag/xiaoxian521/vue-pure-admin.svg?sort=semver"
               alt="当前版本"
-              style="
-                width: 80px;
-                height: 24px;
-                margin: 0;
-                padding: 0;
-                padding-left: 10px;
-                padding-top: 5px;
-              "
+              style="width: 80px;height: 24px;margin: 0;padding: 0;padding-left: 10px;padding-top: 5px;"
             />
           </div>
           <p v-if="homeData.tagline" class="description">
