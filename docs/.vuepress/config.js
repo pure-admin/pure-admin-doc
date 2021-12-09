@@ -3,7 +3,7 @@ const base = require('../../base.js')
 const htmlModules = require('./config/htmlModules.js')
 
 module.exports = {
-  title: "Pure Admin",
+  title: "Pure Admin 文档",
   description: '一个开箱即用的前端框架',
   port: 8889,
   base, // '/<仓库名>/'， 默认'/'
