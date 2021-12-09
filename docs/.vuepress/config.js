@@ -36,6 +36,7 @@ module.exports = {
     repo: 'xiaoxian521/vue-pure-admin', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
+    searchPlaceholder: '宝，不懂就搜，留着干啥',
 
     // docsDir: 'docs', // 编辑的文件夹
     // editLinks: true, // 编辑链接
