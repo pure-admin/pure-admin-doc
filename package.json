@@ -5,9 +5,7 @@
     "bootstrap": "pnpm install && cd theme-vdoing && pnpm install",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
-    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D",
-    "editFm": "node utils/editFrontmatter.js"
+    "deploy": "bash deploy.sh"
   },
   "license": "MIT",
   "devDependencies": {
