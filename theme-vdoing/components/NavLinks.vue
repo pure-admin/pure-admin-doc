@@ -7,12 +7,13 @@
     </div>
 
     <el-popover placement="bottom" trigger="hover">
+      <h5 style="margin: 0">添加作者微信请备注来意</h5>
       <img
         :src="require('./wechat.png')"
         style="width: 200px; height: 200px"
         alt="wechat"
       />
-      <i class="ri-wechat-fill" slot="reference" title="添加微信"></i>
+      <i class="ri-wechat-fill" slot="reference" title="添加作者微信"></i>
     </el-popover>
 
     <!-- repo link -->
