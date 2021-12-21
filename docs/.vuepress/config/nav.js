@@ -7,7 +7,7 @@ module.exports = [
       { text: '目录结构', link: '/pages/2f674a/' },
       { text: '项目配置', link: '/pages/5d83b5/' },
       { text: '布局', link: '/pages/93bd0d/' },
-      { text: '路由', link: '/pages/782b6e/' },
+      { text: '路由和菜单', link: '/pages/782b6e/' },
       { text: '权限', link: '/pages/7a0a31/' },
       { text: '请求接口', link: '/pages/9a083a/' },
       { text: '项目打包', link: '/pages/9a152a/' },
