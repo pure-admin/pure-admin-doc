@@ -1,5 +1,5 @@
 {
-  "name": "vue-pure-admin-doc",
+  "name": "pure-admin-doc",
   "version": "1.0.0",
   "scripts": {
     "bootstrap": "pnpm install && cd theme-vdoing && pnpm install",
