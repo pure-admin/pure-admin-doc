@@ -30,6 +30,8 @@ module.exports = [
       { text: 'Gitee完整版源码', link: 'https://gitee.com/yiming_chang/vue-pure-admin' },
       { text: 'Gitee精简版源码', link: 'https://gitee.com/yiming_chang/pure-admin-thin' },
       { text: 'Gitee配套后端源码', link: 'https://gitee.com/yiming_chang/pure-admin-backend' },
+      { text: 'Vue3响应式本地存储工具', link: 'https://github.com/xiaoxian521/responsive-storage' },
+      { text: '生产环境删除console的vite插件', link: 'https://github.com/xiaoxian521/vite-plugin-remove-console' },
     ]
   },
   { text: '支持与反馈', link: '/pages/1b12ed/' },
