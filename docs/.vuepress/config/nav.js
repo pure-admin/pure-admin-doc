@@ -18,6 +18,11 @@ module.exports = [
           { text: '国际化', link: '/pages/7dd925/' },
         ]
       },
+      {
+        text: '其他', items: [
+          { text: '常见问题回答', link: '/pages/f8dc77/' },
+        ]
+      },
     ]
   },
   {
