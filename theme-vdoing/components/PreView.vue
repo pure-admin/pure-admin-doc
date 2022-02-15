@@ -23,7 +23,7 @@ export default {
 
   computed: {
     link() {
-      return "http://yiming_chang.gitee.io/manages";
+      return "https://vue-pure-admin.vercel.app";
     },
 
     exact() {

@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-doc",
-  "version": "1.0.0",
+  "version": "3.0",
   "scripts": {
     "bootstrap": "pnpm install && cd theme-vdoing && pnpm install",
     "dev": "vuepress dev docs",
