@@ -16,9 +16,9 @@
   "dependencies": {
     "@better-scroll/core": "^2.0.0-beta.6",
     "@better-scroll/slide": "^2.0.0-beta.6",
-    "@vuepress/plugin-active-header-links": "^1.2.0",
-    "@vuepress/plugin-nprogress": "^1.2.0",
-    "@vuepress/plugin-search": "^1.2.0",
+    "@vuepress/plugin-active-header-links": "^1.9.7",
+    "@vuepress/plugin-nprogress": "^1.9.7",
+    "@vuepress/plugin-search": "^1.9.7",
     "chalk": "^4.0.0",
     "core-js": "2.6.11",
     "docsearch.js": "^2.5.2",
@@ -28,8 +28,8 @@
     "json2yaml": "^1.1.0",
     "lodash": "^4.17.15",
     "remixicon": "^2.5.0",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
+    "stylus": "^0.57.0",
+    "stylus-loader": "^6.2.0",
     "vuepress-plugin-container": "^2.0.2",
     "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
