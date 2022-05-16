@@ -21,6 +21,8 @@ module.exports = [
       {
         text: '其他', items: [
           { text: '常见问题回答', link: '/pages/f8dc77/' },
+          { text: 'vscode文件夹详解', link: '/pages/f8dc90/' },
+          { text: '相关项目', link: '/pages/a151e8/' },
         ]
       },
     ]
