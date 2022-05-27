@@ -1,5 +1,9 @@
 vue-pure-admin 文档
 
+## 预览
+
+- [文档地址](https://pure-admin-doc.vercel.app)
+
 ## 安装依赖
 
 ```
