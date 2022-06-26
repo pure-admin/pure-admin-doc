@@ -28,6 +28,29 @@ module.exports = [
     ]
   },
   {
+    text: '组件', link: '/pages/pure-admin-table/',
+    items: [
+      {
+        text: '组件', items: [
+          { text: 'pure-admin-table', link: '/pages/pure-admin-table/' },
+          { text: 'pure-admin-descriptions', link: '/pages/pure-admin-descriptions/' },
+          { text: 'pure-admin-components', link: '/pages/pure-admin-components/' },
+        ]
+      },
+      {
+        text: '工具库', items: [
+          { text: 'pure-admin-utils', link: '/pages/pure-admin-utils/' },
+          { text: 'responsive-storage', link: '/pages/responsive-storage/' },
+        ]
+      },
+      {
+        text: 'vite插件', items: [
+          { text: 'vite-plugin-remove-console', link: '/pages/vite-plugin-remove-console/' },
+        ]
+      },
+    ]
+  },
+  {
     text: '相关链接', link: '',
     items: [
       { text: 'GitHub完整版预览', link: 'https://vue-pure-admin.vercel.app' },
@@ -39,8 +62,6 @@ module.exports = [
       { text: 'Gitee精简版源码', link: 'https://gitee.com/yiming_chang/pure-admin-thin' },
       { text: 'Gitee Tauri版源码', link: 'https://gitee.com/yiming_chang/tauri-pure-admin' },
       { text: 'Gitee配套后端源码', link: 'https://gitee.com/yiming_chang/pure-admin-backend' },
-      { text: 'Vue3响应式本地存储工具', link: 'https://github.com/xiaoxian521/responsive-storage' },
-      { text: '生产环境删除console的vite插件', link: 'https://github.com/xiaoxian521/vite-plugin-remove-console' },
     ]
   },
   { text: '支持与反馈', link: '/pages/1b12ed/' },
