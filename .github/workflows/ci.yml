@@ -1,37 +1,37 @@
-# name: CI
+name: CI
 
-# #on: [push]
+#on: [push]
 
-# # 在master分支发生push事件时触发。
-# on:
-#   push:
-#     branches:
-#       - master
+# 在master分支发生push事件时触发。
+on:
+  push:
+    branches:
+      - master
 
-# jobs: # 工作流
-#   build: # 自定义名称
-#     runs-on: ubuntu-latest #运行在虚拟机环境ubuntu-latest
+jobs: # 工作流
+  build: # 自定义名称
+    runs-on: ubuntu-latest #运行在虚拟机环境ubuntu-latest
 
-#     strategy:
-#       matrix:
-#         node-version: [10.x]
+    strategy:
+      matrix:
+        node-version: [10.x]
 
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v1
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
 
-#       - name: Setup node
-#         uses: actions/setup-node@v2
-#         with:
-#           node-version: "16"
-#           registry-url: https://registry.npmjs.com/
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+          registry-url: https://registry.npmjs.com/
 
-#       - name: Setup pnpm
-#         uses: pnpm/action-setup@v2
-#         with:
-#           version: latest
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
 
-#       - name: run deploy.sh
-#         env: # 设置环境变量
-#           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-#         run: pnpm install && pnpm deploy
+      - name: run deploy.sh
+        env: # 设置环境变量
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
+        run: pnpm install && pnpm deploy
