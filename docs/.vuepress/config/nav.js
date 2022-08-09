@@ -41,6 +41,7 @@ module.exports = [
         text: '工具库', items: [
           { text: 'pure-admin-utils', link: '/pages/pure-admin-utils/' },
           { text: 'responsive-storage', link: '/pages/responsive-storage/' },
+          { text: 'pure-admin-release', link: '/pages/pure-admin-release/' },
         ]
       },
       {
