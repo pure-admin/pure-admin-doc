@@ -63,6 +63,8 @@ module.exports = [
       { text: 'Gitee精简版源码', link: 'https://gitee.com/yiming_chang/pure-admin-thin' },
       { text: 'Gitee Tauri版源码', link: 'https://gitee.com/yiming_chang/tauri-pure-admin' },
       { text: 'Gitee配套后端源码', link: 'https://gitee.com/yiming_chang/pure-admin-backend' },
+      { text: 'GitHub 文档源码', link: 'https://github.com/xiaoxian521/pure-admin-doc' },
+      { text: 'Gitee 文档源码', link: 'https://gitee.com/yiming_chang/pure-admin-doc' },
     ]
   },
   { text: '支持与反馈', link: '/pages/1b12ed/' },
