@@ -29,7 +29,7 @@ initGit(){
   git commit -m "${msg}"
 }
 initGit
-git push -f $githubUrl master:gh-pages # 推送到github
+git push $githubUrl origin gh-pages -f # 推送到github
 
 cd -
 rm -rf docs/.vuepress/dist
