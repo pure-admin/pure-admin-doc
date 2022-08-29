@@ -32,5 +32,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: pure-admin-doc
+          folder: .
           clean: true
