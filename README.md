@@ -2,7 +2,10 @@ vue-pure-admin 文档
 
 ## 预览
 
-- [文档地址](https://pure-admin-doc.vercel.app)
+- [国内文档地址](http://yiming_chang.gitee.io/pure-admin-doc)
+
+- [国外文档地址1](https://pure-admin-doc.vercel.app)
+- [国外文档地址2](https://xiaoxian521.github.io/pure-admin-doc)
 
 ## 安装依赖
 
