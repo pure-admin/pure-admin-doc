@@ -1,1 +1,1 @@
-module.exports = '/pure-admin-doc/'
+module.exports = '/'
