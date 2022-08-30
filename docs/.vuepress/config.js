@@ -156,12 +156,12 @@ module.exports = {
       }
     ]
   ],
-  // configureWebpack: {
-  //   //webpack别名 如![Image from alias](~@alias/image.png)
-  //   resolve: {
-  //     alias: {
-  //       '@alias': 'path/to/some/dir'
-  //     }
-  //   }
-  // }
+  configureWebpack: {
+    //webpack别名 如![Image from alias](~@alias/image.png)
+    resolve: {
+      alias: {
+        '@alias': '/docs/.vuepress/public'
+      }
+    }
+  }
 }
