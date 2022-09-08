@@ -25,7 +25,7 @@ module.exports = {
     // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
   ],
   markdown: {
-    lineNumbers: true // 代码行号
+    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
   // theme: 'vdoing', // 使用依赖包主题
   theme: require.resolve('../../theme-vdoing'), // 使用本地主题
