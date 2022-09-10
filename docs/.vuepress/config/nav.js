@@ -16,6 +16,7 @@ module.exports = [
           { text: '图标', link: '/pages/497c2e/' },
           { text: '主题', link: '/pages/1579c5/' },
           { text: '国际化', link: '/pages/7dd925/' },
+          { text: 'Tailwind CSS', link: '/pages/39156f/' },
         ]
       },
       {
