@@ -43,6 +43,7 @@ module.exports = [
           { text: 'pure-admin-utils', link: '/pages/pure-admin-utils/' },
           { text: 'responsive-storage', link: '/pages/responsive-storage/' },
           { text: 'pure-admin-release', link: '/pages/pure-admin-release/' },
+          { text: 'pure-thin-cli', link: '/pages/pure-thin-cli/' },
         ]
       },
       {
