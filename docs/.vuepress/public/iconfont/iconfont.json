@@ -1,0 +1,86 @@
+{
+  "id": "3114978",
+  "name": "my_notes",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630092",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "1166351",
+      "name": "打勾_有圈",
+      "font_class": "dagouyouquan",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "9974757",
+      "name": "感叹号",
+      "font_class": "gantanhao",
+      "unicode": "e710",
+      "unicode_decimal": 59152
+    },
+    {
+      "icon_id": "11686796",
+      "name": "info",
+      "font_class": "info",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "12148932",
+      "name": "错误",
+      "font_class": "cuowu",
+      "unicode": "e7fa",
+      "unicode_decimal": 59386
+    },
+    {
+      "icon_id": "722473",
+      "name": "loading",
+      "font_class": "loading",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1196167",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "8952406",
+      "name": "award",
+      "font_class": "award",
+      "unicode": "e7df",
+      "unicode_decimal": 59359
+    },
+    {
+      "icon_id": "15205994",
+      "name": "view",
+      "font_class": "view",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "1355085",
+      "name": "book",
+      "font_class": "book",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    }
+  ]
+}

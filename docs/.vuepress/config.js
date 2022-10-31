@@ -9,7 +9,7 @@ module.exports = {
   base, // '/<仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }], // 阿里在线矢量库
+    ['link', { rel: 'stylesheet', href: '/iconfont/iconfont.css' }], // 阿里在线矢量库
     ['meta', { name: 'keywords', content: 'vue-pure-admin,pure-admin,pure-admin-thin,pure-admin-docs' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // 以下是vuepress-plugin-demo-block插件所需依赖
