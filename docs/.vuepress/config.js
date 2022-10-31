@@ -9,22 +9,15 @@ module.exports = {
   base, // '/<仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
+    ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_3114978_qe0b39no76.css' }], // 阿里在线矢量库
+    ['meta', { name: 'keywords', content: 'vue-pure-admin,pure-admin,pure-admin-thin,pure-admin-docs' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    [
-      'script',
-      {
-        'data-ad-client': 'ca-pub-7828333725993554',
-        async: 'async',
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-      },
-    ], // 网站关联Google AdSense 与 html格式广告支持
-
     // 以下是vuepress-plugin-demo-block插件所需依赖
     // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }], // 此文件会影响导航router-link-active样式的切换，改为在enhanceApp.js中把Vue构造函数绑定到window上
     // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
   ],
   markdown: {
+    lineNumbers: true, // 显示代码块的行号
     extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
   // theme: 'vdoing', // 使用依赖包主题
@@ -124,7 +117,7 @@ module.exports = {
     ['one-click-copy', { // 代码块复制按钮
       copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
       copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
-      duration: 1000, // prompt message display time.
+      duration: 300, // prompt message display time.
       showInMobile: false // whether to display on the mobile side, default: false.
     }],
     ['demo-block', { // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
@@ -153,6 +146,15 @@ module.exports = {
           const dayjs = require('dayjs') // https://day.js.org/
           return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
         },
+      }
+    ],
+    [
+      'reading-progress'
+    ],
+    [
+      {
+        name: 'custom-plugins',
+        globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
       }
     ]
   ],

@@ -28,6 +28,7 @@ importers:
       vuepress-plugin-container: ^2.1.5
       vuepress-plugin-demo-block: ^0.7.2
       vuepress-plugin-one-click-copy: ^1.0.6
+      vuepress-plugin-reading-progress: ^1.0.10
       vuepress-plugin-smooth-scroll: ^0.0.10
       vuepress-plugin-thirdparty-search: ^1.0.2
       vuepress-plugin-zooming: ^1.1.8
@@ -58,6 +59,7 @@ importers:
       vuepress-plugin-container: 2.1.5
       vuepress-plugin-demo-block: 0.7.2
       vuepress-plugin-one-click-copy: 1.0.6
+      vuepress-plugin-reading-progress: 1.0.10
       vuepress-plugin-smooth-scroll: 0.0.10
       vuepress-plugin-thirdparty-search: 1.0.2
       vuepress-plugin-zooming: 1.1.8
@@ -8919,6 +8921,10 @@ packages:
 
   /vuepress-plugin-one-click-copy/1.0.6:
     resolution: {integrity: sha512-apFCcsBwk9IEDm5HwD6dwor30rl8gr0VjPkmrQlFSR2KD7OjK3ZUwioeEvbrcAiZBi35V6YgndLAHksJXRfpnQ==}
+    dev: true
+
+  /vuepress-plugin-reading-progress/1.0.10:
+    resolution: {integrity: sha512-7OxcjNEDf9gqFTns0YnXrqPnTRlX6wvxWFr7D8tlfyMPpsZwJkh/MkJveRrEaKcU0gk8QGmPHnXLAZ3soTThVg==}
     dev: true
 
   /vuepress-plugin-smooth-scroll/0.0.10:
