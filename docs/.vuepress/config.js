@@ -4,12 +4,12 @@ const htmlModules = require('./config/htmlModules.js')
 
 module.exports = {
   title: "Pure Admin 文档",
-  description: '一个开箱即用的前端框架',
+  description: '一个开箱即用的后台管理系统模版',
   port: 8889,
   base, // '/<仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['link', { rel: 'stylesheet', href: '/iconfont/iconfont.css' }], // 阿里在线矢量库
+    ['link', { rel: 'stylesheet', href: '/iconfont/iconfont.css' }],
     ['meta', { name: 'keywords', content: 'vue-pure-admin,pure-admin,pure-admin-thin,pure-admin-docs' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // 以下是vuepress-plugin-demo-block插件所需依赖
@@ -95,6 +95,10 @@ module.exports = {
           title: '在GitHub中搜索',
           frontUrl: 'https://github.com/search?q=', // 搜索链接的前面部分
           behindUrl: '' // 搜索链接的后面部分，可选，默认 ''
+        },
+        {
+          title: '在Gitee中搜索',
+          frontUrl: 'https://gitee.com/search?q=', // 搜索链接的前面部分
         },
         {
           title: '在npm中搜索',

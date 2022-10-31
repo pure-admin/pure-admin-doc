@@ -22,6 +22,7 @@ module.exports = [
           { text: '函数工具库', link: '/pages/utils/' },
           { text: '组件库', link: '/pages/components/' },
           { text: 'vite插件', link: '/pages/viteplugin/' },
+          { text: '打包优化', link: '/pages/buildgood/' },
         ]
       },
       {

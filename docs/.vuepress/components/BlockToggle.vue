@@ -109,8 +109,8 @@ export default {
     // 移动一键复制图标
     moveCopyBlock(element) {
       let copyElement = element.getElementsByClassName("code-copy")[0]
-      copyElement.title = '点击复制'
       if (copyElement && copyElement.parentNode != element) {
+        copyElement.title = '点击复制'
         copyElement.parentNode.parentNode.insertBefore(
           copyElement,
           copyElement.parentNode
