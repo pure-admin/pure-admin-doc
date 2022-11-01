@@ -67,6 +67,13 @@ module.exports = [
           { text: '文档', link: 'https://gitee.com/yiming_chang/pure-admin-doc' },
         ]
       },
+      {
+        text: '版本更新日志',
+        items: [
+          { text: 'Github日志', link: 'https://github.com/xiaoxian521/vue-pure-admin/releases' },
+          { text: 'Gitee日志', link: 'https://gitee.com/yiming_chang/vue-pure-admin/releases' },
+        ]
+      },
     ]
   },
 ]
