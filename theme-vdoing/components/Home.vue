@@ -33,6 +33,9 @@
           <p v-if="homeData.tagline" class="description">
             {{ homeData.tagline }}
           </p>
+          <p style="font-size:15px">
+            <el-link style="color: #426feb" :underline="false" href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank">2020年11月16日开发（持续维护中）</el-link>
+          </p>
           <p class="action" v-if="homeData.actionText && homeData.actionLink">
             <NavLink class="action-button" :item="actionLink" />
             <PreView class="preview-button" :item="actionLink" />
