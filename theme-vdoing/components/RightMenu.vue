@@ -8,9 +8,7 @@
           'level' + item.level,
           { active: item.slug === hashText }
         ]" v-for="(item, i) in headers" :key="i">
-          <el-tooltip effect="dark" :content="item.title" placement="left">
-            <a :href="'#' + item.slug">{{ item.title }}</a>
-          </el-tooltip>
+          <a :href="'#' + item.slug">{{ item.title }}</a>
         </div>
       </div>
     </div>
