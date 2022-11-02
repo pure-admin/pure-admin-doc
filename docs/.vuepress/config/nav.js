@@ -9,9 +9,8 @@ module.exports = [
       { text: '项目配置', link: '/pages/config/' },
       { text: '布局', link: '/pages/layout/' },
       { text: '路由和菜单', link: '/pages/routerMenu/' },
-      { text: 'RBAC权限', link: '/pages/RBAC/' },
-      { text: '请求接口', link: '/pages/request/' },
-      { text: '项目打包', link: '/pages/build/' },
+      { text: '接口请求', link: '/pages/request/' },
+      { text: '打包和部署', link: '/pages/build/' },
       {
         text: '进阶',
         items: [
@@ -19,10 +18,13 @@ module.exports = [
           { text: '主题', link: '/pages/theme/' },
           { text: '国际化', link: '/pages/i18n/' },
           { text: 'Tailwind CSS', link: '/pages/tailwindcss/' },
+          { text: 'RBAC权限', link: '/pages/RBAC/' },
+          { text: '类型声明', link: '/pages/typescript/' },
+          { text: '项目规范', link: '/pages/standard/' },
+          { text: '打包优化', link: '/pages/buildgood/' },
           { text: '函数工具库', link: '/pages/utils/' },
           { text: '组件库', link: '/pages/components/' },
           { text: 'vite插件', link: '/pages/viteplugin/' },
-          { text: '打包优化', link: '/pages/buildgood/' },
         ]
       },
       {
@@ -38,7 +40,6 @@ module.exports = [
   },
   {
     text: '相关链接',
-    link: '',
     items: [
       {
         text: '预览',
@@ -67,13 +68,13 @@ module.exports = [
           { text: '文档', link: 'https://gitee.com/yiming_chang/pure-admin-doc' },
         ]
       },
-      {
-        text: '版本更新日志',
-        items: [
-          { text: 'Github日志', link: 'https://github.com/xiaoxian521/vue-pure-admin/releases' },
-          { text: 'Gitee日志', link: 'https://gitee.com/yiming_chang/vue-pure-admin/releases' },
-        ]
-      },
+    ]
+  },
+  {
+    text: '更新日志',
+    items: [
+      { text: 'Github日志', link: 'https://github.com/xiaoxian521/vue-pure-admin/releases' },
+      { text: 'Gitee日志', link: 'https://gitee.com/yiming_chang/vue-pure-admin/releases' },
     ]
   },
 ]
