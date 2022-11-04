@@ -186,7 +186,10 @@ module.exports = {
     ],
     ['@vuepress/pwa', {
       serviceWorker: true,
-      updatePopup: true
+      updatePopup: {
+        message: "尊贵的主人，检测到新内容可用，是否更新",
+        buttonText: "更新"
+      }
     }]
   ],
   configureWebpack: {
