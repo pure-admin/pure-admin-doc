@@ -12,9 +12,32 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/iconfont/iconfont.css' }],
     ['meta', { name: 'keywords', content: 'vue-pure-admin,pure-admin,pure-admin-thin,pure-admin-docs' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    // 以下是vuepress-plugin-demo-block插件所需依赖
-    // ['script', { src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' }], // 此文件会影响导航router-link-active样式的切换，改为在enhanceApp.js中把Vue构造函数绑定到window上
-    // ['script', { src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    [
+      'meta',
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
+    ],
+    [
+      'link',
+      { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }
+    ],
+    [
+      'link',
+      {
+        rel: 'mask-icon',
+        href: '/img/favicon.ico',
+        color: '#3eaf7c'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'msapplication-TileImage',
+        content: '/icons/msapplication-icon-144x144.png'
+      }
+    ],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   markdown: {
     lineNumbers: true, // 显示代码块的行号
