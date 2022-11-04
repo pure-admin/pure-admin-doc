@@ -162,8 +162,8 @@ module.exports = {
       }
     ],
     ['@vuepress/pwa', {
-      skipWaiting: true,
-      serviceWorkerFilename: 'service-worker.js'
+      serviceWorker: true,
+      updatePopup: true
     }]
   ],
   configureWebpack: {
