@@ -30,10 +30,10 @@ module.exports = [
       {
         text: '其他',
         items: [
-          { text: '常见问题回答', link: '/pages/FAQ/' },
+          { text: '常见问题（感觉累了就来看看吧）', link: '/pages/FAQ/' },
           { text: 'vscode文件夹详解', link: '/pages/vscode/' },
           { text: '相关开源项目', link: '/pages/opensource/' },
-          { text: '反馈与支持', link: '/pages/support/' },
+          { text: '反馈支持（感觉不错就来支持吧）', link: '/pages/support/' },
         ]
       },
     ]
