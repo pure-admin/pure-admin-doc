@@ -1,0 +1,14 @@
+{
+  "name": "pure-admin-doc",
+  "short_name": "pure-admin-doc",
+  "icons": [
+    {
+      "src": "/icons/favicon.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#426feb"
+}

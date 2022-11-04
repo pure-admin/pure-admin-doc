@@ -160,7 +160,11 @@ module.exports = {
         name: 'custom-plugins',
         globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
       }
-    ]
+    ],
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true
+    }]
   ],
   configureWebpack: {
     //webpack别名 如![Image from alias](~@alias/image.png)
