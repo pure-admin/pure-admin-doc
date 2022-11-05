@@ -77,6 +77,10 @@ $navbar-horizontal-padding = 1.5rem
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   transition transform 0.3s
+  background-image radial-gradient(transparent 1px, var(--blurBg) 1px)
+  background-size 4px 4px
+  backdrop-filter saturate(50%) blur(4px)
+  -webkit-backdrop-filter saturate(50%) blur(4px)
   a, span, img
     display inline-block
   .logo
