@@ -15,7 +15,7 @@ module.exports = [
         text: '进阶',
         items: [
           { text: '图标', link: '/pages/icon/' },
-          { text: '主题', link: '/pages/theme/' },
+          { text: '主题和暗黑模式', link: '/pages/theme/' },
           { text: '国际化', link: '/pages/i18n/' },
           { text: 'Tailwind CSS', link: '/pages/tailwindcss/' },
           { text: 'RBAC权限', link: '/pages/RBAC/' },
