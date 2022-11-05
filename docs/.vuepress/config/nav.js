@@ -33,7 +33,7 @@ module.exports = [
           { text: '常见问题（感觉累了就来看看吧）', link: '/pages/FAQ/' },
           { text: 'vscode文件夹详解', link: '/pages/vscode/' },
           { text: '相关开源项目', link: '/pages/opensource/' },
-          { text: '优秀网站推荐', link: '/pages/recommendation/' },
+          { text: '技术网站推荐', link: '/pages/recommendation/' },
           { text: '反馈支持（感觉不错就来支持吧）', link: '/pages/support/' },
         ]
       },
