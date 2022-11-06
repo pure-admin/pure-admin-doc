@@ -103,6 +103,7 @@ $navbar-horizontal-padding = 1.5rem
     display flex
     padding 0.5rem
     background var(--blurBg)
+    box-shadow -15px 0 5px 0px var(--blurBg)
     .search-box
       flex 0 0 auto
       vertical-align top
