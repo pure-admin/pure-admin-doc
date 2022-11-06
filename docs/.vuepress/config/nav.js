@@ -40,7 +40,7 @@ module.exports = [
     ]
   },
   {
-    text: '相关链接',
+    text: '链接',
     items: [
       {
         text: '预览',
@@ -72,7 +72,7 @@ module.exports = [
     ]
   },
   {
-    text: '更新日志',
+    text: '日志',
     items: [
       { text: 'Github日志', link: 'https://github.com/xiaoxian521/vue-pure-admin/releases' },
       { text: 'Gitee日志', link: 'https://gitee.com/yiming_chang/vue-pure-admin/releases' },
