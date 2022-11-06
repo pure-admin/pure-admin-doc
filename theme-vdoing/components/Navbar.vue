@@ -94,14 +94,15 @@ $navbar-horizontal-padding = 1.5rem
     color var(--textColor)
     position relative
   .links
-    padding-left 1.5rem
     box-sizing border-box
     white-space nowrap
     font-size 0.9rem
     position absolute
     right $navbar-horizontal-padding
-    top $navbar-vertical-padding
+    top 1.2px
     display flex
+    padding 0.5rem
+    background var(--blurBg)
     .search-box
       flex 0 0 auto
       vertical-align top
