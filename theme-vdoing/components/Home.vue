@@ -461,13 +461,13 @@ export default {
             animation-play-state paused
           h2
             font-weight 500
-            font-size 0.95rem
+            font-size 1.2rem
             border-bottom none
             padding-bottom 0
           p
             opacity 0.8
             padding 0 0.8rem
-            font-size 0.9rem
+            font-size 0.94rem
       .feature:hover
         .feature-img
           animation-play-state running
