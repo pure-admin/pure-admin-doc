@@ -23,7 +23,7 @@ export default {
 
   computed: {
     link() {
-      return "http://yiming_chang.gitee.io/vue-pure-admin";
+      return "http://yiming_chang.gitee.io/vue-pure-admin/#/login";
     },
 
     exact() {
