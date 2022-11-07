@@ -275,15 +275,15 @@ export default {
   },
   created() {
     this.total = this.$sortPosts.length;
+  },
+  beforeMount() {
+    this.isMQMobile =
+      window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false; // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
     if (process.env.NODE_ENV !== 'development' && window.location.protocol === 'http:') {
       Message({
         message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
       })
     }
-  },
-  beforeMount() {
-    this.isMQMobile =
-      window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false; // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
   },
   mounted() {
     if (this.$route.query.p) {
