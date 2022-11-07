@@ -9,7 +9,7 @@ module.exports = [
       { text: '项目配置', link: '/pages/config/' },
       { text: '布局', link: '/pages/layout/' },
       { text: '路由和菜单', link: '/pages/routerMenu/' },
-      { text: '接口请求', link: '/pages/request/' },
+      { text: 'http请求', link: '/pages/request/' },
       { text: '打包和部署', link: '/pages/build/' },
       {
         text: '进阶',
