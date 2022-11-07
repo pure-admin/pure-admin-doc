@@ -131,7 +131,7 @@ export default {
     margin-left 1.3rem
     display inline-block
     &:hover
-      color $accentColor
+      color var(--textLightenColor)
   .ri-wechat-fill
     vertical-align middle
     margin-bottom 0.1em
