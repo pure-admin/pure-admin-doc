@@ -45,7 +45,7 @@ module.exports = [
       {
         text: '预览',
         items: [
-          { text: '完整版', link: 'http://yiming_chang.gitee.io/vue-pure-admin/#/login' },
+          { text: '完整版', link: 'https://yiming_chang.gitee.io/vue-pure-admin/#/login' },
           { text: '精简版', link: 'https://pure-admin-thin.netlify.app/#/login' },
         ]
       },

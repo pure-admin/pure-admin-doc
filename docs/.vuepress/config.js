@@ -48,7 +48,7 @@ module.exports = {
   themeConfig: { // 主题配置
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: 'http://yiming_chang.gitee.io/pure-admin-doc/img/favicon.ico', // 导航栏logo
+    logo: 'https://yiming_chang.gitee.io/pure-admin-doc/img/favicon.ico', // 导航栏logo
     repo: 'xiaoxian521/vue-pure-admin', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
