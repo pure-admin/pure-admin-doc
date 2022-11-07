@@ -4,7 +4,7 @@ module.exports = [
     link: '/pages/introduction/',
     items: [
       { text: '介绍', link: '/pages/introduction/' },
-      { text: '快速上手', link: '/pages/start/' },
+      { text: '快速开始', link: '/pages/start/' },
       { text: '目录结构', link: '/pages/directory/' },
       { text: '项目配置', link: '/pages/config/' },
       { text: '布局', link: '/pages/layout/' },
