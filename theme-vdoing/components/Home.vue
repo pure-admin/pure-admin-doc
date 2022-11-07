@@ -185,6 +185,7 @@ import Pagination from "@theme/components/Pagination";
 import BloggerBar from "@theme/components/BloggerBar";
 import CategoriesBar from "@theme/components/CategoriesBar";
 import TagsBar from "@theme/components/TagsBar";
+import { Message } from 'element-ui';
 
 const MOBILE_DESKTOP_BREAKPOINT = 720; // refer to config.styl
 
@@ -274,6 +275,11 @@ export default {
   },
   created() {
     this.total = this.$sortPosts.length;
+    if (process.env.NODE_ENV !== 'development' && window.location.protocol === 'http:') {
+      Message({
+        message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
+      })
+    }
   },
   beforeMount() {
     this.isMQMobile =
