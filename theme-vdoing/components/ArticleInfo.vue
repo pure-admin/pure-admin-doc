@@ -8,7 +8,7 @@
         <li>
           <router-link to="/" class="iconfont icon-home" title="首页" />
         </li>
-        <li>
+        <!-- <li>
           <router-link
             v-if="articleInfo.cataloguePermalink"
             :to="articleInfo.cataloguePermalink"
@@ -24,7 +24,7 @@
             >{{ articleInfo.classify1 }}</router-link
           >
           <span v-else>{{ articleInfo.classify1 }}</span>
-        </li>
+        </li> -->
         <li v-if="articleInfo.classify2">
           <router-link
             v-if="articleInfo.cataloguePermalink"
@@ -183,10 +183,6 @@ export default {
         list-style-type none
         float left
         padding-right 5px
-        &:after
-          content '/'
-          margin-left 5px
-          color #999
         &:last-child
           &:after
             content ''
