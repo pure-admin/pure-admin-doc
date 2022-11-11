@@ -5,7 +5,7 @@
       <div>
         <div class="pure-video"
           style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
-          <a href="https://www.bilibili.com/video/BV1Xv4y1U7UN/" target="_blank" style="color: var(--videoTextColor)">
+          <a href="https://www.bilibili.com/video/BV1Xv4y1U7UN/" target="_blank" style="color: #ed5858">
             使用PWA访问文档
           </a>
           <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
