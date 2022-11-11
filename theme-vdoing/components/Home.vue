@@ -36,10 +36,10 @@
           <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank">2020年11月16日开发（持续维护中）</el-link>
           </p>
-          <p style="font-size:15px">
+          <!-- <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
               target="_blank">点我查看如何使用PWA访问文档</el-link>
-          </p>
+          </p> -->
           <p class="action" v-if="homeData.actionText && homeData.actionLink">
             <NavLink class="action-button" :item="actionLink" />
             <PreView class="preview-button" :item="actionLink" />
