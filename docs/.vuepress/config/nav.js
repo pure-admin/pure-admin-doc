@@ -31,6 +31,7 @@ module.exports = [
         text: '其他',
         items: [
           { text: '常见问题', link: '/pages/FAQ/' },
+          { text: '非平台问题跟踪记录', link: '/pages/track/' },
           { text: 'vscode文件夹详解', link: '/pages/vscode/' },
           { text: '相关开源项目', link: '/pages/opensource/' },
           { text: '技术网站推荐', link: '/pages/recommendation/' },
