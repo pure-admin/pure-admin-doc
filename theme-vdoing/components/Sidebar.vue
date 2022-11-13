@@ -1,7 +1,7 @@
 <template>
   <aside class="sidebar">
     <div style="margin-left: 24px">
-      <p style="color:#888;font-weight:400;font-size:14px">平台视频教程推荐</p>
+      <p style="color:#888;font-weight:400;font-size:14px">视频教程推荐</p>
       <div>
         <div class="pure-video"
           style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
@@ -24,8 +24,12 @@
           target="_blank">前端工程师浅谈后台设计</a>
         <a class="pure-video"
           href="https://www.bilibili.com/video/BV17S4y1J79d/?vd_source=5a992808de6229d78e7810536c5f9ab3"
-          style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
+          style="background: var(--videoBgColor);padding:8px;margin-bottom: 4px;border-radius: 6px;color: var(--videoTextColor)"
           target="_blank">iconify图标终极解决方案</a>
+        <a class="pure-video"
+          href="https://www.bilibili.com/video/BV1KZ4y1o7gr/?p=1&vd_source=5a992808de6229d78e7810536c5f9ab3"
+          style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
+          target="_blank">简单易懂的 Git 相关教程</a>
       </div>
     </div>
     <div class="blogger" v-if="blogger">
