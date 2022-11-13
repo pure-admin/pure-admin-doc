@@ -98,6 +98,11 @@ module.exports = {
           title: 'GitHub',
           link: 'https://github.com/xiaoxian521'
         },
+        {
+          iconClass: 'icon-bilibili',
+          title: 'bilibili',
+          link: 'https://space.bilibili.com/301103230?spm_id_from=333.999.0.0'
+        },
       ]
     },
     footer: { // 页脚信息

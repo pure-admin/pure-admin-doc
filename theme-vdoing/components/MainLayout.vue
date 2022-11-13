@@ -1,12 +1,12 @@
 <template>
   <div class="main-wrapper">
-    <div class="main-left">
+    <!-- <div class="main-left">
       <slot name="mainLeft" />
     </div>
 
     <div class="main-right">
       <slot name="mainRight" />
-    </div>
+    </div> -->
   </div>
 </template>
 <style lang="stylus">
