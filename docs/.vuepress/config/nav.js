@@ -57,6 +57,7 @@ module.exports = [
           { text: '完整版', link: 'https://github.com/xiaoxian521/vue-pure-admin' },
           { text: '精简版', link: 'https://github.com/xiaoxian521/pure-admin-thin' },
           { text: 'Tauri版', link: 'https://github.com/xiaoxian521/tauri-pure-admin' },
+          { text: 'Electron版', link: 'https://github.com/xiaoxian521/electron-pure-admin' },
           { text: '配套后端', link: 'https://github.com/xiaoxian521/pure-admin-backend' },
           { text: '文档', link: 'https://github.com/xiaoxian521/pure-admin-doc' },
         ]
@@ -67,6 +68,7 @@ module.exports = [
           { text: '完整版', link: 'https://gitee.com/yiming_chang/vue-pure-admin' },
           { text: '精简版', link: 'https://gitee.com/yiming_chang/pure-admin-thin' },
           { text: 'Tauri版', link: 'https://gitee.com/yiming_chang/tauri-pure-admin' },
+          { text: 'Electron版', link: 'https://gitee.com/yiming_chang/electron-pure-admin' },
           { text: '配套后端', link: 'https://gitee.com/yiming_chang/pure-admin-backend' },
           { text: '文档', link: 'https://gitee.com/yiming_chang/pure-admin-doc' },
         ]
