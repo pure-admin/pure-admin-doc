@@ -6,6 +6,7 @@ module.exports = [
       { text: '介绍', link: '/pages/introduction/' },
       { text: '快速开始', link: '/pages/start/' },
       { text: '目录结构', link: '/pages/directory/' },
+      { text: 'vscode文件夹详解', link: '/pages/vscode/' },
       { text: '项目配置', link: '/pages/config/' },
       { text: '布局', link: '/pages/layout/' },
       { text: '路由和菜单', link: '/pages/routerMenu/' },
@@ -22,10 +23,22 @@ module.exports = [
           { text: '类型声明', link: '/pages/typescript/' },
           { text: '项目规范', link: '/pages/standard/' },
           { text: '打包优化', link: '/pages/buildgood/' },
+        ]
+      },
+      {
+        text: '生态',
+        items: [
           { text: '函数工具库', link: '/pages/utils/' },
           { text: '组件库', link: '/pages/components/' },
           { text: 'vite插件', link: '/pages/viteplugin/' },
+          { text: '相关开源项目', link: '/pages/opensource/' },
+        ]
+      },
+      {
+        text: '教程',
+        items: [
           { text: 'git常用命令', link: '/pages/git/' },
+          { text: 'pinia常用写法', link: '/pages/pinia/' },
         ]
       },
       {
@@ -33,8 +46,6 @@ module.exports = [
         items: [
           { text: '常见问题', link: '/pages/FAQ/' },
           { text: '非平台问题跟踪记录', link: '/pages/track/' },
-          { text: 'vscode文件夹详解', link: '/pages/vscode/' },
-          { text: '相关开源项目', link: '/pages/opensource/' },
           { text: '技术网站推荐', link: '/pages/recommendation/' },
           { text: '反馈支持', link: '/pages/support/' },
         ]
