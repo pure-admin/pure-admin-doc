@@ -37,8 +37,7 @@
             <el-link style="color: #426feb" :underline="false" href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank">2020年11月16日开发（持续维护中）</el-link>
           </p>
           <p style="font-size:15px">
-            <el-link style="color: #426feb" :underline="false" href="https://yiming_chang.gitee.io/pure-admin-doc/"
-              target="_blank">文档中任何内容均可搬运，留个平台链接就🀄️</el-link>
+            <el-link style="color: #426feb" :underline="false" :href="addressHerf">文档中任何内容均可搬运，留个平台链接就🀄️</el-link>
           </p>
           <!-- <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
@@ -212,6 +211,7 @@ export default {
       total: 0, // 总长
       perPage: 10, // 每页长
       currentPage: 1, // 当前页
+      addressHerf: 'https://yiming_chang.gitee.io/pure-admin-doc/'
     };
   },
   computed: {
@@ -292,6 +292,7 @@ export default {
         message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
       })
     }
+    this.addressHerf = window.location.href
   },
   mounted() {
     if (this.$route.query.p) {
