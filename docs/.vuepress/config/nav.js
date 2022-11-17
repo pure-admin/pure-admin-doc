@@ -21,7 +21,7 @@ module.exports = [
           { text: 'Tailwind CSS', link: '/pages/tailwindcss/' },
           { text: 'RBAC权限', link: '/pages/RBAC/' },
           { text: '类型声明', link: '/pages/typescript/' },
-          { text: '项目规范', link: '/pages/standard/' },
+          { text: '平台规范', link: '/pages/standard/' },
           { text: '打包优化', link: '/pages/buildgood/' },
         ]
       },
