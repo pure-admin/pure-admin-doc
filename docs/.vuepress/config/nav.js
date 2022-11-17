@@ -7,7 +7,7 @@ module.exports = [
       { text: '快速开始', link: '/pages/start/' },
       { text: '目录结构', link: '/pages/directory/' },
       { text: 'vscode文件夹详解', link: '/pages/vscode/' },
-      { text: '项目配置', link: '/pages/config/' },
+      { text: '平台配置', link: '/pages/config/' },
       { text: '布局', link: '/pages/layout/' },
       { text: '路由和菜单', link: '/pages/routerMenu/' },
       { text: 'http请求', link: '/pages/request/' },
