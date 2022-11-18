@@ -5,8 +5,9 @@
       <div>
         <div class="pure-video"
           style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
-          <a href="https://www.bilibili.com/video/BV1Xv4y1U7UN/" target="_blank" style="color: #ed5858">
-            使用PWA访问文档
+          <a href="https://www.bilibili.com/video/BV1kg411v7QT/?spm_id_from=333.999.0.0" target="_blank"
+            style="color: #ed5858">
+            平台快速开发教程
           </a>
           <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
             height="20">
@@ -18,6 +19,9 @@
               fill="#FFDF99" p-id="3480"></path>
           </svg>
         </div>
+        <a class="pure-video" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
+          style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
+          target="_blank">使用PWA访问文档</a>
         <a class="pure-video"
           href="https://www.bilibili.com/video/BV17g411T7rq/?vd_source=5a992808de6229d78e7810536c5f9ab3"
           style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
