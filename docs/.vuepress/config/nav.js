@@ -23,6 +23,7 @@ module.exports = [
           { text: '类型声明', link: '/pages/typescript/' },
           { text: '平台规范', link: '/pages/standard/' },
           { text: '打包优化', link: '/pages/buildgood/' },
+          { text: '单点登录', link: '/pages/sso/' },
         ]
       },
       {
