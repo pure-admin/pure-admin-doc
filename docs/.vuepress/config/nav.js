@@ -36,17 +36,11 @@ module.exports = [
         ]
       },
       {
-        text: '教程',
-        items: [
-          { text: 'git常用命令', link: '/pages/git/' },
-          { text: 'pinia常用写法', link: '/pages/pinia/' },
-        ]
-      },
-      {
         text: '其他',
         items: [
           { text: '常见问题', link: '/pages/FAQ/' },
           { text: '非平台问题跟踪记录', link: '/pages/track/' },
+          { text: 'git常用命令', link: '/pages/git/' },
           { text: '技术网站推荐', link: '/pages/recommendation/' },
           { text: '反馈支持', link: '/pages/support/' },
         ]
