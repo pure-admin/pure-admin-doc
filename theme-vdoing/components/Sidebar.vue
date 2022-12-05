@@ -1,7 +1,7 @@
 <template>
   <aside class="sidebar">
     <div style="margin-left: 24px">
-      <p style="color:#888;font-weight:400;font-size:14px">视频教程推荐</p>
+      <p style="color:#888;font-weight:400;font-size:14px">平台视频教程推荐</p>
       <div>
         <div class="pure-video"
           style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
