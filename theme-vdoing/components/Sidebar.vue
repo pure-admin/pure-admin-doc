@@ -19,9 +19,6 @@
               fill="#FFDF99" p-id="3480"></path>
           </svg>
         </div>
-        <a class="pure-video" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
-          style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
-          target="_blank">使用PWA访问文档</a>
         <a class="pure-video"
           href="https://www.bilibili.com/video/BV17g411T7rq/?vd_source=5a992808de6229d78e7810536c5f9ab3"
           style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
