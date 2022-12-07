@@ -7,7 +7,6 @@ Vue.component(CodeBlock)
 Vue.component(CodeGroup)
 
 import 'remixicon/fonts/remixicon.css'
-import "./globalPolyfills"
 
 import ElementUI from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
@@ -19,7 +18,8 @@ export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项
   router, // 当前应用的路由实例
-  siteData // 站点元数据
+  siteData, // 站点元数据
+  isServer
 }) => {
   // 修复ISO8601时间格式为普通时间格式，以及添加作者信息
   siteData.pages.map(item => {
@@ -35,6 +35,10 @@ export default ({
       }
     }
   })
+
+  if (!isServer) {
+    import("./globalPolyfills")
+  }
 
   // 将对文章数据的处理结果混入Vue实例
   Vue.mixin(postsMixin)
