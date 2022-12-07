@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 importers:
 
@@ -74,6 +74,7 @@ importers:
       '@vuepress/plugin-active-header-links': ^1.9.7
       '@vuepress/plugin-nprogress': ^1.9.7
       '@vuepress/plugin-search': ^1.9.7
+      axios: ^1.2.1
       chalk: ^4.0.0
       core-js: 2.6.11
       docsearch.js: ^2.5.2
@@ -92,6 +93,7 @@ importers:
       '@vuepress/plugin-active-header-links': 1.9.7
       '@vuepress/plugin-nprogress': 1.9.7
       '@vuepress/plugin-search': 1.9.7
+      axios: 1.2.1
       chalk: 4.1.2
       core-js: 2.6.11
       docsearch.js: 2.6.3
@@ -1579,9 +1581,10 @@ packages:
       svg-tags: 1.0.0
     dev: true
 
-  /@vue/babel-preset-app/4.5.17_vue@2.6.14:
+  /@vue/babel-preset-app/4.5.17_core-js@3.22.5+vue@2.6.14:
     resolution: {integrity: sha512-iFv9J3F5VKUPcbx+TqW5qhGmAVyXQxPRpKpPOuTLFIVTzg+iwJnrqVbL4kJU5ECGDxPESW2oCVgxv9bTlDPu7w==}
     peerDependencies:
+      core-js: ^3
       vue: ^2 || ^3.0.0-0
     peerDependenciesMeta:
       core-js:
@@ -1761,7 +1764,7 @@ packages:
     engines: {node: '>=8.6'}
     dependencies:
       '@babel/core': 7.17.10
-      '@vue/babel-preset-app': 4.5.17_vue@2.6.14
+      '@vue/babel-preset-app': 4.5.17_core-js@3.22.5+vue@2.6.14
       '@vuepress/markdown': 1.9.7
       '@vuepress/markdown-loader': 1.9.7
       '@vuepress/plugin-last-updated': 1.9.7
@@ -1769,7 +1772,7 @@ packages:
       '@vuepress/shared-utils': 1.9.7
       '@vuepress/types': 1.9.7
       autoprefixer: 9.8.8
-      babel-loader: 8.2.5_a48671a7a0b12e26689d4cec3e702e28
+      babel-loader: 8.2.5_usdhdj5awexcm2e5jtwd44bofa
       bundle-require: 2.1.8_esbuild@0.14.7
       cache-loader: 3.0.1_webpack@4.46.0
       chokidar: 2.1.8
@@ -1790,8 +1793,8 @@ packages:
       toml: 3.0.0
       url-loader: 1.1.2_webpack@4.46.0
       vue: 2.6.14
-      vue-loader: 15.9.8_a9e588b4cca9b94e2e224498c7f5e45a
-      vue-router: 3.5.3
+      vue-loader: 15.9.8_vhsyrngmvg4u4lrcismmp5peli
+      vue-router: 3.5.3_vue@2.6.14
       vue-server-renderer: 2.6.14
       vue-template-compiler: 2.6.14
       vuepress-html-webpack-plugin: 3.2.0_webpack@4.46.0
@@ -2373,7 +2376,7 @@ packages:
     dev: true
 
   /asynckit/0.4.0:
-    resolution: {integrity: sha1-x57Zf380y48robyXkLzDZkdLS3k=}
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
   /atob/2.1.2:
     resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
@@ -2404,6 +2407,16 @@ packages:
   /aws4/1.11.0:
     resolution: {integrity: sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==}
 
+  /axios/1.2.1:
+    resolution: {integrity: sha512-I88cFiGu9ryt/tfVEi4kX2SITsvDddTajXTOFmt2uK1ZVA8LytjtdeyefdQWEf5PU8w+4SSJDoYnggflB5tW4A==}
+    dependencies:
+      follow-redirects: 1.15.0
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
   /babel-extract-comments/1.0.0:
     resolution: {integrity: sha512-qWWzi4TlddohA91bFwgt6zO/J0X+io7Qp184Fw0m2JYRSTZnJbFR8+07KmzudHCZgOiKRCrjhylwv9Xd8gfhVQ==}
     engines: {node: '>=4'}
@@ -2414,7 +2427,7 @@ packages:
   /babel-helper-vue-jsx-merge-props/2.0.3:
     resolution: {integrity: sha512-gsLiKK7Qrb7zYJNgiXKpXblxbV5ffSwR0f5whkPAaBAR4fhi6bwRZxX9wBlIc5M/v8CCkXUbXZL4N/nSE97cqg==}
 
-  /babel-loader/8.2.5_a48671a7a0b12e26689d4cec3e702e28:
+  /babel-loader/8.2.5_usdhdj5awexcm2e5jtwd44bofa:
     resolution: {integrity: sha512-OSiFfH89LrEMiWd4pLNqGz4CwJDtbs2ZVc+iGu2HrkRfPxId9F2anQj38IxWpmRfsUY0aBZYi1EFcd3mhtRMLQ==}
     engines: {node: '>= 8.9'}
     peerDependencies:
@@ -3253,7 +3266,7 @@ packages:
       lodash: ^4.17.20
       marko: ^3.14.4
       mote: ^0.2.0
-      mustache: ^4.0.1
+      mustache: ^3.0.0
       nunjucks: ^3.2.2
       plates: ~0.4.11
       pug: ^3.0.0
@@ -4772,6 +4785,15 @@ packages:
       combined-stream: 1.0.8
       mime-types: 2.1.35
 
+  /form-data/4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: false
+
   /forwarded/0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
@@ -5258,7 +5280,7 @@ packages:
     resolution: {integrity: sha512-vDlkRPDJn93swjcjqMSaGSPABbIarsr1TLAui/gLDXzV5VsJNdXNzMYDyNBLQkjWQCJ1uizu8T2oDMhmGt0PRA==}
     dev: true
 
-  /http-proxy-middleware/0.19.1_debug@4.3.4+supports-color@6.1.0:
+  /http-proxy-middleware/0.19.1_tmpgdztspuwvsxzgjkhoqk7duq:
     resolution: {integrity: sha512-yHYTgWMQO8VvwNS22eLLloAkvungsKdKTLO8AJlftYIKNfJr3GK3zK0ZCfzDDGUBttdGc8xFy1mCitvNKQtC3Q==}
     engines: {node: '>=4.0.0'}
     dependencies:
@@ -7353,6 +7375,10 @@ packages:
       ipaddr.js: 1.9.1
     dev: true
 
+  /proxy-from-env/1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
+
   /prr/1.0.1:
     resolution: {integrity: sha1-0/wRS6BplaRexok/SEzrHXj19HY=}
     dev: true
@@ -8889,7 +8915,7 @@ packages:
     resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
     dev: true
 
-  /vue-loader/15.9.8_a9e588b4cca9b94e2e224498c7f5e45a:
+  /vue-loader/15.9.8_vhsyrngmvg4u4lrcismmp5peli:
     resolution: {integrity: sha512-GwSkxPrihfLR69/dSV3+5CdMQ0D+jXg8Ma1S4nQXKJAznYFX14vHdc/NetQc34Dw+rBbIJyP7JOuVb9Fhprvog==}
     peerDependencies:
       '@vue/compiler-sfc': ^3.0.8
@@ -8970,8 +8996,12 @@ packages:
       - whiskers
     dev: true
 
-  /vue-router/3.5.3:
+  /vue-router/3.5.3_vue@2.6.14:
     resolution: {integrity: sha512-FUlILrW3DGitS2h+Xaw8aRNvGTwtuaxrRkNSHWTizOfLUie7wuYwezeZ50iflRn8YPV5kxmU2LQuu3nM/b3Zsg==}
+    peerDependencies:
+      vue: ^2
+    dependencies:
+      vue: 2.6.14
     dev: true
 
   /vue-server-renderer/2.6.14:
@@ -9222,7 +9252,7 @@ packages:
       del: 4.1.1
       express: 4.18.1_supports-color@6.1.0
       html-entities: 1.4.0
-      http-proxy-middleware: 0.19.1_debug@4.3.4+supports-color@6.1.0
+      http-proxy-middleware: 0.19.1_tmpgdztspuwvsxzgjkhoqk7duq
       import-local: 2.0.0
       internal-ip: 4.3.0
       ip: 1.1.8

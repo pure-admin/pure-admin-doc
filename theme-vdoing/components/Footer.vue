@@ -1,38 +1,69 @@
 <template>
   <div class="footer">
     <div class="icons" v-if="social && social.icons">
-      <a
-        :href="item.link"
-        :title="item.title"
-        :class="['iconfont', item.iconClass]"
-        v-for="(item, index) in social.icons"
-        :key="index"
-        target="_blank"
-      ></a>
+      <a :href="item.link" :title="item.title" :class="['iconfont', item.iconClass]"
+        v-for="(item, index) in social.icons" :key="index" target="_blank"></a>
     </div>
 
-    <p align="center">
-      <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank"
-        ><img
-          src="https://img.shields.io/github/stars/xiaoxian521/vue-pure-admin"
-          alt="GitHub stars"
-          class="no-zoom"
-      /></a>
-      <a href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank"
-        ><img
-          src="https://img.shields.io/github/forks/xiaoxian521/vue-pure-admin"
-          alt="GitHub forks"
-          class="no-zoom"
-      /></a>
-    </p>
+    <div style="display: flex;justify-content: center;margin-bottom: 6px;">
+      <div title="GitHub stars" class="no-zoom">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="20">
+          <linearGradient id="s" x2="0" y2="100%">
+            <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+            <stop offset="1" stop-opacity=".1" />
+          </linearGradient>
+          <clipPath id="r">
+            <rect width="72" height="20" rx="3" fill="#fff" />
+          </clipPath>
+          <g clip-path="url(#r)">
+            <rect width="37" height="20" fill="#555" />
+            <rect x="37" width="35" height="20" fill="#426feb" />
+            <rect width="72" height="20" fill="url(#s)" />
+          </g>
+          <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+            text-rendering="geometricPrecision" font-size="110"><a target="_blank"
+              xlink:href="https://github.com/xiaoxian521/vue-pure-admin">
+              <rect width="37" x="0" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="195" y="150"
+                fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="270">stars</text><text x="195"
+                y="140" transform="scale(.1)" fill="#fff" textLength="270">stars</text>
+            </a><a target="_blank" xlink:href="https://github.com/xiaoxian521/vue-pure-admin/stargazers">
+              <rect width="35" x="37" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="535" y="150"
+                fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="250">{{ stars }}</text><text x="535"
+                y="140" transform="scale(.1)" fill="#fff" textLength="250">{{ stars }}</text>
+            </a></g>
+        </svg>
+      </div>
+      <div title="GitHub forks" class="no-zoom" style="margin-left: 6px">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="20">
+          <linearGradient id="s" x2="0" y2="100%">
+            <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+            <stop offset="1" stop-opacity=".1" />
+          </linearGradient>
+          <clipPath id="r">
+            <rect width="68" height="20" rx="3" fill="#fff" />
+          </clipPath>
+          <g clip-path="url(#r)">
+            <rect width="37" height="20" fill="#555" />
+            <rect x="37" width="31" height="20" fill="#426feb" />
+            <rect width="68" height="20" fill="url(#s)" />
+          </g>
+          <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+            text-rendering="geometricPrecision" font-size="110"><a target="_blank"
+              xlink:href="https://github.com/xiaoxian521/vue-pure-admin/fork">
+              <rect width="37" x="0" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="195" y="150"
+                fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="270">forks</text><text x="195"
+                y="140" transform="scale(.1)" fill="#fff" textLength="270">forks</text>
+            </a><a target="_blank" xlink:href="https://github.com/xiaoxian521/vue-pure-admin/network">
+              <rect width="31" x="37" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="515" y="150"
+                fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="210">{{ forks }}</text><text x="515"
+                y="140" transform="scale(.1)" fill="#fff" textLength="210">{{ forks }}</text>
+            </a></g>
+        </svg>
+      </div>
+    </div>
     <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
     Theme by
-    <a
-      href="https://github.com/xugaoyi/vuepress-theme-vdoing"
-      target="_blank"
-      title="本站主题"
-      >Vdoing</a
-    >
+    <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
     <template v-if="footer">
       | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
       <span v-html="footer.copyrightInfo"></span>
@@ -41,16 +72,30 @@
 </template>
 
 <script>
+import axios from "axios"
 export default {
+  data() {
+    return {
+      stars: '4.3k',
+      forks: '1k',
+    }
+  },
   computed: {
     social() {
-      return this.$themeConfig.social;
+      return this.$themeConfig.social
     },
     footer() {
-      return this.$themeConfig.footer;
+      return this.$themeConfig.footer
     },
   },
-};
+  beforeMount() {
+    axios.get('https://api.github.com/repos/xiaoxian521/vue-pure-admin').then(res => {
+      const { stargazers_count, forks_count } = res.data
+      this.stars = stargazers_count
+      this.forks = forks_count
+    })
+  }
+}
 </script>
 
 <style lang="stylus">
@@ -63,7 +108,7 @@ export default {
   font-size 0.85rem
   transition all 0.2s ease
   .icons
-    margin-bottom 12px
+    margin-bottom 6px
     .iconfont
       padding 0 10px
       font-size 1.3rem

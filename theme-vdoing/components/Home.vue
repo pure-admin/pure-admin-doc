@@ -1,40 +1,52 @@
 <template>
   <div class="home-wrapper">
     <!-- banner块 s -->
-    <div
-      class="banner"
-      :class="{ 'hide-banner': !showBanner }"
-      :style="bannerBgStyle"
-    >
-      <div
-        class="banner-conent"
-        :style="
-          !homeData.features && !homeData.heroImage && `padding-top: 7rem`
-        "
-      >
+    <div class="banner" :class="{ 'hide-banner': !showBanner }" :style="bannerBgStyle">
+      <div class="banner-conent" :style="
+        !homeData.features && !homeData.heroImage && `padding-top: 7rem`
+      ">
         <header class="hero">
-          <img
-            v-if="homeData.heroImage"
-            :src="$withBase(homeData.heroImage)"
-            :alt="homeData.heroAlt"
-          />
-          <div
-            style="display: flex; align-items: center; justify-content: center"
-          >
+          <img v-if="homeData.heroImage" :src="$withBase(homeData.heroImage)" :alt="homeData.heroAlt" />
+          <div style="display: flex; align-items: center; justify-content: center">
             <h1 v-if="homeData.heroText" id="main-title">
               {{ homeData.heroText }}
             </h1>
-            <img
-              src="https://img.shields.io/github/v/tag/xiaoxian521/vue-pure-admin.svg?sort=semver"
-              alt="当前版本"
-              style="width: 80px;height: 24px;margin: 0;padding: 0;padding-left: 10px;padding-top: 5px;"
-            />
+            <div title="当前版本"
+              style="width: 80px;height: 20px;margin: 0;padding: 0;padding-left: 10px;padding-top: 5px;">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="20"
+                role="img">
+                <title>release: {{ release }}</title>
+                <linearGradient id="s" x2="0" y2="100%">
+                  <stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+                  <stop offset="1" stop-opacity=".1" />
+                </linearGradient>
+                <clipPath id="r">
+                  <rect width="111" height="20" rx="3" fill="#fff" />
+                </clipPath>
+                <g clip-path="url(#r)">
+                  <rect width="66" height="20" fill="#555" />
+                  <rect x="66" width="45" height="20" fill="#426feb" />
+                  <rect width="111" height="20" fill="url(#s)" />
+                </g>
+                <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+                  text-rendering="geometricPrecision" font-size="110">
+                  <image x="5" y="3" width="14" height="14"
+                    xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDBCM0UwIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+QXBwVmV5b3I8L3RpdGxlPjxwYXRoIGQ9Ik0gMTIsMCBDIDE4LjYsMCAyNCw1LjQgMjQsMTIgMjQsMTguNiAxOC42LDI0IDEyLDI0IDUuNCwyNCAwLDE4LjYgMCwxMiAwLDUuNCA1LjQsMCAxMiwwIFogbSAyLjk0LDE0LjM0IEMgMTYuMjYsMTIuNjYgMTYuMDgsMTAuMjYgMTQuNCw5IDEyLjc4LDcuNzQgMTAuMzgsOC4wNCA5LDkuNzIgNy42OCwxMS40IDcuODYsMTMuOCA5LjU0LDE1LjA2IGMgMS42OCwxLjI2IDQuMDgsMC45NiA1LjQsLTAuNzIgeiBtIC02LjQyLDcuOCBjIDAuNzIsMC4zIDIuMjgsMC42IDMuMDYsMC42IGwgNS4yMiwtNy41NiBjIDEuNjgsLTIuNTIgMS4yNiwtNS45NCAtMS4wOCwtNy44IC0yLjEsLTEuNjggLTUuMDQsLTEuNjIgLTcuMTQsMCBsIC03LjI2LDUuNTggYyAwLjE4LDEuOTIgMC43MiwyLjg4IDAuNzIsMi45NCBsIDQuMTQsLTQuNSBjIC0wLjMsMS45OCAwLjQyLDQuMDIgMi4xLDUuMjggMS40NCwxLjE0IDMuMTgsMS40NCA0Ljg2LDEuMDggeiIvPjwvc3ZnPg==" />
+                  <text aria-hidden="true" x="425" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)"
+                    textLength="390">release</text><text x="425" y="140" transform="scale(.1)" fill="#fff"
+                    textLength="390">release</text><text aria-hidden="true" x="875" y="150" fill="#010101"
+                    fill-opacity=".3" transform="scale(.1)" textLength="350">{{ release }}</text><text x="875" y="140"
+                    transform="scale(.1)" fill="#fff" textLength="350">{{ release }}</text>
+                </g>
+              </svg>
+            </div>
           </div>
           <p v-if="homeData.tagline" class="description">
             {{ homeData.tagline }}
           </p>
           <p style="font-size:15px">
-            <el-link style="color: #426feb" :underline="false" href="https://github.com/xiaoxian521/vue-pure-admin" target="_blank">2020年11月16日开发（持续维护中）</el-link>
+            <el-link style="color: #426feb" :underline="false" href="https://github.com/xiaoxian521/vue-pure-admin"
+              target="_blank">2020年11月16日开发（持续维护中）</el-link>
           </p>
           <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" :href="addressHerf">文档中任何内容均可搬运，留个平台链接就🀄️</el-link>
@@ -51,28 +63,14 @@
 
         <!-- PC端features块 s -->
         <div class="features" v-if="hasFeatures && !isMQMobile">
-          <div
-            class="feature"
-            v-for="(feature, index) in homeData.features"
-            :key="index"
-          >
+          <div class="feature" v-for="(feature, index) in homeData.features" :key="index">
             <router-link v-if="feature.link" :to="feature.link">
-              <img
-                class="feature-img"
-                v-if="feature.imgUrl"
-                :src="$withBase(feature.imgUrl)"
-                :alt="feature.title"
-              />
+              <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)" :alt="feature.title" />
               <h2>{{ feature.title }}</h2>
               <p>{{ feature.details }}</p>
             </router-link>
             <a v-else href="javascript:;">
-              <img
-                class="feature-img"
-                v-if="feature.imgUrl"
-                :src="$withBase(feature.imgUrl)"
-                :alt="feature.title"
-              />
+              <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)" :alt="feature.title" />
               <h2>{{ feature.title }}</h2>
               <p>{{ feature.details }}</p>
             </a>
@@ -87,28 +85,16 @@
         <div class="banner-wrapper">
           <div class="slide-banner-scroll" ref="slide">
             <div class="slide-banner-wrapper">
-              <div
-                class="slide-item"
-                v-for="(feature, index) in homeData.features"
-                :key="index"
-              >
+              <div class="slide-item" v-for="(feature, index) in homeData.features" :key="index">
                 <router-link v-if="feature.link" :to="feature.link">
-                  <img
-                    class="feature-img"
-                    v-if="feature.imgUrl"
-                    :src="$withBase(feature.imgUrl)"
-                    :alt="feature.title"
-                  />
+                  <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)"
+                    :alt="feature.title" />
                   <h2>{{ feature.title }}</h2>
                   <p>{{ feature.details }}</p>
                 </router-link>
                 <a v-else href="javascript:;">
-                  <img
-                    class="feature-img"
-                    v-if="feature.imgUrl"
-                    :src="$withBase(feature.imgUrl)"
-                    :alt="feature.title"
-                  />
+                  <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)"
+                    :alt="feature.title" />
                   <h2>{{ feature.title }}</h2>
                   <p>{{ feature.details }}</p>
                 </a>
@@ -116,12 +102,8 @@
             </div>
           </div>
           <div class="docs-wrapper">
-            <span
-              class="doc"
-              v-for="(item, index) in homeData.features.length"
-              :key="index"
-              :class="{ active: currentPageIndex === index }"
-            ></span>
+            <span class="doc" v-for="(item, index) in homeData.features.length" :key="index"
+              :class="{ active: currentPageIndex === index }"></span>
           </div>
         </div>
       </div>
@@ -132,24 +114,14 @@
     <MainLayout>
       <template #mainLeft>
         <!-- 简约版文章列表 -->
-        <UpdateArticle
-          class="card-box"
-          v-if="homeData.postList === 'simple'"
-          :length="homeData.simplePostListLength || 10"
-        />
+        <UpdateArticle class="card-box" v-if="homeData.postList === 'simple'"
+          :length="homeData.simplePostListLength || 10" />
 
         <!-- 详情版文章列表 -->
-        <template
-          v-else-if="!homeData.postList || homeData.postList === 'detailed'"
-        >
+        <template v-else-if="!homeData.postList || homeData.postList === 'detailed'">
           <PostList :currentPage="currentPage" :perPage="perPage" />
-          <Pagination
-            :total="total"
-            :perPage="perPage"
-            :currentPage="currentPage"
-            @getCurrentPage="handlePagination"
-            v-show="Math.ceil(total / perPage) > 1"
-          />
+          <Pagination :total="total" :perPage="perPage" :currentPage="currentPage" @getCurrentPage="handlePagination"
+            v-show="Math.ceil(total / perPage) > 1" />
         </template>
 
         <Content class="theme-vdoing-content custom card-box" />
@@ -157,50 +129,41 @@
 
       <template #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
-        <CategoriesBar
-          v-if="
-            $themeConfig.category !== false &&
-            $categoriesAndTags.categories.length
-          "
-          :categoriesData="$categoriesAndTags.categories"
-          :length="10"
-        />
-        <TagsBar
-          v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length"
-          :tagsData="$categoriesAndTags.tags"
-          :length="30"
-        />
-        <div
-          class="custom-html-box card-box"
-          v-if="homeSidebarB"
-          v-html="homeSidebarB"
-        ></div>
+        <CategoriesBar v-if="
+          $themeConfig.category !== false &&
+          $categoriesAndTags.categories.length
+        " :categoriesData="$categoriesAndTags.categories" :length="10" />
+        <TagsBar v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length" :tagsData="$categoriesAndTags.tags"
+          :length="30" />
+        <div class="custom-html-box card-box" v-if="homeSidebarB" v-html="homeSidebarB"></div>
       </template>
     </MainLayout>
   </div>
 </template>
 
 <script>
-import NavLink from "@theme/components/NavLink";
-import PreView from "@theme/components/PreView";
-import BScroll from "@better-scroll/core";
-import Slide from "@better-scroll/slide";
-import MainLayout from "@theme/components/MainLayout";
-import PostList from "@theme/components/PostList";
-import UpdateArticle from "@theme/components/UpdateArticle";
-import Pagination from "@theme/components/Pagination";
-import BloggerBar from "@theme/components/BloggerBar";
-import CategoriesBar from "@theme/components/CategoriesBar";
-import TagsBar from "@theme/components/TagsBar";
-import { Message } from 'element-ui';
+import NavLink from "@theme/components/NavLink"
+import PreView from "@theme/components/PreView"
+import BScroll from "@better-scroll/core"
+import Slide from "@better-scroll/slide"
+import MainLayout from "@theme/components/MainLayout"
+import PostList from "@theme/components/PostList"
+import UpdateArticle from "@theme/components/UpdateArticle"
+import Pagination from "@theme/components/Pagination"
+import BloggerBar from "@theme/components/BloggerBar"
+import CategoriesBar from "@theme/components/CategoriesBar"
+import TagsBar from "@theme/components/TagsBar"
+import { Message } from 'element-ui'
+import axios from "axios"
 
-const MOBILE_DESKTOP_BREAKPOINT = 720; // refer to config.styl
+const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
-BScroll.use(Slide);
+BScroll.use(Slide)
 
 export default {
   data() {
     return {
+      release: "latest",
       isMQMobile: false,
 
       slide: null,
@@ -212,20 +175,20 @@ export default {
       perPage: 10, // 每页长
       currentPage: 1, // 当前页
       addressHerf: 'https://yiming_chang.gitee.io/pure-admin-doc/'
-    };
+    }
   },
   computed: {
     homeData() {
       return {
         ...this.$page.frontmatter,
-      };
+      }
     },
     hasFeatures() {
-      return !!(this.homeData.features && this.homeData.features.length);
+      return !!(this.homeData.features && this.homeData.features.length)
     },
     homeSidebarB() {
-      const { htmlModules } = this.$themeConfig;
-      return htmlModules ? htmlModules.homeSidebarB : "";
+      const { htmlModules } = this.$themeConfig
+      return htmlModules ? htmlModules.homeSidebarB : ""
     },
     showBanner() {
       // 当分页不在第一页时隐藏banner栏
@@ -233,41 +196,41 @@ export default {
         this.$route.query.p != 1 &&
         (!this.homeData.postList || this.homeData.postList === "detailed")
         ? false
-        : true;
+        : true
     },
     bannerBgStyle() {
-      let bannerBg = this.homeData.bannerBg;
+      let bannerBg = this.homeData.bannerBg
       if (!bannerBg || bannerBg === "auto") {
         // 默认
         if (this.$themeConfig.bodyBgImg) {
           // 当有bodyBgImg时，不显示背景
-          return "";
+          return ""
         } else {
           // 网格纹背景
-          return "background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)";
+          return "background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)"
         }
       } else if (bannerBg === "none") {
         // 无背景
         if (this.$themeConfig.bodyBgImg) {
-          return "";
+          return ""
         } else {
-          return "background: var(--mainBg);color: var(--textColor)";
+          return "background: var(--mainBg);color: var(--textColor)"
         }
       } else if (bannerBg.indexOf("background") > -1) {
         // 自定义背景样式
-        return bannerBg;
+        return bannerBg
       } else if (bannerBg.indexOf(".") > -1) {
         // 大图
         return `background: url(${this.$withBase(
           bannerBg
-        )}) center center / cover no-repeat`;
+        )}) center center / cover no-repeat`
       }
     },
     actionLink() {
       return {
         link: this.homeData.actionLink,
         text: this.homeData.actionText,
-      };
+      }
     },
   },
   components: {
@@ -282,21 +245,26 @@ export default {
     Pagination,
   },
   created() {
-    this.total = this.$sortPosts.length;
+    this.total = this.$sortPosts.length
   },
   beforeMount() {
     this.isMQMobile =
-      window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false; // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
+      window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
     if (process.env.NODE_ENV !== 'development' && window.location.protocol === 'http:') {
       Message({
         message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
       })
     }
     this.addressHerf = window.location.href
+
+    axios.get('https://api.github.com/repos/xiaoxian521/vue-pure-admin/releases/latest').then(res => {
+      const { tag_name } = res.data
+      this.release = tag_name
+    })
   },
   mounted() {
     if (this.$route.query.p) {
-      this.currentPage = Number(this.$route.query.p);
+      this.currentPage = Number(this.$route.query.p)
     }
 
     if (
@@ -304,45 +272,45 @@ export default {
       this.isMQMobile &&
       (!this.$route.query.p || this.$route.query.p == 1)
     ) {
-      this.init();
+      this.init()
     }
 
     if (this.hasFeatures) {
       window.addEventListener("resize", () => {
         this.isMQMobile =
-          window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false;
+          window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false
         if (this.isMQMobile && !this.slide && !this.mark) {
-          this.mark++;
+          this.mark++
           setTimeout(() => {
-            this.init();
-          }, 60);
+            this.init()
+          }, 60)
         }
-      });
+      })
     }
   },
   beforeDestroy() {
-    clearTimeout(this.playTimer);
-    this.slide && this.slide.destroy();
+    clearTimeout(this.playTimer)
+    this.slide && this.slide.destroy()
   },
   watch: {
     "$route.query.p"() {
       if (!this.$route.query.p) {
-        this.currentPage = 1;
+        this.currentPage = 1
       } else {
-        this.currentPage = Number(this.$route.query.p);
+        this.currentPage = Number(this.$route.query.p)
       }
 
       if (this.hasFeatures && this.currentPage === 1 && this.isMQMobile) {
         setTimeout(() => {
-          this.slide && this.slide.destroy();
-          this.init();
-        }, 0);
+          this.slide && this.slide.destroy()
+          this.init()
+        }, 0)
       }
     },
   },
   methods: {
     init() {
-      clearTimeout(this.playTimer);
+      clearTimeout(this.playTimer)
       this.slide = new BScroll(this.$refs.slide, {
         scrollX: true, // x轴滚动
         scrollY: false, // y轴滚动
@@ -356,40 +324,40 @@ export default {
         stopPropagation: false, // 是否阻止事件冒泡
         probeType: 2,
         preventDefault: false,
-      });
+      })
 
       // user touches the slide area
       this.slide.on("beforeScrollStart", () => {
-        clearTimeout(this.playTimer);
-      });
+        clearTimeout(this.playTimer)
+      })
       // user touched the slide done
       this.slide.on("scrollEnd", () => {
-        this.autoGoNext();
-      });
+        this.autoGoNext()
+      })
       this.slide.on("slideWillChange", (page) => {
-        this.currentPageIndex = page.pageX;
-      });
-      this.autoGoNext();
+        this.currentPageIndex = page.pageX
+      })
+      this.autoGoNext()
     },
     autoGoNext() {
-      clearTimeout(this.playTimer);
+      clearTimeout(this.playTimer)
       this.playTimer = setTimeout(() => {
-        this.slide.next();
-      }, 4000);
+        this.slide.next()
+      }, 4000)
     },
     handlePagination(i) {
       // 分页
-      this.currentPage = i;
+      this.currentPage = i
     },
     getScrollTop() {
       return (
         window.pageYOffset ||
         document.documentElement.scrollTop ||
         document.body.scrollTop
-      );
+      )
     },
   },
-};
+}
 </script>
 
 <style lang="stylus" scoped>

@@ -7,6 +7,7 @@ Vue.component(CodeBlock)
 Vue.component(CodeGroup)
 
 import 'remixicon/fonts/remixicon.css'
+import "./globalPolyfills"
 
 import ElementUI from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
