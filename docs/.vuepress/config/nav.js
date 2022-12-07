@@ -24,7 +24,6 @@ module.exports = [
           { text: '单点登录', link: '/pages/sso/' },
           { text: '打包优化', link: '/pages/buildgood/' },
           { text: 'vite预构建', link: '/pages/optimize/' },
-          { text: '平台规范', link: '/pages/standard/' },
         ]
       },
       {
