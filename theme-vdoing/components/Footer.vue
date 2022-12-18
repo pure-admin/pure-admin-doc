@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <a href="/pages/support/#支持" class="sponsor">支持这个开源项目</a>
+    <router-link to="/pages/support/#支持" class="sponsor">支持这个开源项目</router-link>
     <div class="icons" v-if="social && social.icons">
       <a :href="item.link" :title="item.title" :class="['iconfont', item.iconClass]"
         v-for="(item, index) in social.icons" :key="index" target="_blank"></a>
