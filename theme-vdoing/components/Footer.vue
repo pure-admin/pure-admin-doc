@@ -1,10 +1,10 @@
 <template>
   <div class="footer">
+    <a href="/pages/support/#支持" class="sponsor">支持这个开源项目</a>
     <div class="icons" v-if="social && social.icons">
       <a :href="item.link" :title="item.title" :class="['iconfont', item.iconClass]"
         v-for="(item, index) in social.icons" :key="index" target="_blank"></a>
     </div>
-
     <div style="display: flex;justify-content: center;margin-bottom: 6px;">
       <div title="GitHub stars" class="no-zoom">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="20">
@@ -61,13 +61,15 @@
         </svg>
       </div>
     </div>
-    <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
-    Theme by
-    <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
-    <template v-if="footer">
-      | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
-      <span v-html="footer.copyrightInfo"></span>
-    </template>
+    <div style="margin-bottom: 10px;">
+      <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
+      Theme by
+      <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
+      <template v-if="footer">
+        | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
+        <span v-html="footer.copyrightInfo"></span>
+      </template>
+    </div>
   </div>
 </template>
 
@@ -101,14 +103,22 @@ export default {
 <style lang="stylus">
 // $mobileSidebarWidth = $sidebarWidth * 0.82
 .footer
-  margin-top -1.4rem
+  margin-top -1.8rem
   text-align center
   color #666
   box-sizing border-box
   font-size 0.85rem
   transition all 0.2s ease
+  .sponsor 
+    padding: 8px 20px
+    display: inline-block
+    color: #426feb
+    border-radius: 30px
+    box-sizing: border-box
+    border: 1px solid #426feb
+    margin-bottom 16px
   .icons
-    margin-bottom 6px
+    margin-bottom 16px
     .iconfont
       padding 0 10px
       font-size 1.3rem

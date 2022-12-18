@@ -423,7 +423,6 @@ export default {
       // pc端features
       .features
         padding 2rem 0
-        margin-top 2.5rem
         display flex
         flex-wrap wrap
         align-items flex-start
