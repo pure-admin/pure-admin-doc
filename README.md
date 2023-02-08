@@ -7,7 +7,7 @@ vue-pure-admin 保姆级文档
 ## 预览
 
 - [点我查看国内文档站](https://yiming_chang.gitee.io/pure-admin-doc)
-- [点我查看国外文档站](https://xiaoxian521.github.io/pure-admin-doc)
+- [点我查看国外文档站](https://pure-admin.github.io/pure-admin-doc)
 
 ## 安装依赖
 
