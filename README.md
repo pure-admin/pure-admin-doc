@@ -29,5 +29,5 @@ pnpm build
 
 ## 配套视频
 
-教程：<https://www.bilibili.com/video/BV1534y1S7HV/>  
+教程：<https://www.bilibili.com/video/BV1kg411v7QT/>  
 UI 设计：<https://www.bilibili.com/video/BV17g411T7rq/>

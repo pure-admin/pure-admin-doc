@@ -78,8 +78,8 @@ import axios from "axios"
 export default {
   data() {
     return {
-      stars: '4.3k',
-      forks: '1k',
+      stars: '7k',
+      forks: '1.4k',
     }
   },
   computed: {
@@ -91,7 +91,7 @@ export default {
     },
   },
   beforeMount() {
-    axios.get('https://api.github.com/repos/pure-admim/vue-pure-admin').then(res => {
+    axios.get('https://api.github.com/repos/pure-admin/vue-pure-admin').then(res => {
       const { stargazers_count, forks_count } = res.data
       this.stars = stargazers_count
       this.forks = forks_count

@@ -257,7 +257,7 @@ export default {
     }
     this.addressHerf = window.location.href
 
-    axios.get('https://api.github.com/repos/pure-admim/vue-pure-admin/releases/latest').then(res => {
+    axios.get('https://api.github.com/repos/pure-admin/vue-pure-admin/releases/latest').then(res => {
       const { tag_name } = res.data
       this.release = tag_name
     })
