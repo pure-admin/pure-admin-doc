@@ -60,12 +60,12 @@ module.exports = [
       {
         text: 'Github源码',
         items: [
-          { text: '完整版', link: 'https://github.com/xiaoxian521/vue-pure-admin' },
-          { text: '精简版', link: 'https://github.com/xiaoxian521/pure-admin-thin' },
-          { text: 'Tauri版', link: 'https://github.com/xiaoxian521/tauri-pure-admin' },
-          { text: 'Electron版', link: 'https://github.com/xiaoxian521/electron-pure-admin' },
-          { text: '配套后端', link: 'https://github.com/xiaoxian521/pure-admin-backend' },
-          { text: '文档', link: 'https://github.com/xiaoxian521/pure-admin-doc' },
+          { text: '完整版', link: 'https://github.com/pure-admin/vue-pure-admin' },
+          { text: '精简版', link: 'https://github.com/pure-admin/pure-admin-thin' },
+          { text: 'Tauri版', link: 'https://github.com/pure-admin/tauri-pure-admin' },
+          { text: 'Electron版', link: 'https://github.com/pure-admin/electron-pure-admin' },
+          { text: '配套后端', link: 'https://github.com/pure-admin/pure-admin-backend' },
+          { text: '文档', link: 'https://github.com/pure-admin/pure-admin-doc' },
         ]
       },
       {
@@ -84,7 +84,7 @@ module.exports = [
   {
     text: '日志',
     items: [
-      { text: 'Github日志', link: 'https://github.com/xiaoxian521/vue-pure-admin/releases' },
+      { text: 'Github日志', link: 'https://github.com/pure-admin/vue-pure-admin/releases' },
       { text: 'Gitee日志', link: 'https://gitee.com/yiming_chang/vue-pure-admin/releases' },
     ]
   },

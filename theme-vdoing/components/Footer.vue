@@ -22,11 +22,11 @@
           </g>
           <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
             text-rendering="geometricPrecision" font-size="110"><a target="_blank"
-              xlink:href="https://github.com/xiaoxian521/vue-pure-admin">
+              xlink:href="https://github.com/pure-admin/vue-pure-admin">
               <rect width="37" x="0" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="195" y="150"
                 fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="270">stars</text><text x="195"
                 y="140" transform="scale(.1)" fill="#fff" textLength="270">stars</text>
-            </a><a target="_blank" xlink:href="https://github.com/xiaoxian521/vue-pure-admin/stargazers">
+            </a><a target="_blank" xlink:href="https://github.com/pure-admin/vue-pure-admin/stargazers">
               <rect width="35" x="37" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="535" y="150"
                 fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="250">{{ stars }}</text><text x="535"
                 y="140" transform="scale(.1)" fill="#fff" textLength="250">{{ stars }}</text>
@@ -49,11 +49,11 @@
           </g>
           <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
             text-rendering="geometricPrecision" font-size="110"><a target="_blank"
-              xlink:href="https://github.com/xiaoxian521/vue-pure-admin/fork">
+              xlink:href="https://github.com/pure-admin/vue-pure-admin/fork">
               <rect width="37" x="0" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="195" y="150"
                 fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="270">forks</text><text x="195"
                 y="140" transform="scale(.1)" fill="#fff" textLength="270">forks</text>
-            </a><a target="_blank" xlink:href="https://github.com/xiaoxian521/vue-pure-admin/network">
+            </a><a target="_blank" xlink:href="https://github.com/pure-admin/vue-pure-admin/network">
               <rect width="31" x="37" height="20" fill="rgba(0,0,0,0)" /><text aria-hidden="true" x="515" y="150"
                 fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="210">{{ forks }}</text><text x="515"
                 y="140" transform="scale(.1)" fill="#fff" textLength="210">{{ forks }}</text>
@@ -91,7 +91,7 @@ export default {
     },
   },
   beforeMount() {
-    axios.get('https://api.github.com/repos/xiaoxian521/vue-pure-admin').then(res => {
+    axios.get('https://api.github.com/repos/pure-admim/vue-pure-admin').then(res => {
       const { stargazers_count, forks_count } = res.data
       this.stars = stargazers_count
       this.forks = forks_count

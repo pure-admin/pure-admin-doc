@@ -45,7 +45,7 @@
             {{ homeData.tagline }}
           </p>
           <p style="font-size:15px">
-            <el-link style="color: #426feb" :underline="false" href="https://github.com/xiaoxian521/vue-pure-admin"
+            <el-link style="color: #426feb" :underline="false" href="https://github.com/pure-admin/vue-pure-admin"
               target="_blank">2020年11月16日开发（持续维护中）</el-link>
           </p>
           <p style="font-size:15px">
@@ -257,7 +257,7 @@ export default {
     }
     this.addressHerf = window.location.href
 
-    axios.get('https://api.github.com/repos/xiaoxian521/vue-pure-admin/releases/latest').then(res => {
+    axios.get('https://api.github.com/repos/pure-admim/vue-pure-admin/releases/latest').then(res => {
       const { tag_name } = res.data
       this.release = tag_name
     })
