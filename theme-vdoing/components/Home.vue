@@ -11,8 +11,7 @@
             <h1 v-if="homeData.heroText" id="main-title">
               {{ homeData.heroText }}
             </h1>
-            <div title="当前版本"
-              style="width: 80px;height: 20px;margin: 0;padding: 0;padding-left: 10px;padding-top: 5px;">
+            <div title="当前版本" style="width: 80px;height: 20px;margin: 0;padding: 0;padding-left: 10px;padding-top: 5px;">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="111" height="20"
                 role="img">
                 <title>release: {{ release }}</title>
@@ -87,14 +86,12 @@
             <div class="slide-banner-wrapper">
               <div class="slide-item" v-for="(feature, index) in homeData.features" :key="index">
                 <router-link v-if="feature.link" :to="feature.link">
-                  <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)"
-                    :alt="feature.title" />
+                  <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)" :alt="feature.title" />
                   <h2>{{ feature.title }}</h2>
                   <p>{{ feature.details }}</p>
                 </router-link>
                 <a v-else href="javascript:;">
-                  <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)"
-                    :alt="feature.title" />
+                  <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)" :alt="feature.title" />
                   <h2>{{ feature.title }}</h2>
                   <p>{{ feature.details }}</p>
                 </a>
@@ -250,11 +247,11 @@ export default {
   beforeMount() {
     this.isMQMobile =
       window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
-    if (process.env.NODE_ENV !== 'development' && window.location.protocol === 'http:') {
-      Message({
-        message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
-      })
-    }
+    // if (process.env.NODE_ENV !== 'development' && window.location.protocol === 'http:') {
+    //   Message({
+    //     message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
+    //   })
+    // }
     this.addressHerf = window.location.href
 
     axios.get('https://api.github.com/repos/pure-admin/vue-pure-admin/releases/latest').then(res => {

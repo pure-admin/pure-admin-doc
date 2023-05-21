@@ -1,7 +1,5 @@
 <p align="center">
 vue-pure-admin 保姆级文档
-<br />
-支持PWA离线访问，没有网络照样以超快的速度访问😄
 </p>
 
 ## 预览

@@ -12,32 +12,32 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/iconfont/iconfont.css' }],
     ['meta', { name: 'keywords', content: 'vue-pure-admin,pure-admin,pure-admin-thin,pure-admin-docs' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    [
-      'meta',
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
-    ],
-    [
-      'link',
-      { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }
-    ],
-    [
-      'link',
-      {
-        rel: 'mask-icon',
-        href: '/img/favicon.ico',
-        color: '#3eaf7c'
-      }
-    ],
-    [
-      'meta',
-      {
-        name: 'msapplication-TileImage',
-        content: '/icons/msapplication-icon-144x144.png'
-      }
-    ],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    // ['link', { rel: 'manifest', href: '/manifest.json' }],
+    // ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    // [
+    //   'meta',
+    //   { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
+    // ],
+    // [
+    //   'link',
+    //   { rel: 'apple-touch-icon', href: '/icons/apple-touch-icon-152x152.png' }
+    // ],
+    // [
+    //   'link',
+    //   {
+    //     rel: 'mask-icon',
+    //     href: '/img/favicon.ico',
+    //     color: '#3eaf7c'
+    //   }
+    // ],
+    // [
+    //   'meta',
+    //   {
+    //     name: 'msapplication-TileImage',
+    //     content: '/icons/msapplication-icon-144x144.png'
+    //   }
+    // ],
+    // ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   markdown: {
     lineNumbers: true, // 显示代码块的行号
@@ -87,7 +87,7 @@ module.exports = {
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'RealityBoy', // 必需
+      name: 'pure-admin', // 必需
       href: 'https://github.com/xiaoxian521' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
@@ -107,7 +107,7 @@ module.exports = {
     },
     footer: { // 页脚信息
       createYear: 2020, // 博客创建年份
-      copyrightInfo: 'RealityBoy | MIT License', // 博客版权信息，支持a标签
+      copyrightInfo: 'pure-admin | MIT License', // 博客版权信息，支持a标签
     },
     htmlModules,
   },
@@ -189,13 +189,13 @@ module.exports = {
         globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
       }
     ],
-    ['@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: {
-        message: "尊贵的主人，检测到新内容可用，是否更新",
-        buttonText: "更新"
-      }
-    }]
+    // ['@vuepress/pwa', {
+    //   serviceWorker: true,
+    //   updatePopup: {
+    //     message: "尊贵的主人，检测到新内容可用，是否更新",
+    //     buttonText: "更新"
+    //   }
+    // }]
   ],
   configureWebpack: {
     //webpack别名 如![Image from alias](~@alias/image.png)
