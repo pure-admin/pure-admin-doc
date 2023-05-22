@@ -47,9 +47,9 @@
             <el-link style="color: #426feb" :underline="false" href="https://github.com/pure-admin/vue-pure-admin"
               target="_blank">2020年11月16日开发（持续维护中）</el-link>
           </p>
-          <p style="font-size:15px">
+          <!-- <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" :href="addressHerf">文档中任何内容均可搬运，留个平台链接就🀄️</el-link>
-          </p>
+          </p> -->
           <!-- <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
               target="_blank">点我查看如何使用PWA访问文档</el-link>
