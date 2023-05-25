@@ -23,7 +23,7 @@
     "lodash": "^4.17.21",
     "stylus": "^0.57.0",
     "stylus-loader": "3.0.2",
-    "vuepress": "^1.9.7",
+    "vuepress": "^1.9.9",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-demo-block": "^0.7.2",
