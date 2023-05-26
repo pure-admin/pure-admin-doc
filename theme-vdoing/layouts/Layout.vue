@@ -72,7 +72,7 @@
     <BodyBgImg v-if="$themeConfig.bodyBgImg" />
 
     <!-- 自定义html插入左右下角的小窗口 -->
-    <div
+    <!-- <div
       class="custom-html-window custom-html-window-lb"
       v-if="windowLB"
       v-show="showWindowLB"
@@ -91,7 +91,7 @@
         <span class="close-but" @click="showWindowRB = false">×</span>
         <div v-html="windowRB" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
