@@ -38,7 +38,7 @@ import Pagination from '@theme/components/Pagination'
 import CategoriesBar from '@theme/components/CategoriesBar'
 
 export default {
-  data () {
+  data() {
     return {
       category: '',
       total: 0, // 总长
@@ -47,7 +47,7 @@ export default {
     }
   },
   components: { MainLayout, PostList, Pagination, CategoriesBar },
-  mounted () {
+  mounted() {
     const queryCategory = this.$route.query.category
     if (queryCategory) {
       this.category = queryCategory
@@ -70,12 +70,12 @@ export default {
     }
   },
   methods: {
-    handlePagination (i) { // 分页
+    handlePagination(i) { // 分页
       this.currentPage = i
     }
   },
   watch: {
-    '$route.query.category' (category) {
+    '$route.query.category'(category) {
       this.category = category ? decodeURIComponent(category) : ''
       if (this.category) {
         this.total = this.$groupPosts.categories[this.category].length
@@ -99,12 +99,16 @@ export default {
     @media (max-width $MQMobile)
       display none
     .categories
-      padding-right 0.5rem
+      // padding-right 0.3rem
       max-height calc(100vh - 14rem)
       min-height 2.2rem
       overflow-y auto
       transition all 0.2s
       position relative
+      a
+        padding-right 1.8rem
+        span
+          right 0.4rem
       &::-webkit-scrollbar-track-piece
         background-color rgba(0, 0, 0, 0.05)
       &::-webkit-scrollbar-thumb:vertical
@@ -128,4 +132,13 @@ export default {
         display block
       .categories
         max-height 12.3rem
+.theme-style-line
+  .categories-page
+    .main-left
+      .categories-wrapper
+        @media (max-width $MQMobile)
+          margin-top -0.91rem
+          margin-bottom -1px
+          padding 0.9rem 0.2rem
+          padding-bottom 0.5rem
 </style>

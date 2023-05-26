@@ -13,6 +13,7 @@
     "@vuepress/plugin-active-header-links": "^1.9.9",
     "@vuepress/plugin-nprogress": "^1.9.9",
     "@vuepress/plugin-search": "^1.9.9",
+    "whatwg-fetch": "^3.6.2",
     "chalk": "^5.0.0",
     "dayjs": "^1.10.7",
     "docsearch.js": "^2.6.3",
@@ -28,7 +29,6 @@
     "stylus": "^0.57.0",
     "stylus-loader": "3.0.2",
     "vuepress": "^1.9.9",
-    "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-demo-block": "^0.7.2",
@@ -43,5 +43,12 @@
     "babel-plugin-component": "^1.1.1",
     "core-js": "2.6.11",
     "remixicon": "^2.5.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "vue"
+      ]
+    }
   }
 }

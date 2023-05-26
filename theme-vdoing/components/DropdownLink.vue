@@ -1,29 +1,49 @@
 <template>
   <div class="dropdown-wrapper" :class="{ open }">
-    <button class="dropdown-title" type="button" :aria-label="dropdownAriaLabel" @click="toggle">
+    <button
+      class="dropdown-title"
+      type="button"
+      :aria-label="dropdownAriaLabel"
+      @click="toggle"
+    >
       <router-link v-if="item.link" :to="item.link" class="link-title">{{
-          item.text
+        item.text
       }}</router-link>
       <span class="title" v-show="!item.link">{{ item.text }}</span>
-      <i class="ri-arrow-down-s-line" slot="reference"></i>
+      <span class="arrow" :class="open ? 'down' : 'right'"></span>
     </button>
 
     <DropdownTransition>
       <ul class="nav-dropdown" v-show="open">
-        <li class="dropdown-item" :key="subItem.link || index" v-for="(subItem, index) in item.items">
+        <li
+          class="dropdown-item"
+          :key="subItem.link || index"
+          v-for="(subItem, index) in item.items"
+        >
           <h4 v-if="subItem.type === 'links'">{{ subItem.text }}</h4>
 
           <ul class="dropdown-subitem-wrapper" v-if="subItem.type === 'links'">
-            <li class="dropdown-subitem" :key="childSubItem.link" v-for="childSubItem in subItem.items">
-              <NavLink @focusout="
-                isLastItemOfArray(childSubItem, subItem.items) &&
-                isLastItemOfArray(subItem, item.items) &&
-                toggle()
-              " :item="childSubItem" />
+            <li
+              class="dropdown-subitem"
+              :key="childSubItem.link"
+              v-for="childSubItem in subItem.items"
+            >
+              <NavLink
+                @focusout="
+                  isLastItemOfArray(childSubItem, subItem.items) &&
+                    isLastItemOfArray(subItem, item.items) &&
+                    toggle()
+                "
+                :item="childSubItem"
+              />
             </li>
           </ul>
 
-          <NavLink v-else @focusout="isLastItemOfArray(subItem, item.items) && toggle()" :item="subItem" />
+          <NavLink
+            v-else
+            @focusout="isLastItemOfArray(subItem, item.items) && toggle()"
+            :item="subItem"
+          />
         </li>
       </ul>
     </DropdownTransition>
@@ -38,7 +58,7 @@ import last from 'lodash/last'
 export default {
   components: { NavLink, DropdownTransition },
 
-  data() {
+  data () {
     return {
       open: false,
       isMQMobile: false
@@ -52,31 +72,31 @@ export default {
   },
 
   computed: {
-    dropdownAriaLabel() {
+    dropdownAriaLabel () {
       return this.item.ariaLabel || this.item.text
     }
   },
-  beforeMount() {
-    this.isMQMobile = window.innerWidth < 720 ? true : false
+  beforeMount () {
+    this.isMQMobile = window.innerWidth < 720 ? true : false;
 
     window.addEventListener('resize', () => {
-      this.isMQMobile = window.innerWidth < 720 ? true : false
+      this.isMQMobile = window.innerWidth < 720 ? true : false;
     })
   },
   methods: {
-    toggle() {
+    toggle () {
       if (this.isMQMobile) {
         this.open = !this.open
       }
     },
 
-    isLastItemOfArray(item, array) {
+    isLastItemOfArray (item, array) {
       return last(array) === item
     }
   },
 
   watch: {
-    $route() {
+    $route () {
       this.open = false
     }
   }
@@ -88,7 +108,7 @@ export default {
   cursor pointer
   .dropdown-title
     display block
-    font-size 14px
+    font-size 0.9rem
     font-family inherit
     cursor inherit
     padding inherit
@@ -99,8 +119,10 @@ export default {
     color var(--textColor)
     &:hover
       border-color transparent
-    i
+    .arrow
       vertical-align middle
+      margin-top -1px
+      margin-left 0.4rem
   .nav-dropdown
     .dropdown-item
       color inherit

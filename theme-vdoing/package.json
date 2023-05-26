@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-vdoing",
-  "version": "1.8.5",
+  "version": "1.12.8",
   "description": "Vdoing theme for VuePress. 一个基于VuePress的知识管理兼博客主题。",
   "author": {
     "name": "gaoyi(Evan) Xu"
@@ -12,26 +12,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xugaoyi/vuepress-theme-vdoing.git"
-  },
-  "dependencies": {
-    "@better-scroll/core": "^2.0.0-beta.6",
-    "@better-scroll/slide": "^2.0.0-beta.6",
-    "@vuepress/plugin-active-header-links": "^1.9.7",
-    "@vuepress/plugin-nprogress": "^1.9.7",
-    "@vuepress/plugin-search": "^1.9.7",
-    "axios": "^1.2.1",
-    "chalk": "^4.0.0",
-    "core-js": "2.6.11",
-    "docsearch.js": "^2.5.2",
-    "element-ui": "^2.15.6",
-    "good-storage": "^1.1.1",
-    "js-yaml": "^3.13.1",
-    "json2yaml": "^1.1.0",
-    "lodash": "^4.17.15",
-    "remixicon": "^2.5.0",
-    "stylus": "^0.57.0",
-    "vuepress-plugin-container": "^2.0.2",
-    "vuepress-plugin-smooth-scroll": "^0.0.3"
   },
   "keywords": [
     "documentation",
@@ -48,5 +28,31 @@
       "name": "Evan xu",
       "email": "894072666@qq.com"
     }
-  ]
+  ],
+  "dependencies": {
+    "@better-scroll/core": "^2.5.1",
+    "@better-scroll/slide": "^2.5.1",
+    "@vuepress/plugin-active-header-links": "^1.9.9",
+    "@vuepress/plugin-nprogress": "^1.9.9",
+    "@vuepress/plugin-search": "^1.9.9",
+    "whatwg-fetch": "^3.6.2",
+    "chalk": "^4.0.0",
+    "core-js": "2.6.11",
+    "docsearch.js": "^2.5.2",
+    "element-ui": "^2.15.6",
+    "good-storage": "^1.1.1",
+    "js-yaml": "^3.13.1",
+    "json2yaml": "^1.1.0",
+    "lodash": "^4.17.15",
+    "remixicon": "^2.5.0",
+    "stylus": "^0.57.0",
+    "vuepress-plugin-container": "^2.0.2",
+    "vuepress-plugin-smooth-scroll": "^0.0.3"
+  },
+  "devDependencies": {
+    "@vuepress/types": "^1.9.5"
+  },
+  "engines": {
+    "node": ">=14.17.0"
+  }
 }

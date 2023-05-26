@@ -45,176 +45,158 @@
 </template>
 
 <script>
-import debounce from "lodash.debounce";
-import storage from "good-storage"; // 本地存储
-const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
+import debounce from 'lodash.debounce'
+import storage from 'good-storage' // 本地存储
+const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
 
 export default {
-  data() {
+  data () {
     return {
       threshold: 100,
       scrollTop: null,
       showCommentBut: false,
       commentTop: null,
-      currentMode: null,
+      currentMode: '',
       showModeBox: false,
       modeList: [
         {
-          name: "跟随系统",
-          icon: "icon-zidong",
-          KEY: "auto",
+          name: '跟随系统',
+          icon: 'icon-zidong',
+          KEY: 'auto'
         },
         {
-          name: "浅色模式",
-          icon: "icon-rijianmoshi",
-          KEY: "light",
+          name: '浅色模式',
+          icon: 'icon-rijianmoshi',
+          KEY: 'light'
         },
         {
-          name: "深色模式",
-          icon: "icon-yejianmoshi",
-          KEY: "dark",
+          name: '深色模式',
+          icon: 'icon-yejianmoshi',
+          KEY: 'dark'
         },
         {
-          name: "阅读模式",
-          icon: "icon-yuedu",
-          KEY: "read",
-        },
+          name: '阅读模式',
+          icon: 'icon-yuedu',
+          KEY: 'read'
+        }
       ],
       _scrollTimer: null,
       _textareaEl: null,
       _recordScrollTop: null,
-      COMMENT_SELECTOR_1: "#vuepress-plugin-comment", // 评论区元素的选择器1
-      COMMENT_SELECTOR_2: "#valine-vuepress-comment", // 评论区元素的选择器2
-      COMMENT_SELECTOR_3: ".vssue", // 评论区元素的选择器3
-    };
+      COMMENT_SELECTOR_1: '#vuepress-plugin-comment', // 评论区元素的选择器1
+      COMMENT_SELECTOR_2: '#valine-vuepress-comment', // 评论区元素的选择器2
+      COMMENT_SELECTOR_3: '.vssue' // 评论区元素的选择器3
+    }
   },
-  mounted() {
-    this.currentMode = storage.get("mode") || "auto";
+  mounted () {
+    this.currentMode = storage.get('mode') ||  this.$themeConfig.defaultMode ||'auto'
+    this.scrollTop = this.getScrollTop()
+    window.addEventListener('scroll', debounce(() => {
+      this.scrollTop = this.getScrollTop()
+    }, 100))
 
-    this.scrollTop = this.getScrollTop();
-    window.addEventListener(
-      "scroll",
-      debounce(() => {
-        this.scrollTop = this.getScrollTop();
-      }, 100)
-    );
-
-    window.addEventListener("load", () => {
-      this.getCommentTop();
-    });
+    window.addEventListener('load', () => {
+      this.getCommentTop()
+    })
 
     // 小屏时选择主题模式后关闭选择框
     if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
-      const modeBox = this.$refs.modeBox;
+      const modeBox = this.$refs.modeBox
       modeBox.onclick = () => {
-        this.showModeBox = false;
-      };
-      window.addEventListener(
-        "scroll",
-        debounce(() => {
-          if (this.showModeBox) {
-            this.showModeBox = false;
-          }
-        }, 100)
-      );
+        this.showModeBox = false
+      }
+      window.addEventListener('scroll', debounce(() => {
+        if (this.showModeBox) {
+          this.showModeBox = false
+        }
+      }, 100))
     }
+
 
     // 移动端对类似:hover效果的处理
-    const buttons = document.querySelectorAll(".buttons .button");
+    const buttons = document.querySelectorAll('.buttons .button')
     for (let i = 0; i < buttons.length; i++) {
-      const button = buttons[i];
-      button.addEventListener("touchstart", function () {
-        button.classList.add("hover");
-      });
-      button.addEventListener("touchend", function () {
+      const button = buttons[i]
+      button.addEventListener('touchstart', function () {
+        button.classList.add('hover')
+      })
+      button.addEventListener('touchend', function () {
         setTimeout(() => {
-          button.classList.remove("hover");
-        }, 150);
-      });
+          button.classList.remove('hover')
+        }, 150)
+      })
     }
+
   },
   computed: {
-    showToTop() {
-      return this.scrollTop > this.threshold;
-    },
+    showToTop () {
+      return this.scrollTop > this.threshold
+    }
   },
   methods: {
-    toggleMode(key) {
-      this.currentMode = key;
-      this.$emit("toggle-theme-mode", key);
+    toggleMode (key) {
+      this.currentMode = key
+      this.$emit('toggle-theme-mode', key)
     },
-    getScrollTop() {
-      return (
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop ||
-        0
-      );
+    getScrollTop () {
+      return window.pageYOffset
+        || document.documentElement.scrollTop
+        || document.body.scrollTop || 0
     },
 
-    scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      this.scrollTop = 0;
+    scrollToTop () {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      this.scrollTop = 0
     },
 
-    getCommentTop() {
+    getCommentTop () {
       setTimeout(() => {
-        let commentEl =
-          document.querySelector(this.COMMENT_SELECTOR_1) ||
-          document.querySelector(this.COMMENT_SELECTOR_2) ||
-          document.querySelector(this.COMMENT_SELECTOR_3);
+        let commentEl = document.querySelector(this.COMMENT_SELECTOR_1) || document.querySelector(this.COMMENT_SELECTOR_2) || document.querySelector(this.COMMENT_SELECTOR_3)
         if (commentEl) {
-          this.showCommentBut =
-            this.$frontmatter.comment !== false &&
-            this.$frontmatter.home !== true;
-          this.commentTop = commentEl.offsetTop - 58;
+          this.showCommentBut = this.$frontmatter.comment !== false && this.$frontmatter.home !== true
+          this.commentTop = commentEl.offsetTop - 58
         }
-      }, 500);
+      }, 500)
     },
 
-    scrollToComment() {
-      window.scrollTo({ top: this.commentTop, behavior: "smooth" });
-      this._textareaEl =
-        document.querySelector(this.COMMENT_SELECTOR_1 + " textarea") ||
-        document.querySelector(this.COMMENT_SELECTOR_2 + " input") ||
-        document.querySelector(this.COMMENT_SELECTOR_3 + " textarea");
+
+    scrollToComment () {
+      window.scrollTo({ top: this.commentTop, behavior: 'smooth' })
+      this._textareaEl = document.querySelector(this.COMMENT_SELECTOR_1 + ' textarea') || document.querySelector(this.COMMENT_SELECTOR_2 + ' input') || document.querySelector(this.COMMENT_SELECTOR_3 + ' textarea')
       if (this._textareaEl && this.getScrollTop() !== this._recordScrollTop) {
-        document.addEventListener("scroll", this._handleListener);
-      } else if (
-        this._textareaEl &&
-        this.getScrollTop() === this._recordScrollTop
-      ) {
-        this._handleFocus();
+        document.addEventListener("scroll", this._handleListener)
+      } else if (this._textareaEl && this.getScrollTop() === this._recordScrollTop) {
+        this._handleFocus()
       }
     },
 
-    _handleListener() {
-      clearTimeout(this._scrollTimer);
+    _handleListener () {
+      clearTimeout(this._scrollTimer)
       this._scrollTimer = setTimeout(() => {
-        document.removeEventListener("scroll", this._handleListener);
-        this._recordScrollTop = this.getScrollTop();
-        this._handleFocus();
-      }, 30);
+        document.removeEventListener('scroll', this._handleListener)
+        this._recordScrollTop = this.getScrollTop()
+        this._handleFocus()
+      }, 30)
     },
 
-    _handleFocus() {
-      this._textareaEl.focus();
-      this._textareaEl.classList.add("yellowBorder");
+    _handleFocus () {
+      this._textareaEl.focus()
+      this._textareaEl.classList.add('yellowBorder')
       setTimeout(() => {
-        this._textareaEl.classList.remove("yellowBorder");
-      }, 500);
-    },
+        this._textareaEl.classList.remove('yellowBorder')
+      }, 500)
+    }
   },
   watch: {
-    "$route.path"() {
-      this.showCommentBut = false;
-      this.getCommentTop();
-    },
-  },
-};
+    '$route.path' () {
+      this.showCommentBut = false
+      this.getCommentTop()
+    }
+  }
+}
 </script>
 
-<style lang="stylus">
+<style lang='stylus'>
 .yellowBorder
   // border: #FFE089 1px solid!important
   border-radius 5px

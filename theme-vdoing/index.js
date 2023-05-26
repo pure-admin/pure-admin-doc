@@ -177,18 +177,18 @@ function renderCardList(tokens, idx, type) {
   const END_TYPE = `container_${type}_close`,
     _tokens$idx = tokens[idx],
     nesting = _tokens$idx.nesting,
-    info = _tokens$idx.info
+    info = _tokens$idx.info;
 
   if (nesting === 1) { // 渲染开头的 ':::' 标记
-    let yamlStr = ''
+    let yamlStr = '';
 
     for (let i = idx; i < tokens.length; i++) {
       let _tokens$i = tokens[i],
         type = _tokens$i.type,
         content = _tokens$i.content,
-        _info = _tokens$i.info
-      if (type === END_TYPE) break // 遇到结束的 ':::' 时
-      if (!content) continue
+        _info = _tokens$i.info;
+      if (type === END_TYPE) break; // 遇到结束的 ':::' 时
+      if (!content) continue;
       if (type === 'fence' && _info === 'yaml') { // 是代码块类型，并且是yaml代码
         yamlStr = content
       }
@@ -283,10 +283,10 @@ function getCardImgListDOM(dataList, row, config) {
 
 // 添加base路径
 function withBase(path) {
-  if (!path) return ''
+  if (!path) return '';
   if (base && path.charAt(0) === '/') {
-    return base + path.slice(1)
+    return base + path.slice(1);
   } else {
-    return path
+    return path;
   }
 }

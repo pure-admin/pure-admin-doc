@@ -1,7 +1,7 @@
 <template>
   <div class="theme-vdoing-content">
     <div class="column-wrapper">
-      <img :src="$withBase(pageData.imgUrl)" />
+      <img v-if="pageData.imgUrl" :src="$withBase(pageData.imgUrl)" />
       <dl class="column-info">
         <dt class="title">{{ pageData.title }}</dt>
         <dd class="description" v-html="pageData.description"></dd>
@@ -13,9 +13,12 @@
         <template v-for="(item, index) in getCatalogueList()">
           <dl v-if="type(item) === 'array'" :key="index" class="inline">
             <dt>
-              <router-link :to="item[2]">{{
-                `${index + 1}. ${item[1]}`
-              }}</router-link>
+              <router-link :to="item[2]"
+                >{{ `${index + 1}. ${item[1]}` }}
+                <span class="title-tag" v-if="item[3]">
+                  {{ item[3] }}
+                </span>
+              </router-link>
             </dt>
           </dl>
           <dl v-else-if="type(item) === 'object'" :key="index">
@@ -28,9 +31,12 @@
               <!-- 二级目录 -->
               <template v-for="(c, i) in item.children">
                 <template v-if="type(c) === 'array'">
-                  <router-link :to="c[2]" :key="i">{{
-                    `${index + 1}-${i + 1}. ${c[1]}`
-                  }}</router-link>
+                  <router-link :to="c[2]" :key="i"
+                    >{{ `${index + 1}-${i + 1}. ${c[1]}` }}
+                    <span class="title-tag" v-if="c[3]">
+                      {{ c[3] }}
+                    </span>
+                  </router-link>
                 </template>
                 <!-- 三级目录 -->
                 <div
@@ -48,6 +54,9 @@
                     :key="`${index + 1}-${i + 1}-${ii + 1}`"
                   >
                     {{ `${index + 1}-${i + 1}-${ii + 1}. ${cc[1]}` }}
+                    <span class="title-tag" v-if="cc[3]">
+                      {{ cc[3] }}
+                    </span>
                   </router-link>
                 </div>
               </template>
@@ -61,14 +70,14 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       pageData: null,
       isStructuring: true,
       appointDir: {}
     }
   },
-  created () {
+  created() {
     this.getPageData()
     const sidebar = this.$themeConfig.sidebar
     if (!sidebar || sidebar === 'auto') {
@@ -77,7 +86,7 @@ export default {
     }
   },
   methods: {
-    getPageData () {
+    getPageData() {
       const pageComponent = this.$frontmatter.pageComponent
       if (pageComponent && pageComponent.data) {
         this.pageData = {
@@ -88,7 +97,7 @@ export default {
         console.error('请在front matter中设置pageComponent和pageComponent.data数据')
       }
     },
-    getCatalogueList () {
+    getCatalogueList() {
       const { sidebar } = this.$site.themeConfig
       const { data } = this.$frontmatter.pageComponent
       const key = data.path || data.key
@@ -104,7 +113,7 @@ export default {
       }
       return catalogueList
     },
-    type (o) { // 数据类型检查
+    type(o) { // 数据类型检查
       return Object.prototype.toString.call(o).match(/\[object (.*?)\]/)[1].toLowerCase()
     },
     /**
@@ -114,7 +123,7 @@ export default {
      * @param catalogueList 目录对象列表
      * @returns {*}
      */
-    appointDirDeal (index, dirKeyArray, catalogueList) {
+    appointDirDeal(index, dirKeyArray, catalogueList) {
       let dirKey = dirKeyArray[index];
       if (dirKey !== undefined && dirKey.indexOf(".") !== -1) {
         dirKey = dirKey.substring(dirKey.indexOf('.') + 1);
@@ -131,7 +140,7 @@ export default {
     },
   },
   watch: {
-    '$route.path' () {
+    '$route.path'() {
       this.getPageData()
     }
   }
@@ -139,6 +148,19 @@ export default {
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
+.theme-vdoing-content
+  margin-bottom $navbarHeight
+.title-tag
+  // height 1.1rem
+  // line-height 1.1rem
+  border 1px solid $activeColor
+  color $activeColor
+  font-size 0.8rem
+  padding 0 0.35rem
+  border-radius 0.2rem
+  margin-left 0rem
+  transform translate(0, -0.05rem)
+  display inline-block
 dl, dd
   margin 0
 .column-wrapper
@@ -184,15 +206,15 @@ dl, dd
       dd
         margin-top 0.7rem
         margin-left 1rem
-      a:not(.header-anchor)
-        margin-bottom 0.5rem
-        display inline-block
-        width 50%
-        &:hover
-          color $activeColor
-          text-decoration none
-        @media (max-width $MQMobileNarrow)
-          width 100%
+        a:not(.header-anchor)
+          margin-bottom 0.5rem
+          display inline-block
+          width 50%
+          &:hover
+            color $activeColor
+            text-decoration none
+          @media (max-width 720px)
+            width 100%
       .sub-cat-wrap
         margin 5px 0 8px 0
         font-size 0.95rem

@@ -184,9 +184,6 @@ module.exports = {
       'reading-progress'
     ],
     [
-      'vuepress-plugin-baidu-autopush', // 百度自动推送
-    ],
-    [
       {
         name: 'custom-plugins',
         globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles

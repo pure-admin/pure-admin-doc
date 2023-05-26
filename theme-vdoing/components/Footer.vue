@@ -74,7 +74,7 @@
 </template>
 
 <script>
-import axios from "axios"
+import { fetch } from 'whatwg-fetch'
 export default {
   data() {
     return {
@@ -91,10 +91,19 @@ export default {
     },
   },
   beforeMount() {
-    axios.get('https://api.github.com/repos/pure-admin/vue-pure-admin').then(res => {
-      const { stargazers_count, forks_count } = res.data
+    fetch('https://api.github.com/repos/pure-admin/vue-pure-admin', {
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((response) => {
+      return response.json()
+    }).then((data) => {
+      const { stargazers_count, forks_count } = data
       this.stars = stargazers_count
       this.forks = forks_count
+    }).catch(function (error) {
+      console.log(error)
     })
   }
 }

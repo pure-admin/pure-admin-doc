@@ -113,7 +113,9 @@
       <template #mainLeft>
         <!-- 简约版文章列表 -->
         <UpdateArticle class="card-box" v-if="homeData.postList === 'simple'"
-          :length="homeData.simplePostListLength || 10" />
+          :length="homeData.simplePostListLength || 10" :moreArticle="
+            $themeConfig.updateBar && $themeConfig.updateBar.moreArticle
+          " />
 
         <!-- 详情版文章列表 -->
         <template v-else-if="!homeData.postList || homeData.postList === 'detailed'">
@@ -125,7 +127,7 @@
         <Content class="theme-vdoing-content custom card-box" />
       </template>
 
-      <template #mainRight>
+      <template v-if="!homeData.hideRightBar" #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
         <CategoriesBar v-if="
           $themeConfig.category !== false &&
@@ -151,8 +153,7 @@ import Pagination from "@theme/components/Pagination"
 import BloggerBar from "@theme/components/BloggerBar"
 import CategoriesBar from "@theme/components/CategoriesBar"
 import TagsBar from "@theme/components/TagsBar"
-import { Message } from 'element-ui'
-import axios from "axios"
+import { fetch } from 'whatwg-fetch'
 
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
@@ -178,7 +179,7 @@ export default {
   computed: {
     homeData() {
       return {
-        ...this.$page.frontmatter,
+        ...this.$page.frontmatter
       }
     },
     hasFeatures() {
@@ -186,78 +187,64 @@ export default {
     },
     homeSidebarB() {
       const { htmlModules } = this.$themeConfig
-      return htmlModules ? htmlModules.homeSidebarB : ""
+      return htmlModules ? htmlModules.homeSidebarB : ''
     },
-    showBanner() {
-      // 当分页不在第一页时隐藏banner栏
-      return this.$route.query.p &&
-        this.$route.query.p != 1 &&
-        (!this.homeData.postList || this.homeData.postList === "detailed")
-        ? false
-        : true
+    showBanner() { // 当分页不在第一页时隐藏banner栏
+      return this.$route.query.p
+        && this.$route.query.p != 1
+        && (!this.homeData.postList || this.homeData.postList === 'detailed')
+        ? false : true
     },
     bannerBgStyle() {
       let bannerBg = this.homeData.bannerBg
-      if (!bannerBg || bannerBg === "auto") {
-        // 默认
-        if (this.$themeConfig.bodyBgImg) {
-          // 当有bodyBgImg时，不显示背景
-          return ""
-        } else {
-          // 网格纹背景
-          return "background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)"
+      if (!bannerBg || bannerBg === 'auto') { // 默认
+        if (this.$themeConfig.bodyBgImg) { // 当有bodyBgImg时，不显示背景
+          return ''
+        } else { // 网格纹背景
+          return 'background: rgb(40,40,45) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABOSURBVFhH7c6xCQAgDAVRR9A6E4hLu4uLiWJ7tSnuQcIvr2TRYsw3/zOGGEOMIcYQY4gxxBhiDDGGGEOMIcYQY4gxxBhiDLkx52W4Gn1tuslCtHJvL54AAAAASUVORK5CYII=)'
         }
-      } else if (bannerBg === "none") {
-        // 无背景
+      } else if (bannerBg === 'none') { // 无背景
         if (this.$themeConfig.bodyBgImg) {
-          return ""
+          return ''
         } else {
-          return "background: var(--mainBg);color: var(--textColor)"
+          return 'background: var(--mainBg);color: var(--textColor)'
         }
-      } else if (bannerBg.indexOf("background") > -1) {
-        // 自定义背景样式
+      } else if (bannerBg.indexOf('background:') > -1) { // 自定义背景样式
         return bannerBg
-      } else if (bannerBg.indexOf(".") > -1) {
-        // 大图
-        return `background: url(${this.$withBase(
-          bannerBg
-        )}) center center / cover no-repeat`
+      } else if (bannerBg.indexOf('.') > -1) { // 大图
+        return `background: url(${this.$withBase(bannerBg)}) center center / cover no-repeat`
       }
+
     },
     actionLink() {
       return {
         link: this.homeData.actionLink,
-        text: this.homeData.actionText,
+        text: this.homeData.actionText
       }
-    },
+    }
   },
-  components: {
-    NavLink,
-    PreView,
-    MainLayout,
-    PostList,
-    UpdateArticle,
-    BloggerBar,
-    CategoriesBar,
-    TagsBar,
-    Pagination,
-  },
+  components: { NavLink, PreView, MainLayout, PostList, UpdateArticle, BloggerBar, CategoriesBar, TagsBar, Pagination },
   created() {
     this.total = this.$sortPosts.length
   },
   beforeMount() {
     this.isMQMobile =
       window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false // vupress在打包时不能在beforeCreate(),created()访问浏览器api（如window）
-    // if (process.env.NODE_ENV !== 'development' && window.location.protocol === 'http:') {
-    //   Message({
-    //     message: '请使用 https 协议打开该文档，即可获得 PWA 快速、离线访问支持',
-    //   })
-    // }
+
     this.addressHerf = window.location.href
 
-    axios.get('https://api.github.com/repos/pure-admin/vue-pure-admin/releases/latest').then(res => {
-      const { tag_name } = res.data
+    fetch('https://api.github.com/repos/pure-admin/vue-pure-admin/releases/latest', {
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((response) => {
+      return response.json()
+    }).then((data) => {
+      const { tag_name } = data
       this.release = tag_name
+    }).catch(function (error) {
+      console.log(error)
     })
   },
   mounted() {
@@ -265,18 +252,13 @@ export default {
       this.currentPage = Number(this.$route.query.p)
     }
 
-    if (
-      this.hasFeatures &&
-      this.isMQMobile &&
-      (!this.$route.query.p || this.$route.query.p == 1)
-    ) {
+    if (this.hasFeatures && this.isMQMobile && (!this.$route.query.p || this.$route.query.p == 1)) {
       this.init()
     }
 
     if (this.hasFeatures) {
-      window.addEventListener("resize", () => {
-        this.isMQMobile =
-          window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false
+      window.addEventListener('resize', () => {
+        this.isMQMobile = window.innerWidth < MOBILE_DESKTOP_BREAKPOINT ? true : false
         if (this.isMQMobile && !this.slide && !this.mark) {
           this.mark++
           setTimeout(() => {
@@ -291,7 +273,7 @@ export default {
     this.slide && this.slide.destroy()
   },
   watch: {
-    "$route.query.p"() {
+    '$route.query.p'() {
       if (!this.$route.query.p) {
         this.currentPage = 1
       } else {
@@ -304,7 +286,7 @@ export default {
           this.init()
         }, 0)
       }
-    },
+    }
   },
   methods: {
     init() {
@@ -314,25 +296,25 @@ export default {
         scrollY: false, // y轴滚动
         slide: {
           loop: true,
-          threshold: 100,
+          threshold: 100
         },
         useTransition: true, // 使用css3 transition动画
         momentum: false,
         bounce: false, // 回弹
         stopPropagation: false, // 是否阻止事件冒泡
         probeType: 2,
-        preventDefault: false,
+        preventDefault: false
       })
 
       // user touches the slide area
-      this.slide.on("beforeScrollStart", () => {
+      this.slide.on('beforeScrollStart', () => {
         clearTimeout(this.playTimer)
       })
       // user touched the slide done
-      this.slide.on("scrollEnd", () => {
+      this.slide.on('scrollEnd', () => {
         this.autoGoNext()
       })
-      this.slide.on("slideWillChange", (page) => {
+      this.slide.on('slideWillChange', (page) => {
         this.currentPageIndex = page.pageX
       })
       this.autoGoNext()
@@ -343,18 +325,16 @@ export default {
         this.slide.next()
       }, 4000)
     },
-    handlePagination(i) {
-      // 分页
+    handlePagination(i) { // 分页
       this.currentPage = i
     },
     getScrollTop() {
-      return (
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop
-      )
+      return window.pageYOffset
+        || document.documentElement.scrollTop
+        || document.body.scrollTop
     },
   },
+
 }
 </script>
 
