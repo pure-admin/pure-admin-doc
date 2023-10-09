@@ -2,7 +2,7 @@
 home: true
 heroImage: "/img/pure.png"
 heroText: Pure Admin
-tagline: 一款开源免费且开箱即用的中后台管理系统模版
+tagline: 一款开源完全免费且开箱即用的中后台管理系统模版
 actionText: 快速开始 →
 actionLink: /pages/introduction/
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应您的背景时可以到palette.styl修改$bannerTextColor变量
