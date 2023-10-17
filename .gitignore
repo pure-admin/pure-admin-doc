@@ -14,3 +14,6 @@ docs/.vuepress/dist
 
 # mac
 .DS_Store
+
+# history
+.history/
