@@ -2,8 +2,8 @@
   "name": "pure-admin-doc",
   "version": "3.9.7",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
     "preview": "esno preview"
   },
   "license": "MIT",
