@@ -3,9 +3,9 @@
     <div style="margin:20px 0 0 20px">
       <div>
         <div class="pure-video"
-          style="width:140px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
+          style="width:120px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
           <a href="https://www.bilibili.com/video/BV1He411m7Qs" target="_blank" style="color: #ed5858">
-            回顾2023！
+            回顾2023
           </a>
           <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
             height="20">
@@ -17,6 +17,7 @@
               fill="#FFDF99" p-id="3480"></path>
           </svg>
         </div>
+        <p>上面的视频更像是这三年来开源社区唯一的一次集体交流。欢迎大家在评论区留下您的想法。我们将认真回复所有评论，并将一些不错的建议或想法在2024年实施改进或开发</p>
       </div>
     </div>
     <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
