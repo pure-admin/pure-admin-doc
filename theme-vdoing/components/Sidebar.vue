@@ -1,6 +1,6 @@
 <template>
   <aside class="sidebar">
-    <div style="margin:20px 0 0 20px">
+    <!-- <div style="margin:20px 0 0 20px">
       <div class="pure-video"
         style="width:130px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
         <a href="https://github.com/pure-admin/vue-pure-admin/issues/897" target="_blank" style="color: #ed5858">
@@ -16,8 +16,8 @@
             fill="#FFDF99" p-id="3480"></path>
         </svg>
       </div>
-    </div>
-    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
+    </div> -->
+    <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <div class="pure-video"
         style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
         <a href="https://www.bilibili.com/video/BV1ag411J7Fh/" target="_blank" style="color: #ed5858">
@@ -33,7 +33,7 @@
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a>
-    </div> -->
+    </div>
     <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">

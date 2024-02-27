@@ -2,14 +2,14 @@
   <header class="navbar blur">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
-    <el-tooltip effect="dark" content="点击返回主页">
+    <!-- <el-tooltip effect="dark" content="点击返回主页"> -->
       <router-link :to="$localePath" class="home-link">
         <img class="logo" v-if="$site.themeConfig.logo" :src="$withBase($site.themeConfig.logo)" :alt="$siteTitle" />
         <span ref="siteName" class="site-name" v-if="$siteTitle" :class="{ 'can-hide': $site.themeConfig.logo }">{{
           $siteTitle
         }}</span>
       </router-link>
-    </el-tooltip>
+    <!-- </el-tooltip> -->
 
     <div class="links" :style="linksWrapMaxWidth ? {
       'max-width': linksWrapMaxWidth + 'px'
