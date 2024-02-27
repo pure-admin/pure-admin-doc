@@ -3,8 +3,8 @@ const base = require('../../base.js')
 const htmlModules = require('./config/htmlModules.js')
 
 module.exports = {
-  title: "Pure Admin 保姆级文档",
-  description: '一款开源免费且开箱即用的中后台管理系统模版',
+  title: "Pure Admin 保姆级文档（已适配 v5.0.0）",
+  description: '一款开源完全免费且开箱即用的中后台管理系统模版',
   port: 8889,
   base, // '/<仓库名>/'， 默认'/'
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
@@ -49,7 +49,7 @@ module.exports = {
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: 'https://yiming_chang.gitee.io/pure-admin-doc/img/favicon.ico', // 导航栏logo
-    repo: 'xiaoxian521/vue-pure-admin', // 导航栏右侧生成Github链接
+    repo: 'pure-admin/vue-pure-admin', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     searchPlaceholder: '快速搜索',

@@ -22,6 +22,7 @@ module.exports = [
           { text: 'RBAC权限', link: '/pages/RBAC/' },
           { text: '类型声明', link: '/pages/typescript/' },
           { text: '单点登录', link: '/pages/sso/' },
+          { text: '自定义免登录', link: '/pages/nologin/' },
           { text: '打包优化', link: '/pages/buildgood/' },
           { text: 'vite预构建', link: '/pages/optimize/' },
         ]

@@ -2,9 +2,8 @@
   <div class="home-wrapper">
     <!-- banner块 s -->
     <div class="banner" :class="{ 'hide-banner': !showBanner }" :style="bannerBgStyle">
-      <div class="banner-conent" :style="
-        !homeData.features && !homeData.heroImage && `padding-top: 7rem`
-      ">
+      <div class="banner-conent" :style="!homeData.features && !homeData.heroImage && `padding-top: 7rem`
+        ">
         <header class="hero">
           <img v-if="homeData.heroImage" :src="$withBase(homeData.heroImage)" :alt="homeData.heroAlt" />
           <div style="display: flex; align-items: center; justify-content: center">
@@ -44,12 +43,12 @@
             {{ homeData.tagline }}
           </p>
           <p style="font-size:15px">
-            <el-link style="color: #426feb" :underline="false" href="https://github.com/pure-admin/vue-pure-admin"
-              target="_blank">2020年11月16日开发（97年的前端菜鸟凭着一颗热爱开源的心维护至今）</el-link>
-          </p>
-          <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false"
               href="https://space.bilibili.com/301103230?spm_id_from=333.999.0.0">愿世间所有美好，都恰逢其时，幸运都奔向你</el-link>
+          </p>
+          <p style="font-size:15px">
+            <el-link style="color: #426feb" :underline="false" href="https://github.com/pure-admin"
+              target="_blank">2020年11月16日开发</el-link>
           </p>
           <!-- <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
@@ -113,9 +112,8 @@
       <template #mainLeft>
         <!-- 简约版文章列表 -->
         <UpdateArticle class="card-box" v-if="homeData.postList === 'simple'"
-          :length="homeData.simplePostListLength || 10" :moreArticle="
-            $themeConfig.updateBar && $themeConfig.updateBar.moreArticle
-          " />
+          :length="homeData.simplePostListLength || 10" :moreArticle="$themeConfig.updateBar && $themeConfig.updateBar.moreArticle
+            " />
 
         <!-- 详情版文章列表 -->
         <template v-else-if="!homeData.postList || homeData.postList === 'detailed'">
@@ -129,10 +127,9 @@
 
       <template v-if="!homeData.hideRightBar" #mainRight>
         <BloggerBar v-if="$themeConfig.blogger" />
-        <CategoriesBar v-if="
-          $themeConfig.category !== false &&
+        <CategoriesBar v-if="$themeConfig.category !== false &&
           $categoriesAndTags.categories.length
-        " :categoriesData="$categoriesAndTags.categories" :length="10" />
+          " :categoriesData="$categoriesAndTags.categories" :length="10" />
         <TagsBar v-if="$themeConfig.tag !== false && $categoriesAndTags.tags.length" :tagsData="$categoriesAndTags.tags"
           :length="30" />
         <div class="custom-html-box card-box" v-if="homeSidebarB" v-html="homeSidebarB"></div>
