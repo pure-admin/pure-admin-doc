@@ -4,7 +4,11 @@ vue-pure-admin 保姆级文档
 
 ## 预览
 
-- [查看文档](https://yiming_chang.gitee.io/pure-admin-doc)
+[查看文档](https://yiming_chang.gitee.io/pure-admin-doc)
+
+## 配套视频
+
+[教程](https://www.bilibili.com/video/BV1kg411v7QT)、[UI 设计](https://www.bilibili.com/video/BV17g411T7rq)
 
 ## 安装依赖
 
@@ -23,7 +27,3 @@ pnpm dev
 ```
 pnpm build
 ```
-
-## 配套视频
-
-[教程](https://www.bilibili.com/video/BV1kg411v7QT)、[UI 设计](https://www.bilibili.com/video/BV17g411T7rq)
