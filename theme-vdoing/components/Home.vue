@@ -44,7 +44,8 @@
           </p>
           <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false"
-              href="https://space.bilibili.com/301103230?spm_id_from=333.999.0.0">愿世间所有美好，都恰逢其时，幸运都奔向你</el-link>
+              href="https://space.bilibili.com/301103230?spm_id_from=333.999.0.0"
+              target="_blank">愿世间所有美好，都恰逢其时，幸运都奔向你</el-link>
           </p>
           <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://github.com/pure-admin"
