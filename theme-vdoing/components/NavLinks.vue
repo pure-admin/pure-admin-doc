@@ -4,6 +4,7 @@
     <div class="nav-item" v-for="item in userLinks" :key="item.link">
       <DropdownLink v-if="item.type === 'links'" :item="item" />
       <NavLink v-else :item="item" />
+      <span style="vertical-align: sub;" v-if="item.icon" v-html="item.icon" />
     </div>
 
     <!-- <el-popover placement="bottom" trigger="hover">
@@ -17,7 +18,8 @@
     </el-popover> -->
 
     <!-- repo link -->
-    <a href="https://space.bilibili.com/301103230" title="bilibili" class="repo-link" target="_blank" rel="noopener noreferrer">
+    <a href="https://space.bilibili.com/301103230" title="bilibili" class="repo-link" target="_blank"
+      rel="noopener noreferrer">
       哔哩哔哩
       <OutboundLink />
     </a>
