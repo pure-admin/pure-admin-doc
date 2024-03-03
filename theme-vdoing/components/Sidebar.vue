@@ -1,11 +1,9 @@
 <template>
   <aside class="sidebar">
-    <!-- <div style="margin:20px 0 0 20px">
-      <div class="pure-video"
-        style="width:130px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
-        <a href="https://github.com/pure-admin/vue-pure-admin/issues/897" target="_blank" style="color: #ed5858">
-          2024年计划
-        </a>
+    <div style="margin:20px 0 0 20px">
+      <a class="pure-video" href="/pages/service/"
+        style="width:100px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
+        <span style="color: #ed5858">优质服务</span>
         <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
           height="20">
           <path
@@ -15,9 +13,9 @@
             d="M702.2592 678.4c-4.1984-45.056-60.672-166.5536-212.6336-246.4256-10.5984-5.5808-23.0912 3.1232-21.504 15.0016 6.2464 46.848 12.9536 140.4928-24.064 184.7296 4.0448-40.3968-18.1248-73.8304-36.6592-94.3104-8.3968-9.216-23.552-4.6592-25.4976 7.68-3.5328 22.3232-12.8512 56.2688-36.5568 97.9456-42.0864 74.0352-86.9888 188.672 124.5696 294.656 10.9568 0.5632 22.1696 0.8704 33.7408 0.8704 11.2128 0 22.0672-0.3072 32.7168-0.8704 158.2592-59.4944 173.4656-177.9712 165.888-259.2768z"
             fill="#FFDF99" p-id="3480"></path>
         </svg>
-      </div>
-    </div> -->
-    <div style="margin-top: 0.8em;margin-left: 1.2em;">
+      </a>
+    </div>
+    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <div class="pure-video"
         style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
         <a href="https://www.bilibili.com/video/BV1ag411J7Fh/" target="_blank" style="color: #ed5858">
@@ -33,7 +31,7 @@
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a>
-    </div>
+    </div> -->
     <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">
