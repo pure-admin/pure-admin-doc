@@ -2,8 +2,8 @@
   <aside class="sidebar">
     <div style="margin:20px 0 0 20px">
       <a class="pure-video" href="https://yiming_chang.gitee.io/pure-admin-doc/pages/service/"
-        style="width:100px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
-        <span style="color: #ed5858">优质服务</span>
+        style="width:160px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
+        <span style="color: #ed5858;">优质服务</span>
         <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
           height="20">
           <path
@@ -15,14 +15,14 @@
         </svg>
       </a>
     </div>
-    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
+    <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <div class="pure-video"
-        style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
-        <a href="https://www.bilibili.com/video/BV1ag411J7Fh/" target="_blank" style="color: #ed5858">
-          快速了解平台生态 📺
+        style="width:160px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
+        <a href="https://www.bilibili.com/video/BV15r421W7U9/" target="_blank" style="color: #ed5858">
+          永久解答服务视频讲解
         </a>
       </div>
-      <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
+      <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">平台快速开发教程 📺</a>
       <a class="pure-video" href="https://www.bilibili.com/video/BV17g411T7rq/"
@@ -30,8 +30,8 @@
         target="_blank">前端工程师浅谈后台设计 📺</a>
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
-        target="_blank">@pureadmin/utils文档 📕</a>
-    </div> -->
+        target="_blank">@pureadmin/utils文档 📕</a> -->
+    </div>
     <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">
