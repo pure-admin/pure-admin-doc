@@ -17,9 +17,14 @@
     </div>
     <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <div class="pure-video"
-        style="width:160px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
-        <a href="https://www.bilibili.com/video/BV15r421W7U9/" target="_blank" style="color: #ed5858">
-          永久解答服务视频讲解
+        style="width:200px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
+        <a href="https://yiming_chang.gitee.io/pure-admin-doc/pages/service/#%E6%B0%B8%E4%B9%85%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4"
+          target="_blank" style="color: #ed5858">
+          永久解答服务
+          <br />
+          不久后恢复原价
+          <br />
+          感兴趣的朋友可以入手啦
         </a>
       </div>
       <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
