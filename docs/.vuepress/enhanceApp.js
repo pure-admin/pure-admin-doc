@@ -5,14 +5,5 @@ export default ({
   router, // 当前应用的路由实例
   siteData, // 站点元数据
 }) => {
-  if (!window) return;
-  window.onload = function () {
-    if (!localStorage.getItem("firstLoad")) {
-      localStorage["firstLoad"] = true;
-      window.location.reload();
-    } else {
-      localStorage.removeItem("firstLoad");
-    }
-  };
   // window.Vue = vue // 使页面中可以使用Vue构造函数 （使页面中的vue demo生效）
 };
