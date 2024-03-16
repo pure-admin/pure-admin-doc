@@ -150,4 +150,8 @@ module.exports = [
             fill="#FFDF99" p-id="3480"></path>
         </svg>`,
   },
+  {
+    text: "后端项目",
+    link: "/pages/opensource/",
+  },
 ];
