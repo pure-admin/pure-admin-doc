@@ -65,7 +65,7 @@
           <h3>赞助商</h3>
           <div id="special-sponsor-container">
             <a class="logo" href="https://ai-tools.cn/resume" target="_blank" rel="sponsored noopener">
-              <img width="150" src="https://yiming_chang.gitee.io/pure-admin-doc/img/sponsors/aitools.jpg" alt="aitools">
+              <img width="70" src="https://yiming_chang.gitee.io/pure-admin-doc/img/sponsors/aitools.jpg" alt="aitools">
             </a>
           </div>
         </section> -->
@@ -349,7 +349,7 @@ export default {
 #special-sponsor {
   border-top: 1px solid rgba(60, 60, 60, .12);
   border-bottom: 1px solid rgba(60, 60, 60, .12);
-  padding: 12px 24px;
+  padding-bottom: 12px;
 }
 
 #special-sponsor-container {
@@ -360,13 +360,13 @@ export default {
 
 #special-sponsor h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #special-sponsor .logo {
   display: flex;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 </style>
 
