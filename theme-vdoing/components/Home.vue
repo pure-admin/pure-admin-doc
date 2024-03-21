@@ -61,6 +61,15 @@
           </p>
         </header>
 
+        <!-- <section id="special-sponsor">
+          <h3>赞助商</h3>
+          <div id="special-sponsor-container">
+            <a class="logo" href="https://ai-tools.cn/resume" target="_blank" rel="sponsored noopener">
+              <img width="150" src="https://yiming_chang.gitee.io/pure-admin-doc/img/sponsors/aitools.jpg" alt="aitools">
+            </a>
+          </div>
+        </section> -->
+
         <!-- PC端features块 s -->
         <div class="features" v-if="hasFeatures && !isMQMobile">
           <div class="feature" v-for="(feature, index) in homeData.features" :key="index">
@@ -335,6 +344,31 @@ export default {
 
 }
 </script>
+
+<style scoped>
+#special-sponsor {
+  border-top: 1px solid rgba(60, 60, 60, .12);
+  border-bottom: 1px solid rgba(60, 60, 60, .12);
+  padding: 12px 24px;
+}
+
+#special-sponsor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#special-sponsor h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+#special-sponsor .logo {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+</style>
 
 <style lang="stylus" scoped>
 .home-wrapper
