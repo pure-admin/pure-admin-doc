@@ -1,17 +1,21 @@
 <template>
   <div class="right-menu-wrapper">
     <div class="right-menu-margin">
+      <section id="special-sponsor">
+        <h3>赞助商</h3>
+        <div id="special-sponsor-container">
+          <a class="logo" href="https://ai-tools.cn/resume/start" target="_blank" rel="sponsored noopener">
+            <img src="https://yiming_chang.gitee.io/pure-admin-doc/img/sponsors/aitools.svg" alt="aitools">
+          </a>
+        </div>
+      </section>
       <div class="right-menu-title">目录</div>
       <div class="right-menu-content">
-        <div
-          :class="[
-            'right-menu-item',
-            'level' + item.level,
-            { active: item.slug === hashText }
-          ]"
-          v-for="(item, i) in headers"
-          :key="i"
-        >
+        <div :class="[
+          'right-menu-item',
+          'level' + item.level,
+          { active: item.slug === hashText }
+        ]" v-for="(item, i) in headers" :key="i">
           <a :href="'#' + item.slug">{{ item.title }}</a>
         </div>
       </div>
@@ -48,6 +52,29 @@ export default {
 }
 </script>
 
+<style scoped>
+#special-sponsor {
+  padding-bottom: 12px;
+}
+
+#special-sponsor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#special-sponsor h3 {
+  /* text-align: center; */
+  font-size: 17px;
+}
+
+#special-sponsor .logo {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+</style>
+
 <style lang='stylus'>
 .theme-style-line
   .right-menu-wrapper
@@ -68,7 +95,7 @@ export default {
   .right-menu-title
     padding 10px 15px 0 15px
     background var(--mainBg)
-    font-size 1rem
+    font-size 1.3rem
     &:after
       content ''
       display block
