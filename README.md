@@ -4,7 +4,7 @@ vue-pure-admin 保姆级文档
 
 ## 预览
 
-[查看文档](https://yiming_chang.gitee.io/pure-admin-doc)
+[查看文档](https://pure-admin.github.io/pure-admin-doc/)
 
 ## 配套视频
 

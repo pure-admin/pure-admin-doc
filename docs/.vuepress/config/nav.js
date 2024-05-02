@@ -57,7 +57,7 @@ module.exports = [
         items: [
           {
             text: "完整版",
-            link: "https://yiming_chang.gitee.io/vue-pure-admin/#/login",
+            link: "https://pure-admin.github.io/vue-pure-admin/#/login",
           },
           {
             text: "精简版",

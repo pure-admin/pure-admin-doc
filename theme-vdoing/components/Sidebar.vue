@@ -1,7 +1,7 @@
 <template>
   <aside class="sidebar">
     <div style="margin:20px 0 0 20px">
-      <a class="pure-video" href="https://yiming_chang.gitee.io/pure-admin-doc/pages/service/"
+      <a class="pure-video" href="https://pure-admin.github.io/pure-admin-doc/pages/service/"
         style="width:100px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
         <span style="color: #ed5858">优质服务</span>
         <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
