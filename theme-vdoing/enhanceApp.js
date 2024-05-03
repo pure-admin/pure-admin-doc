@@ -40,12 +40,14 @@ export default ({
 
   if (!isServer) {
     window.onload = function () {
-      if (!localStorage.getItem("firstLoad")) {
-        localStorage["firstLoad"] = true;
-        window.location.reload();
-      } else {
-        localStorage.removeItem("firstLoad");
-      }
+      setTimeout(() => {
+        if (!localStorage.getItem("firstLoad")) {
+          localStorage["firstLoad"] = true;
+          window.location.reload();
+        } else {
+          localStorage.removeItem("firstLoad");
+        }
+      }, 1000);
     };
     import("./globalPolyfills");
   }
