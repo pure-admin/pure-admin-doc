@@ -44,7 +44,6 @@ module.exports = [
           { text: "问题反馈", link: "/pages/support/" },
           { text: "git常用命令", link: "/pages/git/" },
           { text: "技术网站推荐", link: "/pages/recommendation/" },
-          { text: "逐年开放计划", link: "/pages/openplan/" },
         ],
       },
     ],
