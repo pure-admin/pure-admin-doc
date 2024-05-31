@@ -61,14 +61,14 @@
           </p>
         </header>
 
-        <section id="special-sponsor">
+        <!-- <section id="special-sponsor">
           <h3>赞助商</h3>
           <div id="special-sponsor-container">
             <a class="logo" href="https://ai-tools.cn/resume/start" target="_blank" rel="sponsored noopener">
               <img src="https://pure-admin.github.io/pure-admin-doc/img/sponsors/aitools.svg" alt="aitools">
             </a>
           </div>
-        </section>
+        </section> -->
 
         <!-- PC端features块 s -->
         <div class="features" v-if="hasFeatures && !isMQMobile">
