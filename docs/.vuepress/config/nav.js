@@ -61,6 +61,14 @@ module.exports = [
             text: "精简版",
             link: "https://pure-admin-thin.netlify.app/#/login",
           },
+          {
+            text: "max版",
+            link: "https://pure-admin.github.io/vue-pure-admin-max/#/login",
+          },
+          {
+            text: "utils文档",
+            link: "https://pure-admin-utils.netlify.app/",
+          },
         ],
       },
       {
@@ -90,6 +98,10 @@ module.exports = [
             text: "文档",
             link: "https://github.com/pure-admin/pure-admin-doc",
           },
+          {
+            text: "utils文档",
+            link: "https://github.com/pure-admin/pure-admin-utils-docs",
+          },
         ],
       },
       {
@@ -118,6 +130,10 @@ module.exports = [
           {
             text: "文档",
             link: "https://gitee.com/yiming_chang/pure-admin-doc",
+          },
+          {
+            text: "utils文档",
+            link: "https://gitee.com/yiming_chang/pure-admin-utils-docs",
           },
         ],
       },
