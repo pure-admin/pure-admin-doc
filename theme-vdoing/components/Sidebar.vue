@@ -15,23 +15,14 @@
         </svg>
       </a>
     </div>
-    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
-      <div class="pure-video"
-        style="width:154px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;">
-        <a href="https://www.bilibili.com/video/BV1ag411J7Fh/" target="_blank" style="color: #ed5858">
-          快速了解平台生态 📺
-        </a>
-      </div>
+    <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">平台快速开发教程 📺</a>
-      <a class="pure-video" href="https://www.bilibili.com/video/BV17g411T7rq/"
-        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
-        target="_blank">前端工程师浅谈后台设计 📺</a>
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a>
-    </div> -->
+    </div>
     <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">
