@@ -51,6 +51,19 @@ module.exports = [
     text: "链接",
     items: [
       {
+        text: "日志",
+        items: [
+          {
+            text: "Github日志",
+            link: "https://github.com/pure-admin/vue-pure-admin/releases",
+          },
+          {
+            text: "Gitee日志",
+            link: "https://gitee.com/yiming_chang/vue-pure-admin/releases",
+          },
+        ],
+      },
+      {
         text: "预览",
         items: [
           {
@@ -136,19 +149,6 @@ module.exports = [
             link: "https://gitee.com/yiming_chang/pure-admin-utils-docs",
           },
         ],
-      },
-    ],
-  },
-  {
-    text: "日志",
-    items: [
-      {
-        text: "Github日志",
-        link: "https://github.com/pure-admin/vue-pure-admin/releases",
-      },
-      {
-        text: "Gitee日志",
-        link: "https://gitee.com/yiming_chang/vue-pure-admin/releases",
       },
     ],
   },
