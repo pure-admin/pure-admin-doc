@@ -20,7 +20,7 @@
     <!-- repo link -->
     <a href="https://space.bilibili.com/301103230" title="bilibili" class="repo-link" target="_blank"
       rel="noopener noreferrer">
-      哔哩哔哩
+      bilibili
       <OutboundLink />
     </a>
 
