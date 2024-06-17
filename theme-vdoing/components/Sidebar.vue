@@ -15,14 +15,17 @@
         <span style="color: #ed5858">JS 版本限时优惠</span>
       </a>
     </div>
-    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
+    <div style="margin-top: 0.8em;margin-left: 1.2em;">
+      <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
+        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
+        target="_blank">迁移JS版本教程 📺</a>
       <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">平台快速开发教程 📺</a>
-      <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
+      <!-- <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
-        target="_blank">@pureadmin/utils文档 📕</a>
-    </div> -->
+        target="_blank">@pureadmin/utils文档 📕</a> -->
+    </div>
     <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">
