@@ -78,8 +78,8 @@ import { fetch } from 'whatwg-fetch'
 export default {
   data() {
     return {
-      stars: '14.2k',
-      forks: '2.7k',
+      stars: '16k',
+      forks: '3k',
     }
   },
   computed: {

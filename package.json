@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-doc",
-  "version": "5.1.0",
+  "version": "5.8.0",
   "scripts": {
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",

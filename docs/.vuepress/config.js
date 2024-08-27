@@ -3,7 +3,7 @@ const base = require("../../base.js");
 const htmlModules = require("./config/htmlModules.js");
 
 module.exports = {
-  title: "Pure Admin 保姆级文档",
+  title: "Pure Admin 保姆级文档（已兼容最新版v5.8.0）",
   description: "一款开源完全免费且开箱即用的中后台管理系统模版",
   port: 8889,
   base, // '/<仓库名>/'， 默认'/'
