@@ -30,7 +30,7 @@ jobs:
       - name: Deploy 🔧
         run: |
           pnpm install --no-frozen-lockfile
-          sed -i "s#module.exports = '/'#module.exports = '/pure-admin-doc/'#g" $(pwd)/base.js
+          # sed -i "s#module.exports = '/'#module.exports = '/pure-admin-doc/'#g" $(pwd)/base.js
           pnpm build
           cd docs/.vuepress/dist
           touch README.md .nojekyll
