@@ -1,35 +1,24 @@
 <template>
-  <div
-    class="theme-container"
-    :class="pageClasses"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
+  <div class="theme-container" :class="pageClasses" @touchstart="onTouchStart" @touchend="onTouchEnd">
+
+    <el-alert center type="success" :closable="false" style="position: fixed;top: 0;z-index: 99999;">
+      <a href="https://pure-admin.cn/pages/service/#%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4">
+        解答微信群又新增三个视频教程！点击去查看 👀
+      </a>
+    </el-alert>
+
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
 
-    <div
-      v-if="$themeConfig.sidebarHoverTriggerOpen !== false"
-      class="sidebar-hover-trigger"
-    ></div>
+    <div v-if="$themeConfig.sidebarHoverTriggerOpen !== false" class="sidebar-hover-trigger"></div>
 
-    <Sidebar
-      :items="sidebarItems"
-      @toggle-sidebar="toggleSidebar"
-      v-show="showSidebar"
-    >
+    <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar" v-show="showSidebar">
       <template #top v-if="sidebarSlotTop">
-        <div
-          class="sidebar-slot sidebar-slot-top"
-          v-html="sidebarSlotTop"
-        ></div>
+        <div class="sidebar-slot sidebar-slot-top" v-html="sidebarSlotTop"></div>
       </template>
       <template #bottom v-if="sidebarSlotBottom">
-        <div
-          class="sidebar-slot sidebar-slot-bottom"
-          v-html="sidebarSlotBottom"
-        ></div>
+        <div class="sidebar-slot sidebar-slot-bottom" v-html="sidebarSlotBottom"></div>
       </template>
       <!-- <slot name="sidebar-top" #top />
       <slot name="sidebar-bottom" #bottom /> -->
@@ -218,9 +207,9 @@ export default {
     const mode = storage.get('mode') // 不放在created是因为vuepress不能在created访问浏览器api，如window
     const { defaultMode } = this.$themeConfig
 
-    if (defaultMode && defaultMode !== 'auto' && !mode ) {
+    if (defaultMode && defaultMode !== 'auto' && !mode) {
       this.themeMode = defaultMode
-    } else if(!mode || mode === 'auto' || defaultMode === 'auto') { // 当未切换过模式，或模式处于'跟随系统'时
+    } else if (!mode || mode === 'auto' || defaultMode === 'auto') { // 当未切换过模式，或模式处于'跟随系统'时
       this._autoMode()
     } else {
       this.themeMode = mode
@@ -231,7 +220,7 @@ export default {
     const social = this.$themeConfig.social
     if (social && social.iconfontCssFile) {
       let linkElm = document.createElement("link")
-      linkElm.setAttribute('rel', 'stylesheet');
+      linkElm.setAttribute('rel', 'stylesheet')
       linkElm.setAttribute("type", "text/css")
       linkElm.setAttribute("href", social.iconfontCssFile)
       document.head.appendChild(linkElm)
@@ -239,7 +228,7 @@ export default {
   },
   mounted() {
     // 初始化页面时链接锚点无法跳转到指定id的解决方案
-    const hash = document.location.hash;
+    const hash = document.location.hash
     if (hash.length > 1) {
       const id = decodeURIComponent(hash.substring(1))
       const element = document.getElementById(id)
@@ -253,7 +242,7 @@ export default {
     })
 
     // 向下滚动收起导航栏
-    let p = 0, t = 0;
+    let p = 0, t = 0
     window.addEventListener('scroll', _.throttle(() => {
       if (!this.isSidebarOpen) { // 侧边栏关闭时
         p = this.getScrollTop()
