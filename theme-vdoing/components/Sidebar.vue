@@ -1,20 +1,19 @@
 <template>
   <aside class="sidebar">
-    <!-- <div style="margin:20px 0 0 20px">
-      <a class="pure-video" href="https://pure-admin.github.io/pure-admin-doc/pages/js/"
-        style="width:170px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;display: flex;align-items: center;font-size: 20px;">
-        <svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
-          height="20">
-          <path
-            d="M428.6976 107.3152c-6.5024 72.192-36.352 207.2576-160.256 337.408 3.6864-48.0256-7.1168-83.7632-19.0464-107.6736-6.6048-13.1584-26.0608-10.5984-28.8768 3.84-5.7344 29.44-20.5824 75.0592-57.6 137.7792-71.6288 121.3952-62.5664 459.8784 340.736 459.8784s430.4384-352.8192 373.1456-496.0256c-37.376-93.44-93.952-152.5248-128.8192-182.3232-11.4176-9.7792-29.1328-1.9456-29.5936 13.056-0.9216 30.464-7.3216 73.3696-33.0752 102.144-0.6656-52.7872-38.144-208.384-202.4448-296.8576-23.296-12.544-51.7632 2.4576-54.1696 28.7744z"
-            fill="#FF5D50" p-id="3479"></path>
-          <path
-            d="M702.2592 678.4c-4.1984-45.056-60.672-166.5536-212.6336-246.4256-10.5984-5.5808-23.0912 3.1232-21.504 15.0016 6.2464 46.848 12.9536 140.4928-24.064 184.7296 4.0448-40.3968-18.1248-73.8304-36.6592-94.3104-8.3968-9.216-23.552-4.6592-25.4976 7.68-3.5328 22.3232-12.8512 56.2688-36.5568 97.9456-42.0864 74.0352-86.9888 188.672 124.5696 294.656 10.9568 0.5632 22.1696 0.8704 33.7408 0.8704 11.2128 0 22.0672-0.3072 32.7168-0.8704 158.2592-59.4944 173.4656-177.9712 165.888-259.2768z"
-            fill="#FFDF99" p-id="3480"></path>
-        </svg>
-        <span style="color: #ed5858">JS 版本限时</span>
+    <div style="margin:20px 0 0 20px">
+      <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4"
+        style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
+        <span style="color: #ed5858">解答微信群优惠即将结束</span>
       </a>
-    </div> -->
+      <a class="pure-video" href="https://pure-admin.cn/pages/js/"
+        style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
+        <span style="color: #ed5858">JS 版本优惠即将结束</span>
+      </a>
+      <a class="pure-video" href="https://pure-admin.cn/pages/max/"
+        style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
+        <span style="color: #ed5858">Max 版本优惠即将结束</span>
+      </a>
+    </div>
     <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;"> -->
     <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
@@ -25,7 +24,7 @@
     <!-- <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a> -->
-    <!-- </div> -->
+    <!-- </div>
     <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">

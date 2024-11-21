@@ -1,12 +1,6 @@
 <template>
   <div class="theme-container" :class="pageClasses" @touchstart="onTouchStart" @touchend="onTouchEnd">
 
-    <el-alert center type="success" :closable="false" style="position: fixed;top: 0;z-index: 99999;">
-      <a href="https://pure-admin.cn/pages/service/#%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4">
-        解答微信群又新增三个视频教程！点击去查看 👀
-      </a>
-    </el-alert>
-
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
