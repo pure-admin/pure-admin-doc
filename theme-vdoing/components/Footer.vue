@@ -74,12 +74,12 @@
 </template>
 
 <script>
-import { fetch } from 'whatwg-fetch'
+// import { fetch } from 'whatwg-fetch'
 export default {
   data() {
     return {
-      stars: '16k',
-      forks: '3k',
+      stars: '16.4k',
+      forks: '3.1k',
     }
   },
   computed: {
@@ -90,22 +90,22 @@ export default {
       return this.$themeConfig.footer
     },
   },
-  beforeMount() {
-    fetch('https://api.github.com/repos/pure-admin/vue-pure-admin', {
-      method: 'get',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then((response) => {
-      return response.json()
-    }).then((data) => {
-      const { stargazers_count, forks_count } = data
-      this.stars = stargazers_count
-      this.forks = forks_count
-    }).catch(function (error) {
-      console.log(error)
-    })
-  }
+  // beforeMount() {
+  //   fetch('https://api.github.com/repos/pure-admin/vue-pure-admin', {
+  //     method: 'get',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     }
+  //   }).then((response) => {
+  //     return response.json()
+  //   }).then((data) => {
+  //     const { stargazers_count, forks_count } = data
+  //     this.stars = stargazers_count
+  //     this.forks = forks_count
+  //   }).catch(function (error) {
+  //     console.log(error)
+  //   })
+  // }
 }
 </script>
 

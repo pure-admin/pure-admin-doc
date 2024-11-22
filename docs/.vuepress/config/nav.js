@@ -55,6 +55,15 @@ module.exports = [
         link: "/pages/opensource/",
       },
       {
+        text: "",
+        items: [
+          {
+            text: "哔哩哔哩",
+            link: "https://space.bilibili.com/301103230",
+          },
+        ],
+      },
+      {
         text: "日志",
         items: [
           {

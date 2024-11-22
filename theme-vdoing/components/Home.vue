@@ -42,15 +42,6 @@
           <p v-if="homeData.tagline" class="description">
             {{ homeData.tagline }}
           </p>
-          <p style="font-size:15px">
-            <el-link style="color: #426feb" :underline="false"
-              href="https://space.bilibili.com/301103230?spm_id_from=333.999.0.0"
-              target="_blank">愿世间所有美好，都恰逢其时，幸运都奔向你</el-link>
-          </p>
-          <p style="font-size:15px">
-            <el-link style="color: #426feb" :underline="false" href="https://github.com/pure-admin"
-              target="_blank">2020年11月16日开发</el-link>
-          </p>
           <!-- <p style="font-size:15px">
             <el-link style="color: #426feb" :underline="false" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
               target="_blank">点我查看如何使用PWA访问文档</el-link>
@@ -160,7 +151,7 @@ import Pagination from "@theme/components/Pagination"
 import BloggerBar from "@theme/components/BloggerBar"
 import CategoriesBar from "@theme/components/CategoriesBar"
 import TagsBar from "@theme/components/TagsBar"
-import { fetch } from 'whatwg-fetch'
+// import { fetch } from 'whatwg-fetch'
 
 const MOBILE_DESKTOP_BREAKPOINT = 720 // refer to config.styl
 
@@ -169,7 +160,7 @@ BScroll.use(Slide)
 export default {
   data() {
     return {
-      release: "latest",
+      release: "5.8.0",
       isMQMobile: false,
 
       slide: null,
@@ -240,19 +231,19 @@ export default {
 
     this.addressHerf = window.location.href
 
-    fetch('https://api.github.com/repos/pure-admin/vue-pure-admin/releases/latest', {
-      method: 'get',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then((response) => {
-      return response.json()
-    }).then((data) => {
-      const { tag_name } = data
-      this.release = tag_name
-    }).catch(function (error) {
-      console.log(error)
-    })
+    // fetch('https://api.github.com/repos/pure-admin/vue-pure-admin/releases/latest', {
+    //   method: 'get',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   }
+    // }).then((response) => {
+    //   return response.json()
+    // }).then((data) => {
+    //   const { tag_name } = data
+    //   this.release = tag_name
+    // }).catch(function (error) {
+    //   console.log(error)
+    // })
   },
   mounted() {
     if (this.$route.query.p) {

@@ -99,22 +99,22 @@ module.exports = {
       name: "pure-admin", // 必需
       href: "https://github.com/xiaoxian521", // 可选的
     },
-    social: {
-      // 社交图标，显示于博主信息栏和页脚栏
-      // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
-      icons: [
-        {
-          iconClass: "icon-github",
-          title: "GitHub",
-          link: "https://github.com/xiaoxian521",
-        },
-        {
-          iconClass: "icon-bilibili",
-          title: "bilibili",
-          link: "https://space.bilibili.com/301103230",
-        },
-      ],
-    },
+    // social: {
+    // 社交图标，显示于博主信息栏和页脚栏
+    // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+    // icons: [
+    //   {
+    //     iconClass: "icon-github",
+    //     title: "GitHub",
+    //     link: "https://github.com/xiaoxian521",
+    //   },
+    //   {
+    //     iconClass: "icon-bilibili",
+    //     title: "bilibili",
+    //     link: "https://space.bilibili.com/301103230",
+    //   },
+    // ],
+    // },
     footer: {
       // 页脚信息
       createYear: 2020, // 博客创建年份
