@@ -56,7 +56,7 @@
           <h3>赞助商</h3>
           <div id="special-sponsor-container">
             <a class="logo" href="https://ai-tools.cn/resume/start" target="_blank" rel="sponsored noopener">
-              <img src="https://pure-admin.github.io/pure-admin-doc/img/sponsors/aitools.svg" alt="aitools">
+              <img src="https://pure-admin.cn/img/sponsors/aitools.svg" alt="aitools">
             </a>
           </div>
         </section> -->
@@ -171,7 +171,7 @@ export default {
       total: 0, // 总长
       perPage: 10, // 每页长
       currentPage: 1, // 当前页
-      addressHerf: 'https://pure-admin.github.io/pure-admin-doc/'
+      addressHerf: 'https://pure-admin.cn'
     }
   },
   computed: {
@@ -423,7 +423,7 @@ export default {
             color #fff !important
       // pc端features
       .features
-        padding 2rem 0
+        padding 1.6rem 0
         display flex
         flex-wrap wrap
         align-items flex-start

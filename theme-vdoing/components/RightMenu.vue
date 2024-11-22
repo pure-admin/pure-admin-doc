@@ -5,7 +5,7 @@
       <!-- <h3 style="color:red">保姆级文档已更新！所有失效、有误链接都已修复！</h3> -->
       <!-- <div id="special-sponsor-container">
           <a class="logo" href="https://ai-tools.cn/resume/start" target="_blank" rel="sponsored noopener">
-            <img src="https://pure-admin.github.io/pure-admin-doc/img/sponsors/aitools.svg" alt="aitools">
+            <img src="https://pure-admin.cn/img/sponsors/aitools.svg" alt="aitools">
           </a>
         </div> -->
       <!-- </section> -->
