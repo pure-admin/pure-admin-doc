@@ -39,12 +39,10 @@
     "chalk": "^4.0.0",
     "core-js": "2.6.11",
     "docsearch.js": "^2.5.2",
-    "element-ui": "^2.15.6",
     "good-storage": "^1.1.1",
     "js-yaml": "^3.13.1",
     "json2yaml": "^1.1.0",
     "lodash": "^4.17.15",
-    "remixicon": "^2.5.0",
     "stylus": "^0.57.0",
     "vuepress-plugin-container": "^2.0.2",
     "vuepress-plugin-smooth-scroll": "^0.0.3"

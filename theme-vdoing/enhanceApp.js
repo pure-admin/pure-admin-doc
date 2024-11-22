@@ -6,11 +6,11 @@ import CodeGroup from "@theme/global-components/CodeGroup.vue";
 Vue.component(CodeBlock);
 Vue.component(CodeGroup);
 
-import "remixicon/fonts/remixicon.css";
+// import "remixicon/fonts/remixicon.css";
 
-import ElementUI from "element-ui";
-import "element-ui/lib/theme-chalk/index.css";
-Vue.use(ElementUI);
+// import ElementUI from "element-ui";
+// import "element-ui/lib/theme-chalk/index.css";
+// Vue.use(ElementUI);
 
 //  注：此文件在浏览器端运行
 import postsMixin from "@theme/mixins/posts";
