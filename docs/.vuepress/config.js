@@ -75,6 +75,7 @@ module.exports = {
       showToArticle: true, // 显示到文章页底部，默认true
       // moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
     },
+    defaultMode: "light",
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
