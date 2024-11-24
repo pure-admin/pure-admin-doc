@@ -67,7 +67,10 @@
       <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
       <template v-if="footer">
         | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
-        <span v-html="footer.copyrightInfo"></span>
+        <!-- <span v-html="footer.copyrightInfo"></span> -->
+        <a href="https://github.com/pure-admin/vue-pure-admin" target="_blank" title="pure-admin">
+          pure-admin | MIT License
+        </a>
       </template>
     </div>
   </div>
