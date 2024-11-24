@@ -61,7 +61,7 @@
         </svg>
       </div>
     </div>
-    <div style="margin-bottom: 10px;">
+    <div>
       <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
       Theme by
       <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
@@ -112,7 +112,7 @@ export default {
 <style lang="stylus">
 // $mobileSidebarWidth = $sidebarWidth * 0.82
 .footer
-  margin-top -1.8rem
+  margin-top -3.5rem
   text-align center
   color #666
   box-sizing border-box

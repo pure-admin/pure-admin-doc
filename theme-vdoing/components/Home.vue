@@ -363,6 +363,7 @@ export default {
 
 <style lang="stylus" scoped>
 .home-wrapper
+  height calc(100vh - 58px)
   .banner
     width 100%
     min-height 450px
@@ -458,7 +459,6 @@ export default {
           color $accentColor
     // 移动端滑动图标
     .slide-banner
-      margin-top 2rem
       .banner-wrapper
         position relative
       .slide-banner-scroll
