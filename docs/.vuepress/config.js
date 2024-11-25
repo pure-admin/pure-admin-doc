@@ -18,7 +18,20 @@ module.exports = {
         content: "vue-pure-admin,pure-admin,pure-admin-thin,pure-admin-docs",
       },
     ],
+    [
+      "meta",
+      { name: "google-adsense-account", content: "ca-pub-3324838481135884" },
+    ],
     ["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
+    [
+      "script",
+      {
+        "data-ad-client": "ca-pub-3324838481135884",
+        async: "async",
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        crossorigin: "anonymous",
+      },
+    ],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     // ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     // [
