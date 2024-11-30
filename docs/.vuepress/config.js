@@ -223,6 +223,7 @@ module.exports = {
       },
     ],
     ["reading-progress"],
+    ["img-lazy"],
     [
       {
         name: "custom-plugins",

@@ -81,6 +81,9 @@ importers:
       vuepress-plugin-demo-block:
         specifier: ^0.7.2
         version: 0.7.2
+      vuepress-plugin-img-lazy:
+        specifier: ^1.0.4
+        version: 1.0.4
       vuepress-plugin-one-click-copy:
         specifier: ^1.0.6
         version: 1.0.6
@@ -3529,6 +3532,12 @@ packages:
   markdown-it-emoji@1.4.0:
     resolution: {integrity: sha512-QCz3Hkd+r5gDYtS2xsFXmBYrgw6KuWcJZLCEkdfAuwzZbShCmCfta+hwAMq4NX/4xPzkSHduMKgMkkPUJxSXNg==}
 
+  markdown-it-img-lazy@1.0.3:
+    resolution: {integrity: sha512-H1wOixBCI8Jm9vxn5f5lsDsTdhG8HxLiC5eh5TjVe/Dv//zwAi/R5+WSpRYmQtyc1+RF1kS4cuLPt1wGid0xWA==}
+
+  markdown-it-imsize@2.0.1:
+    resolution: {integrity: sha512-5SH90ademqcR8ifQCBXRCfIR4HGfZZOh5pO0j2TglulfSQH+SBXM4Iw/QlTUbSoUwVZArCYgECoMvktDS2kP3w==}
+
   markdown-it-table-of-contents@0.4.4:
     resolution: {integrity: sha512-TAIHTHPwa9+ltKvKPWulm/beozQU41Ab+FIefRaQV1NRnpzwcV9QOe6wXQS5WLivm5Q/nlo0rl6laGkMDZE7Gw==}
     engines: {node: '>6.4.0'}
@@ -5177,6 +5186,9 @@ packages:
 
   vuepress-plugin-demo-block@0.7.2:
     resolution: {integrity: sha512-0k7z7bTjXoXgdAMVFIVn3RFSQpKOM0yvD0hf/CA0gMCLBih77mCALtEpH9b+bEvijHmLLIq+BUtS2TQHXpkbNA==}
+
+  vuepress-plugin-img-lazy@1.0.4:
+    resolution: {integrity: sha512-4mMIy3vZzNZupFuohPKlOHGd0rNZEMEHEyN8b2M3j1yBANrkhGg1wNnpsdpe7ZnLdtVpxH3JQT7a3TDdxLLFmQ==}
 
   vuepress-plugin-one-click-copy@1.0.6:
     resolution: {integrity: sha512-apFCcsBwk9IEDm5HwD6dwor30rl8gr0VjPkmrQlFSR2KD7OjK3ZUwioeEvbrcAiZBi35V6YgndLAHksJXRfpnQ==}
@@ -9379,6 +9391,10 @@ snapshots:
 
   markdown-it-emoji@1.4.0: {}
 
+  markdown-it-img-lazy@1.0.3: {}
+
+  markdown-it-imsize@2.0.1: {}
+
   markdown-it-table-of-contents@0.4.4: {}
 
   markdown-it@8.4.2:
@@ -11314,6 +11330,11 @@ snapshots:
       - supports-color
 
   vuepress-plugin-demo-block@0.7.2: {}
+
+  vuepress-plugin-img-lazy@1.0.4:
+    dependencies:
+      markdown-it-img-lazy: 1.0.3
+      markdown-it-imsize: 2.0.1
 
   vuepress-plugin-one-click-copy@1.0.6: {}
 
