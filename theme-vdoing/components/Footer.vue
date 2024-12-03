@@ -81,7 +81,7 @@
 export default {
   data() {
     return {
-      stars: '16.4k',
+      stars: '16.5k',
       forks: '3.1k',
     }
   },
