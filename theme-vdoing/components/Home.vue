@@ -160,7 +160,7 @@ BScroll.use(Slide)
 export default {
   data() {
     return {
-      release: "5.8.0",
+      release: "5.9.0",
       isMQMobile: false,
 
       slide: null,
