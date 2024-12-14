@@ -21,6 +21,9 @@
       <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">平台快速开发教程 📺</a>
+      <a class="pure-video" href="https://www.bilibili.com/video/BV1Rx4y1U7Mv/"
+        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
+        target="_blank">平台页面、功能演示 📺</a>
       <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">迁移JS版本教程 📺</a>
