@@ -14,7 +14,8 @@
         <span style="color: #ed5858">Max 版本优惠即将结束</span>
       </a> -->
     <!-- </div> -->
-    <div style="margin-top: 0.8em;margin-left: 1.2em;">
+
+    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a>
@@ -27,7 +28,8 @@
       <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">迁移JS版本教程 📺</a>
-    </div>
+    </div> -->
+
     <!-- <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">
