@@ -1,23 +1,23 @@
 <template>
   <aside class="sidebar">
-    <div style="margin:20px 0 0 20px">
-      <a class="pure-video" href="https://pure-admin.cn/pages/js/"
+    <!-- <div style="margin:20px 0 0 20px"> -->
+    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/js/"
         style="width:200px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">JS版本、Max版本限时活动</span>
-      </a>
-      <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4"
+      </a> -->
+    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4"
         style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">解答微信群优惠即将结束</span>
       </a> -->
-      <!-- <a class="pure-video" href="https://pure-admin.cn/pages/js/"
+    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/js/"
         style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">JS 版本优惠即将结束</span>
       </a> -->
-      <!-- <a class="pure-video" href="https://pure-admin.cn/pages/max/"
+    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/max/"
         style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">Max 版本优惠即将结束</span>
       </a> -->
-    </div>
+    <!-- </div> -->
 
     <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
