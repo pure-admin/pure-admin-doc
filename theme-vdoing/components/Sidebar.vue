@@ -17,9 +17,9 @@
         style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">Max 版本优惠即将结束</span>
       </a> -->
-    </div>
+      <!-- </div> -->
 
-    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
+      <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;">
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a>
@@ -34,7 +34,7 @@
         target="_blank">迁移JS版本教程 📺</a>
     </div> -->
 
-    <!-- <div class="blogger" v-if="blogger">
+      <!-- <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
       <div class="blogger-info">
         <h3>{{ blogger.name }}</h3>
@@ -44,8 +44,8 @@
             v-for="(item, index) in blogger.social.icons" :key="index" target="_blank"></a>
         </div>
         <span v-else>{{ blogger.slogan }}</span>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
 
     <!-- 移动端Nav -->
     <NavLinks />
