@@ -63,7 +63,7 @@
         ]" v-for="(item, i) in headers" :key="i" :style="dynamicStyles">
           <a :href="'#' + item.slug" :style="{
             fontSize: isService ? '16px' : '',
-            marginBottom: isService ? '10px' : ''
+            marginBottom: isService ? '14px' : ''
           }">
             <span>{{ item.title }}</span>
             <svg v-if="getTitle(item.title)" style="vertical-align: middle;margin-bottom: 3px;" viewBox="0 0 1024 1024"
@@ -84,6 +84,10 @@
                 fill="#FFFFFF" p-id="1499"></path>
             </svg>
           </a>
+          <p v-if="/Js 版本|Max 版本|Max-Js 版本|Max-Ts 版本/.test(item.title)"
+            :style="{ color: '#0055A4', fontSize: '12px', padding: 0, marginTop: /Max-Js 版本|Max-Ts 版本/.test(item.title) ? '-20px' : '-16px' }">
+            永久使用、永久更新
+          </p>
         </div>
       </div>
     </div>
