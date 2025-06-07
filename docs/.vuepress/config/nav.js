@@ -51,19 +51,19 @@ module.exports = [
   {
     text: "链接",
     items: [
-      {
-        text: "赞助",
-        link: "/pages/sponsor/",
-      },
-      {
-        text: "",
-        items: [
-          {
-            text: "后端项目",
-            link: "/pages/opensource/",
-          },
-        ],
-      },
+      // {
+      //   text: "赞助",
+      //   link: "/pages/sponsor/",
+      // },
+      // {
+      //   text: "",
+      //   items: [
+      //     {
+      //       text: "后端项目",
+      //       link: "/pages/opensource/",
+      //     },
+      //   ],
+      // },
       {
         text: "",
         items: [
@@ -178,6 +178,10 @@ module.exports = [
   {
     text: "后端",
     link: "/pages/opensource/",
+  },
+  {
+    text: "赞助",
+    link: "/pages/sponsor/",
   },
   {
     text: "高级服务",
