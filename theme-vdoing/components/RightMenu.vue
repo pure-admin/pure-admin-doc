@@ -84,7 +84,7 @@
                 fill="#FFFFFF" p-id="1499"></path>
             </svg>
           </a>
-          <p v-if="/Js 版本|Max 版本|Max-Js 版本|Max-Ts 版本/.test(item.title)"
+          <p v-if="/Js 版本|Max 版本|Max-Js 版本|Max-Ts 版本/.test(item.title) && $route.path === '/pages/service/'"
             :style="{ color: '#0055A4', fontSize: '12px', padding: 0, marginTop: /Max-Js 版本|Max-Ts 版本/.test(item.title) ? '-20px' : '-16px' }">
             永久使用、永久更新
           </p>
