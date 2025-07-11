@@ -1,5 +1,5 @@
 <p align="center">
-vue-pure-admin 保姆级文档
+vue-pure-admin 官方文档
 </p>
 
 ## 预览
