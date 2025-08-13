@@ -20,6 +20,10 @@
     <!-- </div> -->
 
     <div style="margin-top: 0.8em;margin-left: 1.2em;" v-show="isShow">
+      <a class="pure-video" href="https://pure-admin.cn/pages/service/#最新活动与动态"
+        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
+        <span style="color: #ed5858">平台最新活动与动态 🔔</span>
+      </a>
       <a class="pure-video" href="https://pure-admin.cn/pages/FAQ/#快速入门-新手必看"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)">
         快速入门，新手必看 📕
