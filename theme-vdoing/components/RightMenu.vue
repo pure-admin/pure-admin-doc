@@ -208,11 +208,11 @@ export default {
   font-size: 16px;
   text-align: center;
   transition: all 0.6s;
-  background-color: rgba(66, 133, 244, 0.2);
-  color: #1a5f7a;
   font-weight: bold;
-  border: 1px solid rgba(66, 133, 244, 0.5);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(150, 180, 230, 0.1);
+  color: #2c6d8c;
+  border: 1px solid rgba(150, 180, 230, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .pure-video:hover {
