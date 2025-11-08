@@ -1,6 +1,6 @@
 {
   "name": "pure-admin-doc",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
