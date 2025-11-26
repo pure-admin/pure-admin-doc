@@ -16,7 +16,7 @@
             </svg>
           </span>
         </a> -->
-        <a class="pure-video" href="https://pure-admin.cn/pages/service/#max-js-版本">
+        <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#max-js-版本">
           <span>
             Max-Js 版本
             <svg style="vertical-align: middle;margin-bottom: 3px;" viewBox="0 0 1024 1024"
@@ -38,8 +38,8 @@
               </path>
             </svg>
           </span>
-        </a>
-        <a class="pure-video" style="margin-top: 10px;" href="https://pure-admin.cn/pages/service/#max-ts-版本">
+        </a> -->
+        <!-- <a class="pure-video" style="margin-top: 10px;" href="https://pure-admin.cn/pages/service/#max-ts-版本">
           <span>
             Max-Ts 版本
             <svg style="vertical-align: middle;margin-bottom: 3px;" viewBox="0 0 1024 1024"
@@ -61,7 +61,7 @@
               </path>
             </svg>
           </span>
-        </a>
+        </a> -->
         <!-- <div id="special-sponsor-container">
           <a class="logo" href="https://ai-tools.cn/resume/start" target="_blank" rel="sponsored noopener">
             <img src="https://pure-admin.cn/img/sponsors/aitools.svg" alt="aitools">
