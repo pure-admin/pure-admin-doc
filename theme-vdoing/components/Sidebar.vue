@@ -1,34 +1,19 @@
 <template>
   <aside class="sidebar">
-    <!-- <div style="margin:20px 0 0 20px"> -->
-    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/js/"
-        style="width:200px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
-        <span style="color: #ed5858">JS版本、Max版本限时活动</span>
-      </a> -->
-    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E8%A7%A3%E7%AD%94%E5%BE%AE%E4%BF%A1%E7%BE%A4"
-        style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
-        <span style="color: #ed5858">解答微信群优惠即将结束</span>
-      </a> -->
-    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/js/"
-        style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
-        <span style="color: #ed5858">JS 版本优惠即将结束</span>
-      </a> -->
-    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/max/"
-        style="width:180px;background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
-        <span style="color: #ed5858">Max 版本优惠即将结束</span>
-      </a> -->
-    <!-- </div> -->
-
-    <!-- <div style="margin-top: 0.8em;margin-left: 1.2em;" v-show="isShow"> -->
-    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E6%9C%80%E6%96%B0%E6%B4%BB%E5%8A%A8"
+    <div style="margin-top: 0.8em;margin-left: 1.2em;" v-show="isShow">
+      <a class="pure-video" href="https://pure-admin.cn/pages/service/"
+        style="width:86%;background: var(--videoBgColor);padding:10px;border-radius: 6px;font-size: 18px;">
+        <span style="color: #ed5858">高级服务</span>
+      </a>
+      <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E6%9C%80%E6%96%B0%E6%B4%BB%E5%8A%A8"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">Js版本、Max版本优惠活动</span>
       </a> -->
-    <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#最新活动与动态"
+      <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#最新活动与动态"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
         <span style="color: #ed5858">平台最新活动与动态 🔔</span>
       </a> -->
-    <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
+      <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">快速开发教程 📺</a>
       <a class="pure-video" href="https://pure-admin.cn/pages/FAQ/#快速入门-新手必看"
@@ -38,13 +23,13 @@
       <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">@pureadmin/utils文档 📕</a> -->
-    <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1Rx4y1U7Mv/"
+      <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1Rx4y1U7Mv/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">平台页面、功能演示 📺</a> -->
-    <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
+      <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
         target="_blank">迁移JS版本教程 📺</a> -->
-    <!-- </div> -->
+    </div>
 
     <!-- <div class="blogger" v-if="blogger">
       <img :src="blogger.avatar" />
