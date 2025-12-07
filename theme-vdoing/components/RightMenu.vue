@@ -133,7 +133,7 @@ export default {
     },
     getTitle() {
       return text => {
-        if (/Max-Js 版本|Max-Ts 版本|一对一包月远程指导|技术指导/.test(text)) {
+        if (/Max-Js 版本|Max-Ts 版本/.test(text)) {
           return true
         } else {
           return false
