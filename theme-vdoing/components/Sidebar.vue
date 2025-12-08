@@ -3,7 +3,7 @@
     <div style="margin-top: 0.8em;margin-left: 1.2em;" v-show="isShow">
       <a class="pure-video" href="https://pure-admin.cn/pages/service/"
         style="width:86%;background: var(--videoBgColor);padding:10px;border-radius: 6px;font-size: 18px;">
-        <span style="color: #ed5858">高级服务</span>
+        <span style="color: #ed5858">高级服务<span style="color: #ed5858;font-size: 16px;">（新功能更新） </span></span>
       </a>
       <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E6%9C%80%E6%96%B0%E6%B4%BB%E5%8A%A8"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
