@@ -46,6 +46,9 @@
             <el-link style="color: #426feb" :underline="false" href="https://www.bilibili.com/video/BV1Xv4y1U7UN/"
               target="_blank">点我查看如何使用PWA访问文档</el-link>
           </p> -->
+          <p style="font-size:18px">
+            平台自 2020 年 11 月 16 日启动开发并发布，作者于 2024 年 3 月 4 日起全职投入开源，全力维护 pure-admin
+          </p>
           <p class="action" v-if="homeData.actionText && homeData.actionLink">
             <NavLink class="action-button" :item="actionLink" />
             <PreView class="preview-button" :item="actionLink" />
