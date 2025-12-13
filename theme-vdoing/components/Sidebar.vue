@@ -1,10 +1,10 @@
 <template>
   <aside class="sidebar">
     <div style="margin-top: 0.8em;margin-left: 1.2em;" v-show="isShow">
-      <a class="pure-video" href="https://pure-admin.cn/pages/service/"
+      <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)">
         <span style="color: #ed5858">高级服务（新功能更新）</span>
-      </a>
+      </a> -->
       <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#%E6%9C%80%E6%96%B0%E6%B4%BB%E5%8A%A8"
           style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;font-size: 16px;">
           <span style="color: #ed5858">Js版本、Max版本优惠活动</span>
