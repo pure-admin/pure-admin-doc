@@ -61,14 +61,15 @@
         </svg>
       </div>
     </div>
-    <div>
+    <div style="display: flex;justify-content: center;margin-bottom: 6px;flex-wrap: wrap;">
       <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
       Theme by
       <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
       <template v-if="footer">
         | Copyright © {{ footer.createYear }}-{{ new Date().getFullYear() }}
         <!-- <span v-html="footer.copyrightInfo"></span> -->
-        <a href="https://github.com/pure-admin/vue-pure-admin" target="_blank" title="pure-admin">
+        <a href="https://github.com/pure-admin/vue-pure-admin" target="_blank" title="pure-admin"
+          style="margin-left: 4px;">
           pure-admin | MIT License
         </a>
       </template>
@@ -81,7 +82,7 @@
 export default {
   data() {
     return {
-      stars: '19.3k',
+      stars: '19.5k',
       forks: '3.6k',
     }
   },
@@ -115,8 +116,10 @@ export default {
 <style lang="stylus">
 // $mobileSidebarWidth = $sidebarWidth * 0.82
 .footer
-  margin-top -3.5rem
-  text-align center
+  position absolute
+  left 50%
+  min-width 100%
+  transform translate(-50%, -50%)
   color #666
   box-sizing border-box
   font-size 0.85rem

@@ -1,11 +1,12 @@
 <template>
-  <div class="home-wrapper">
+  <div class="home-wrapper" style="margin-bottom: -2rem;">
     <!-- banner块 s -->
     <div class="banner" :class="{ 'hide-banner': !showBanner }" :style="bannerBgStyle">
       <div class="banner-conent" :style="!homeData.features && !homeData.heroImage && `padding-top: 7rem`
         ">
         <header class="hero">
-          <img v-if="homeData.heroImage" :src="$withBase(homeData.heroImage)" :alt="homeData.heroAlt" />
+          <img v-if="homeData.heroImage" :src="$withBase(homeData.heroImage)" :alt="homeData.heroAlt"
+            style="margin-top: -2rem;" />
           <div style="display: flex; align-items: center; justify-content: center">
             <h1 v-if="homeData.heroText" id="main-title">
               {{ homeData.heroText }}
@@ -468,7 +469,7 @@ export default {
         min-height 1px
         overflow hidden
       .slide-banner-wrapper
-        height 300px
+        height 280px
         .slide-item
           display inline-block
           height 300px
