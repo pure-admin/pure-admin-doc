@@ -70,13 +70,13 @@
           <div class="feature" v-for="(feature, index) in homeData.features" :key="index">
             <router-link v-if="feature.link" :to="feature.link">
               <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)" :alt="feature.title" />
-              <h2>{{ feature.title }}</h2>
-              <p>{{ feature.details }}</p>
+              <h2 :title="feature.title">{{ feature.title }}</h2>
+              <p :title="feature.details">{{ feature.details }}</p>
             </router-link>
             <a v-else href="javascript:;">
               <img class="feature-img" v-if="feature.imgUrl" :src="$withBase(feature.imgUrl)" :alt="feature.title" />
-              <h2>{{ feature.title }}</h2>
-              <p>{{ feature.details }}</p>
+              <h2 :title="feature.title">{{ feature.title }}</h2>
+              <p :title="feature.details">{{ feature.details }}</p>
             </a>
           </div>
         </div>
@@ -85,7 +85,7 @@
 
       <!-- 移动端features块 s -->
       <!-- isMQMobile放到v-if上线后会报错 -->
-      <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
+      <!-- <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
         <div class="banner-wrapper">
           <div class="slide-banner-scroll" ref="slide">
             <div class="slide-banner-wrapper">
@@ -108,7 +108,7 @@
               :class="{ active: currentPageIndex === index }"></span>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- 移动端features块 e -->
     </div>
     <!-- banner块 e -->
@@ -578,4 +578,19 @@ export default {
       .feature
         h2
           font-size 1.25rem
+
+@media (max-width: 920px)
+  .home-wrapper
+    .banner
+      .banner-conent
+        .feature
+          a
+            h2
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+            p
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
 </style>
