@@ -83,7 +83,7 @@ export default {
   data() {
     return {
       stars: '19.6k',
-      forks: '3.6k',
+      forks: '3.7k',
     }
   },
   computed: {
