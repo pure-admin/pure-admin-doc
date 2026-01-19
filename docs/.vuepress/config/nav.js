@@ -74,15 +74,11 @@ module.exports = [
         ],
       },
       {
-        text: "日志",
+        text: "",
         items: [
           {
-            text: "Github日志",
+            text: "版本日志",
             link: "https://github.com/pure-admin/vue-pure-admin/releases",
-          },
-          {
-            text: "Gitee日志",
-            link: "https://gitee.com/yiming_chang/vue-pure-admin/releases",
           },
         ],
       },
@@ -90,16 +86,24 @@ module.exports = [
         text: "预览",
         items: [
           {
-            text: "完整版",
+            text: "完整版本",
             link: "https://pure-admin.github.io/vue-pure-admin/#/login",
           },
           {
-            text: "精简版",
+            text: "精简版本",
             link: "https://pure-admin-thin.netlify.app/#/login",
           },
           {
-            text: "max版",
+            text: "Max版本",
             link: "https://pure-admin.github.io/vue-pure-admin-max/#/login",
+          },
+          {
+            text: "Max-Ts版本",
+            link: "https://xiaoxian521.github.io/thin-max-ts-i18n/#/login",
+          },
+          {
+            text: "Max-Js版本",
+            link: "https://xiaoxian521.github.io/thin-max-js-i18n/#/login",
           },
           {
             text: "utils文档",
@@ -108,68 +112,27 @@ module.exports = [
         ],
       },
       {
-        text: "Github源码",
+        text: "源码",
         items: [
           {
-            text: "完整版",
+            text: "完整版本",
             link: "https://github.com/pure-admin/vue-pure-admin",
           },
           {
-            text: "精简版",
+            text: "精简版本",
             link: "https://github.com/pure-admin/pure-admin-thin",
           },
           {
-            text: "Tauri版",
+            text: "Tauri版本",
             link: "https://github.com/pure-admin/tauri-pure-admin",
           },
           {
-            text: "Electron版",
+            text: "Electron版本",
             link: "https://github.com/pure-admin/electron-pure-admin",
           },
           {
-            text: "配套后端",
+            text: "后端版本",
             link: "https://github.com/pure-admin/pure-admin-backend",
-          },
-          {
-            text: "文档",
-            link: "https://github.com/pure-admin/pure-admin-doc",
-          },
-          {
-            text: "utils文档",
-            link: "https://github.com/pure-admin/pure-admin-utils-docs",
-          },
-        ],
-      },
-      {
-        text: "Gitee源码",
-        items: [
-          {
-            text: "完整版",
-            link: "https://gitee.com/yiming_chang/vue-pure-admin",
-          },
-          {
-            text: "精简版",
-            link: "https://gitee.com/yiming_chang/pure-admin-thin",
-          },
-          {
-            text: "Tauri版",
-            link: "https://gitee.com/yiming_chang/tauri-pure-admin",
-          },
-          {
-            text: "Electron版",
-            link: "https://gitee.com/yiming_chang/electron-pure-admin",
-          },
-          {
-            text: "配套后端",
-            link: "https://gitee.com/yiming_chang/pure-admin-backend",
-          },
-          {
-            text: "文档",
-            link: "https://gitee.com/yiming_chang/pure-admin-doc",
-          },
-          {
-            text: "utils文档",
-            link: "https://gitee.com/yiming_chang/pure-admin-utils-docs",
           },
         ],
       },

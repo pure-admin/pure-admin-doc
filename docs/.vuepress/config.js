@@ -155,10 +155,6 @@ module.exports = {
             behindUrl: "", // 搜索链接的后面部分，可选，默认 ''
           },
           {
-            title: "在Gitee中搜索",
-            frontUrl: "https://gitee.com/search?q=", // 搜索链接的前面部分
-          },
-          {
             title: "在npm中搜索",
             frontUrl: "https://www.npmjs.com/search?q=",
           },
