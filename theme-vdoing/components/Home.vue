@@ -85,7 +85,7 @@
 
       <!-- 移动端features块 s -->
       <!-- isMQMobile放到v-if上线后会报错 -->
-      <!-- <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
+      <div class="slide-banner" v-if="hasFeatures" v-show="isMQMobile">
         <div class="banner-wrapper">
           <div class="slide-banner-scroll" ref="slide">
             <div class="slide-banner-wrapper">
@@ -108,7 +108,7 @@
               :class="{ active: currentPageIndex === index }"></span>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- 移动端features块 e -->
     </div>
     <!-- banner块 e -->
@@ -367,7 +367,6 @@ export default {
 
 <style lang="stylus" scoped>
 .home-wrapper
-  height calc(100vh - 58px)
   .banner
     width 100%
     min-height 450px
@@ -428,7 +427,7 @@ export default {
             color #fff !important
       // pc端features
       .features
-        padding 1.6rem 0
+        padding-bottom 1rem
         display flex
         flex-wrap wrap
         align-items flex-start
@@ -578,19 +577,4 @@ export default {
       .feature
         h2
           font-size 1.25rem
-
-@media (max-width: 920px)
-  .home-wrapper
-    .banner
-      .banner-conent
-        .feature
-          a
-            h2
-              white-space nowrap
-              overflow hidden
-              text-overflow ellipsis
-            p
-              white-space nowrap
-              overflow hidden
-              text-overflow ellipsis
 </style>
