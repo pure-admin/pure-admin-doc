@@ -2,7 +2,7 @@
   <div class="right-menu-wrapper">
     <div class="right-menu-margin">
       <section v-if="!isService" id="special-sponsor">
-        <a class="pure-video" href="https://pure-admin.cn/pages/service/">
+        <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/">
           <span>
             补差价活动即将结束
             <svg style="vertical-align: middle;margin-bottom: 3px;" viewBox="0 0 1024 1024" version="1.1"
@@ -15,7 +15,7 @@
                 fill="#FFDF99" p-id="3480"></path>
             </svg>
           </span>
-        </a>
+        </a> -->
         <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#最新活动">
           <span>
             国庆限时优惠活动
