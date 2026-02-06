@@ -10,7 +10,7 @@ module.exports = [
       { text: "平台配置", link: "/pages/config/" },
       { text: "布局", link: "/pages/layout/" },
       { text: "路由和菜单", link: "/pages/routerMenu/" },
-      { text: "http请求", link: "/pages/request/" },
+      { text: "HTTP请求", link: "/pages/request/" },
       { text: "打包和部署", link: "/pages/build/" },
       {
         text: "进阶",
@@ -24,7 +24,7 @@ module.exports = [
           { text: "单点登录", link: "/pages/sso/" },
           { text: "自定义免登录", link: "/pages/nologin/" },
           { text: "打包优化", link: "/pages/buildgood/" },
-          { text: "vite预构建", link: "/pages/optimize/" },
+          { text: "Vite预构建", link: "/pages/optimize/" },
         ],
       },
       {
@@ -33,7 +33,7 @@ module.exports = [
           { text: "对接平台的前后端项目", link: "/pages/opensource/" },
           { text: "函数工具库", link: "/pages/utils/" },
           { text: "组件库", link: "/pages/components/" },
-          { text: "vite插件", link: "/pages/viteplugin/" },
+          { text: "Vite插件", link: "/pages/viteplugin/" },
         ],
       },
       {
@@ -42,8 +42,8 @@ module.exports = [
           { text: "赞助", link: "/pages/sponsor/" },
           { text: "常见问题", link: "/pages/FAQ/" },
           { text: "非平台问题跟踪记录", link: "/pages/track/" },
-          { text: "ai", link: "/pages/ai/" },
-          { text: "git常用命令", link: "/pages/git/" },
+          { text: "Ai", link: "/pages/ai/" },
+          { text: "Git常用命令", link: "/pages/git/" },
           { text: "技术网站推荐", link: "/pages/recommendation/" },
         ],
       },
