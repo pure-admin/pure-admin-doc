@@ -42,6 +42,7 @@ module.exports = [
           { text: "赞助", link: "/pages/sponsor/" },
           { text: "常见问题", link: "/pages/FAQ/" },
           { text: "非平台问题跟踪记录", link: "/pages/track/" },
+          { text: "ai", link: "/pages/ai/" },
           { text: "git常用命令", link: "/pages/git/" },
           { text: "技术网站推荐", link: "/pages/recommendation/" },
         ],
