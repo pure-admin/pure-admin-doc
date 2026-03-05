@@ -42,7 +42,7 @@ module.exports = [
           { text: "赞助", link: "/pages/sponsor/" },
           { text: "常见问题", link: "/pages/FAQ/" },
           { text: "非平台问题跟踪记录", link: "/pages/track/" },
-          { text: "Ai", link: "/pages/ai/" },
+          { text: "AI", link: "/pages/ai/" },
           { text: "Git常用命令", link: "/pages/git/" },
           { text: "技术网站推荐", link: "/pages/recommendation/" },
         ],
@@ -144,7 +144,7 @@ module.exports = [
     link: "/pages/opensource/",
   },
   {
-    text: "Ai",
+    text: "AI",
     link: "/pages/ai/",
     icon: `<svg t="1668145036658" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
           height="20">
