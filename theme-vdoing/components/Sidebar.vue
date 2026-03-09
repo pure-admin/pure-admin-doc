@@ -14,7 +14,10 @@
           <span style="color: #ed5858">平台最新活动与动态 🔔</span>
         </a> -->
 
-      <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
+      <a class="pure-video" href="https://www.bilibili.com/video/BV1VYASzREmJ/"
+        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor);font-size:18px"
+        target="_blank">在 VS Code 中使用 <br /> Claude Code 编码</a>
+      <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">快速开发教程 📺</a>
       <a class="pure-video" href="https://pure-admin.cn/pages/FAQ/#快速入门-新手必看"
@@ -29,15 +32,11 @@
         target="_blank">平台页面、功能演示 📺</a>
       <a class="pure-video" href="https://www.bilibili.com/video/BV1Wr421F7oj/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
-        target="_blank">迁移JS版本教程 📺</a> -->
+        target="_blank">迁移JS版本教程 📺</a>
       <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#最新活动与动态"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-top: 4px;font-size: 16px;">
         <span style="color: #ed5858">限时活动即将结束！</span>
       </a> -->
-
-      <a class="pure-video" href="https://www.bilibili.com/video/BV1VYASzREmJ/"
-        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor);font-size:18px"
-        target="_blank">在 VS Code 中使用 <br /> Claude Code 编码</a>
     </div>
 
     <!-- <div class="blogger" v-if="blogger">
