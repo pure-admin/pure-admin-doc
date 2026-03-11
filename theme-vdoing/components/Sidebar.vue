@@ -14,9 +14,9 @@
           <span style="color: #ed5858">平台最新活动与动态 🔔</span>
         </a> -->
 
-      <a class="pure-video" href="https://www.bilibili.com/video/BV1VYASzREmJ/"
+      <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1VYASzREmJ/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor);font-size:18px"
-        target="_blank">在 VS Code 中使用 <br /> Claude Code 编码</a>
+        target="_blank">在 VS Code 中使用 <br /> Claude Code 编码</a> -->
       <a class="pure-video" href="https://www.bilibili.com/video/BV1kg411v7QT/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">快速开发教程 📺</a>
