@@ -121,6 +121,7 @@ export default {
   box-sizing border-box
   font-size 0.85rem
   transition all 0.2s ease
+  margin-top auto
   .sponsor 
     padding: 8px 20px
     display: inline-block
