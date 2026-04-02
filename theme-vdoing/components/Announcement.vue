@@ -47,7 +47,7 @@ export default {
   height 36px
   padding 0 40px
   background var(--blurBg)
-  border-bottom 1px solid var(--borderColor)
+  border-bottom 0.3px solid var(--borderColor)
   font-size 13px
   letter-spacing 0.3px
   .announcement-link
