@@ -65,7 +65,7 @@ a,input,button
 
 .custom-page // 自定义页面
   min-height calc(100vh - 3.6rem)
-  padding-top $navbarHeight
+  padding-top "calc(%s + var(--announcement-height, 0px))" % $navbarHeight
   padding-bottom .9rem
   .theme-vdoing-wrapper
     margin 0 auto
@@ -88,7 +88,7 @@ body .search-box
 .navbar
   position fixed
   z-index 20
-  top 0
+  top var(--announcement-height, 0px)
   left 0
   right 0
   height $navbarHeight
@@ -109,7 +109,7 @@ body .search-box
   display none
   position: fixed
   z-index 12
-  top ($navbarHeight + 4.5rem)
+  top "calc(%s + 4.5rem + var(--announcement-height, 0px))" % $navbarHeight
   left 0
   bottom 0
   width 24px
@@ -121,7 +121,7 @@ body .search-box
   position fixed
   z-index 13
   margin 0
-  top $navbarHeight
+  top "calc(%s + var(--announcement-height, 0px))" % $navbarHeight
   left 0
   bottom 0
   box-sizing border-box

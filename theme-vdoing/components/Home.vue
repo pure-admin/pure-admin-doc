@@ -370,7 +370,7 @@ export default {
   .banner
     width 100%
     min-height 450px
-    margin-top $navbarHeight
+    margin-top "calc(%s + var(--announcement-height, 0px))" % $navbarHeight
     color $bannerTextColor
     position relative
     overflow hidden
@@ -507,7 +507,7 @@ export default {
   .banner.hide-banner
     display none
     & + .main-wrapper
-      margin-top: ($navbarHeight + 0.9rem)
+      margin-top: "calc(%s + 0.9rem + var(--announcement-height, 0px))" % $navbarHeight
   .main-wrapper
     margin-top 2rem
     .main-left

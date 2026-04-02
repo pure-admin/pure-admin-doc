@@ -246,10 +246,10 @@ export default {
   margin-right -($rightMenuWidth + 55px)
   // margin-top -($navbarHeight *2 + 1.5rem)
   position sticky
-  top 0
+  top var(--announcement-height, 0px)
   font-size 0.8rem
   .right-menu-margin
-    margin-top: ($navbarHeight + 1rem)
+    margin-top: "calc(%s + 1rem + var(--announcement-height, 0px))" % $navbarHeight
     border-radius 3px
     overflow hidden
   .right-menu-title
