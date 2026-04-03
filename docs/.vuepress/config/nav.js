@@ -144,10 +144,6 @@ module.exports = [
     link: "/pages/opensource/",
   },
   {
-    text: "AI",
-    link: "/pages/ai/",
-  },
-  {
     text: "赞助",
     link: "/pages/sponsor/",
   },
