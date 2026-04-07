@@ -1,7 +1,7 @@
 <template>
   <div v-if="visible" class="announcement-bar">
     <a class="announcement-link" href="https://github.com/pure-admin/vue-pure-admin/issues/1279" target="_blank"
-      rel="noopener noreferrer">点击查看 7.0.0 版本更新预告 <span class="arrow">→</span></a>
+      rel="noopener noreferrer">点击查看 7.0.0 版本更新公告 <span class="arrow">→</span></a>
     <!-- <button class="announcement-close" @click="close" aria-label="关闭">&times;</button> -->
   </div>
 </template>
