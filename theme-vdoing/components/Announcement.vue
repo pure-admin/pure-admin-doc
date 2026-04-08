@@ -13,23 +13,23 @@ export default {
   name: 'Announcement',
   data() {
     return {
-      visible: true,
+      visible: false,
     }
   },
   mounted() {
-    this.applyOffset()
+    // this.applyOffset()
   },
   methods: {
-    applyOffset() {
-      document.documentElement.style.setProperty('--announcement-height', ANNOUNCEMENT_HEIGHT + 'px')
-    },
-    removeOffset() {
-      document.documentElement.style.setProperty('--announcement-height', '0px')
-    },
-    close() {
-      this.visible = false
-      this.removeOffset()
-    }
+    // applyOffset() {
+    //   document.documentElement.style.setProperty('--announcement-height', ANNOUNCEMENT_HEIGHT + 'px')
+    // },
+    // removeOffset() {
+    //   document.documentElement.style.setProperty('--announcement-height', '0px')
+    // },
+    // close() {
+    //   this.visible = false
+    //   this.removeOffset()
+    // }
   }
 }
 </script>

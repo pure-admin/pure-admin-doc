@@ -138,7 +138,6 @@ export default {
 .theme-vdoing-wrapper
   .content-wrapper
     position relative
-    margin-top 3rem
   h1
     .title-tag
       height 1.5rem
