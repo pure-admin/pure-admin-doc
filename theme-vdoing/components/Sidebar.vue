@@ -21,12 +21,12 @@
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">快速开发教程 📺</a> -->
       <a class="pure-video" href="https://pure-admin.cn/pages/FAQ/#快速入门-新手必看"
-        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)">
+        style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)">
         快速入门，新手必看 📕
       </a>
-      <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
+      <!-- <a class="pure-video" href="https://pure-admin-utils.netlify.app/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;color: var(--videoTextColor)"
-        target="_blank">@pureadmin/utils文档 📕</a>
+        target="_blank">@pureadmin/utils文档 📕</a> -->
       <!-- <a class="pure-video" href="https://www.bilibili.com/video/BV1Rx4y1U7Mv/"
         style="background: var(--videoBgColor);padding:8px;border-radius: 6px;margin-bottom: 4px;color: var(--videoTextColor)"
         target="_blank">平台页面、功能演示 📺</a>
