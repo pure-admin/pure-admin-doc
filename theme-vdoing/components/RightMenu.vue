@@ -2,7 +2,7 @@
   <div class="right-menu-wrapper">
     <div class="right-menu-margin">
       <section v-if="!isService" id="special-sponsor">
-        <a class="pure-video" href="https://github.com/pure-admin/vue-pure-admin/issues/1279" target="_blank"
+        <!-- <a class="pure-video" href="https://github.com/pure-admin/vue-pure-admin/issues/1279" target="_blank"
           rel="noopener noreferrer">
           <span style="font-size: 18px;">
             7.0.0 版本更新公告
@@ -16,7 +16,7 @@
                 fill="#FFDF99" p-id="3480"></path>
             </svg>
           </span>
-        </a>
+        </a> -->
         <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#最新活动">
           <span>
             国庆限时优惠活动
@@ -31,7 +31,7 @@
             </svg>
           </span>
         </a> -->
-        <!-- <a class="pure-video" href="https://pure-admin.cn/pages/service/#max-js-版本">
+        <a class="pure-video" href="https://pure-admin.cn/pages/service/#max-js-版本">
           <span>
             Max-Js 版本
             <svg style="vertical-align: middle;margin-bottom: 3px;" viewBox="0 0 1024 1024"
@@ -53,8 +53,8 @@
               </path>
             </svg>
           </span>
-        </a> -->
-        <!-- <a class="pure-video" style="margin-top: 10px;" href="https://pure-admin.cn/pages/service/#max-ts-版本">
+        </a>
+        <a class="pure-video" style="margin-top: 10px;" href="https://pure-admin.cn/pages/service/#max-ts-版本">
           <span>
             Max-Ts 版本
             <svg style="vertical-align: middle;margin-bottom: 3px;" viewBox="0 0 1024 1024"
@@ -76,7 +76,7 @@
               </path>
             </svg>
           </span>
-        </a> -->
+        </a>
         <!-- <div id="special-sponsor-container">
           <a class="logo" href="https://ai-tools.cn/resume/start" target="_blank" rel="sponsored noopener">
             <img src="https://pure-admin.cn/img/sponsors/aitools.svg" alt="aitools">
