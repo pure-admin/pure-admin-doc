@@ -157,7 +157,8 @@ export default {
     },
     getTitles() {
       return text => {
-        return text === 'Js 版本' || text === 'Max 版本'
+        // return text === 'Js 版本' || text === 'Max 版本'
+        return false
       }
     }
   },
