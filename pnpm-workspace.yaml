@@ -1,2 +1,11 @@
 packages:
   - "theme-vdoing/"
+allowBuilds:
+  core-js: true
+  esbuild: true
+  fsevents: true
+  highlight.js: true
+  vuepress: true
+peerDependencyRules:
+  ignoreMissing:
+    - vue

@@ -6,6 +6,9 @@
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
     "preview": "cross-env NODE_OPTIONS=--openssl-legacy-provider esno preview"
   },
+  "engines": {
+    "pnpm": ">=11"
+  },
   "license": "MIT",
   "devDependencies": {
     "@better-scroll/core": "^2.5.1",
@@ -43,12 +46,5 @@
   "dependencies": {
     "babel-plugin-component": "^1.1.1",
     "core-js": "2.6.11"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "vue"
-      ]
-    }
   }
 }
