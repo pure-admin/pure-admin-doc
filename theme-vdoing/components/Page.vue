@@ -4,23 +4,16 @@
       <div :class="`theme-vdoing-wrapper ${bgStyle}`">
         <ArticleInfo v-if="isArticle()" />
         <div v-else class="placeholder" />
-        <component
-          class="theme-vdoing-content"
-          v-if="pageComponent"
-          :is="pageComponent"
-        />
+        <component class="theme-vdoing-content" v-if="pageComponent" :is="pageComponent" />
 
         <div class="content-wrapper">
           <RightMenu v-if="showRightMenu" />
 
           <h1 v-if="showTitle">
-            <img
-              :src="currentBadge"
-              v-if="$themeConfig.titleBadge === false ? false : true"
-            />{{ this.$page.title
+            <img :src="currentBadge" v-if="$themeConfig.titleBadge === false ? false : true" />{{ this.$page.title
             }}<span class="title-tag" v-if="$frontmatter.titleTag">{{
               $frontmatter.titleTag
-            }}</span>
+              }}</span>
           </h1>
 
           <slot name="top" v-if="isShowSlotT" />
@@ -33,11 +26,7 @@
         <PageNav v-bind="{ sidebarItems }" />
       </div>
 
-      <UpdateArticle
-        :length="3"
-        :moreArticle="updateBarConfig && updateBarConfig.moreArticle"
-        v-if="isShowUpdateBar"
-      />
+      <UpdateArticle :length="3" :moreArticle="updateBarConfig && updateBarConfig.moreArticle" v-if="isShowUpdateBar" />
     </main>
   </div>
 </template>
@@ -138,6 +127,7 @@ export default {
 .theme-vdoing-wrapper
   .content-wrapper
     position relative
+    margin-top 3rem
   h1
     .title-tag
       height 1.5rem

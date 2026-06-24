@@ -1,7 +1,7 @@
 <template>
   <div v-if="visible" class="announcement-bar">
-    <a class="announcement-link" href="https://github.com/pure-admin/vue-pure-admin/issues/1279" target="_blank"
-      rel="noopener noreferrer">点击查看 7.0.0 版本更新公告 <span class="arrow">→</span></a>
+    <a class="announcement-link" href="https://pure-admin.cn/pages/news/" rel="noopener noreferrer">最新公告！最新公告！最新公告！<span
+        class="arrow">→</span></a>
     <!-- <button class="announcement-close" @click="close" aria-label="关闭">&times;</button> -->
   </div>
 </template>
@@ -13,23 +13,23 @@ export default {
   name: 'Announcement',
   data() {
     return {
-      visible: false,
+      visible: true,
     }
   },
   mounted() {
-    // this.applyOffset()
+    this.applyOffset()
   },
   methods: {
-    // applyOffset() {
-    //   document.documentElement.style.setProperty('--announcement-height', ANNOUNCEMENT_HEIGHT + 'px')
-    // },
-    // removeOffset() {
-    //   document.documentElement.style.setProperty('--announcement-height', '0px')
-    // },
-    // close() {
-    //   this.visible = false
-    //   this.removeOffset()
-    // }
+    applyOffset() {
+      document.documentElement.style.setProperty('--announcement-height', ANNOUNCEMENT_HEIGHT + 'px')
+    },
+    removeOffset() {
+      document.documentElement.style.setProperty('--announcement-height', '0px')
+    },
+    close() {
+      this.visible = false
+      this.removeOffset()
+    }
   }
 }
 </script>
@@ -46,12 +46,12 @@ export default {
   justify-content center
   height 36px
   padding 0 40px
-  background var(--blurBg)
-  border-bottom 0.3px solid var(--borderColor)
+  background #fff
+  border-bottom 1px solid var(--borderColor)
   font-size 13px
   letter-spacing 0.3px
   .announcement-link
-    color $accentColor
+    color red
     text-decoration none
     font-weight 600
     cursor pointer
